@@ -1,0 +1,123 @@
+@font-face{
+  font-family: "Noto sans Italic";
+  src: url("../../assets/fonts/NotoSans-Italic.ttf");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Noto sans Light";
+  src: url("../../assets/fonts/NotoSans-Light.ttf");
+}
+
+.landing {
+  /* margin: 2rem; */
+  padding: 7rem 2rem 2rem;
+  /* display: flex; */
+  background: url("../../assets/img/bg-1024.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 5rem;
+}
+
+.landingLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  /* flex: 0.6; */
+  padding: 2rem 7rem;
+}
+
+.landingLeftHeader {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-top: 0rem;
+}
+
+.landingLeftHeader > img {
+  height: 7.3rem;
+  width: auto;
+  
+}
+
+.LeftHeaderLogo {
+  position: relative;
+  right: 1rem;
+  bottom: 1rem;
+}
+.LeftHeaderLogo > img {
+  height: 5rem;
+  width: auto;
+}
+
+.LeftHeaderText > h3 {
+  color: #666666;
+}
+.LeftHeaderText > h4 {
+  color: #737373;
+  float: left;
+}
+
+.landingLeftInfo > h4 {
+  /* padding-left: 8rem;
+  padding-right: 4rem; */
+  text-align: left;
+  margin-top: 2rem;
+  font-family: "Noto sans Italic", sans-serif ;
+  color: #547DBF;
+}
+
+.landingLeft > .joinButton {
+  margin-top: 2rem;
+  height: auto;
+  width: 150px;
+  font-family: "Roboto Bold", monospace;
+  font-size: 1.15rem;
+}
+
+
+.landingRight {
+  position: absolute;
+  top: 7.5rem;
+  right: 0;
+}
+
+.mascots {
+  height: auto;
+  width: 25rem;
+}
+
+.scroll-down {
+  font-family: "Noto sans Light", sans-serif ;
+  font-size: 24px;
+  color: #4F4F4F;
+  margin: 3rem auto;
+}
+
+@media screen and (max-width: 992px) {
+  .landing {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .landingLeftHeader > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landing {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .landingLeft {
+    padding: 2rem 3rem;
+  }
+}
