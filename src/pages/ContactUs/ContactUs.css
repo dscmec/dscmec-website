@@ -1,0 +1,53 @@
+.contactus {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactus > h1 {
+    margin: 3rem;
+    font-size: 2.8rem;
+}
+
+.contactus > p {
+    margin-top: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    font-size: 1.85rem;
+}
+
+.contactus > .contactusButton {
+    position: relative;
+    margin-top: 2rem;
+    padding: 0.75rem;
+    width: 200px;
+    font-family: "Roboto Bold", monospace;
+    font-size: 1.15rem;
+  }
+
+
+@media screen and (max-width: 992px) {
+    .contactus > h1 {
+        margin: 1rem;
+        font-size: 2rem;
+    }
+    
+    .contactus > p {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        font-size: 1.5rem;
+    }
+}
+  
+  @media screen and (max-width: 600px) {
+    .contactus > h1 {
+        margin: 1rem;
+    }
+    
+    .contactus > p {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}

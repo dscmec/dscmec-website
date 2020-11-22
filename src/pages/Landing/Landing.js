@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-
-import logo from '../../assets/img/logo.svg';
+import { NavHashLink as Link } from 'react-router-hash-link';
 import logoFull from '../../assets/svg/logo-full.svg';
 import scrollDown from '../../assets/svg/scroll-down.svg';
 import mascots from '../../assets/svg/mascots.svg';
@@ -30,7 +29,9 @@ function Landing() {
             </div>
             <div className="scroll-down">
                 <p className="d-none d-md-block d-lg-block d-xl">Powered by Google Developers</p>
-                <img src={scrollDown} alt="Scroll Down" />
+                <Link to="/#announcements" smooth={true} spy="true" duration={1000}>
+                    <img src={scrollDown} alt="Scroll Down" />
+                </Link>
             </div>
         </section>
     );
