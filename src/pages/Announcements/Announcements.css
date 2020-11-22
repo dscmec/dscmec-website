@@ -1,0 +1,9 @@
+.announcements {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+}
+
+.announcements_header {
+    left: 10%;
+} 

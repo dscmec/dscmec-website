@@ -5,6 +5,7 @@ import Team from './pages/Team/Team';
 import Navbar from './components/Navbar/Navbar';
 import Landing from './pages/Landing/Landing';
 import './App.css';
+import Announcements from './pages/Announcements/Announcements';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/">
               <Navbar />
               <Landing />
+              <Announcements />
             </Route>
           </Switch>
       </div>
