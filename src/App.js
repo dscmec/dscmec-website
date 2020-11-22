@@ -8,6 +8,7 @@ import './App.css';
 import Announcements from './pages/Announcements/Announcements';
 import Focus from './pages/Focus/Focus';
 import OurTeam from './pages/OurTeam/OurTeam';
+import ContactUs from './pages/ContactUs/ContactUs';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               <Announcements />
               <Focus />
               <OurTeam />
+              <ContactUs />
             </Route>
           </Switch>
       </div>
