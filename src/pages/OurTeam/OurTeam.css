@@ -1,43 +1,51 @@
-.focus {
+.ourteam {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     min-height: 85vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.focus > h1 {
+.ourteam > h1 {
     margin: 3rem;
     font-size: 2.8rem;
 }
 
-.focus > p {
+.ourteam > p {
     margin-top: 2rem;
     margin-left: 15rem;
     margin-right: 15rem;
     font-size: 1.85rem;
 }
 
+.ourteam > .ourteamButton {
+    position: relative;
+    margin-top: 2rem;
+    padding: 0.75rem;
+    width: 200px;
+    font-family: "Roboto Bold", monospace;
+    font-size: 1.15rem;
+  }
 
 
 @media screen and (max-width: 992px) {
-    .focus > h1 {
+    .ourteam > h1 {
         margin: 1rem;
     }
     
-    .focus > p {
+    .ourteam > p {
         margin-left: 2.5rem;
         margin-right: 2.5rem;
     }
-  }
+}
   
   @media screen and (max-width: 600px) {
-    .focus > h1 {
+    .ourteam > h1 {
         margin: 1rem;
     }
     
-    .focus > p {
+    .ourteam > p {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
-  }
+}

@@ -7,6 +7,7 @@ import Landing from './pages/Landing/Landing';
 import './App.css';
 import Announcements from './pages/Announcements/Announcements';
 import Focus from './pages/Focus/Focus';
+import OurTeam from './pages/OurTeam/OurTeam';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Landing />
               <Announcements />
               <Focus />
+              <OurTeam />
             </Route>
           </Switch>
       </div>
