@@ -1,0 +1,41 @@
+.focus {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+}
+
+.focus > h1 {
+    margin: 3rem;
+    font-size: 2.8rem;
+}
+
+.focus > p {
+    margin-top: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    font-size: 1.85rem;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .focus > h1 {
+        margin: 1rem;
+    }
+    
+    .focus > p {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .focus > h1 {
+        margin: 1rem;
+    }
+    
+    .focus > p {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+  }

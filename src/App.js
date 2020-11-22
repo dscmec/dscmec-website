@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import Landing from './pages/Landing/Landing';
 import './App.css';
 import Announcements from './pages/Announcements/Announcements';
+import Focus from './pages/Focus/Focus';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Navbar />
               <Landing />
               <Announcements />
+              <Focus />
             </Route>
           </Switch>
       </div>
