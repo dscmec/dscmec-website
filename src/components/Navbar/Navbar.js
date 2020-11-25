@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { Link } from "react-router-dom";
 import { Navbar, Nav } from 'react-bootstrap';
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -14,8 +15,10 @@ function Navigation(){
     return(
             <div className="container-fluid">
                 <Navbar expand="lg" fixed="top" style={ {"background":"white"} }>
-                    <Navbar.Brand href="#home">
-                        <img src={ logo } alt="Home"/>
+                    <Navbar.Brand>
+                        <NavLink to="/#home" smooth={true} spy={true} duration={2000}>
+                            <img src={ logo } alt="Home"/>
+                        </NavLink>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"> <GiHamburgerMenu style={{color: "#808080", fontSize: "1.5rem"}}/> </Navbar.Toggle>
                     <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
@@ -35,7 +38,7 @@ function Navigation(){
                         <Nav.Link as={Link} to="/contact" className="nav-item">
                             Contact Us
                         </Nav.Link>
-                        <Nav.Link href="https://discord.com/" target="_blank">
+                        <Nav.Link href="https://discord.com/invite/XpQEB5d" target="_blank">
                                 <img className="discord-container" src={ discord } alt="discord"/>
                         </Nav.Link>
                     </Nav>
