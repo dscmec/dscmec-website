@@ -10,7 +10,7 @@ import './Landing.css';
 
 function Landing() {
     return (
-        <section className="landing container-fluid">
+        <section className="landing container-fluid" id="home">
             <div className=" d-none d-lg-block landingRight">
                 <img className="mascots" src={mascots} alt="Mascots" />
             </div>
@@ -29,7 +29,7 @@ function Landing() {
             </div>
             <div className="scroll-down">
                 <p className="d-none d-md-block d-lg-block d-xl">Powered by Google Developers</p>
-                <Link to="/#announcements" smooth={true} spy="true" duration={1000}>
+                <Link to="/#announcements" smooth={true} spy="true" duration={2000}>
                     <img src={scrollDown} alt="Scroll Down" />
                 </Link>
             </div>
