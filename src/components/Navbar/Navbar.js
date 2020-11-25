@@ -38,7 +38,7 @@ function Navigation(){
                         <Nav.Link as={Link} to="/contact" className="nav-item">
                             Contact Us
                         </Nav.Link>
-                        <Nav.Link href="https://discord.com/" target="_blank">
+                        <Nav.Link href="https://discord.com/invite/XpQEB5d" target="_blank">
                                 <img className="discord-container" src={ discord } alt="discord"/>
                         </Nav.Link>
                     </Nav>
