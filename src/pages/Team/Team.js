@@ -1,4 +1,6 @@
 import React from 'react'
+
+import Member from "./Member";
 import './Team.css'
 
 function Team() {
@@ -7,62 +9,62 @@ function Team() {
         <div>
             <h1 className="team-heading">Meet Our Team</h1>
             <div className="lead-container">
-                <img alt="member" src={circleIcon} className="team-member-icon" />
+                <Member img={circleIcon} />
             </div>
             <div className="web-team-container">
                 <h1>Web Team</h1>
-                <img alt="member" src={circleIcon} className="team-member-icon" />
+                    <Member img={circleIcon} />
                 <div className="row">
                     <div className="col-lg-3">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-3">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-3">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-3">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-lg-3">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-3">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-3">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-3">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                 </div>
             </div>
             <div className="design-team-container">
                 <h1>Design Team</h1>
                 <div>
-                    <img alt="member" src={circleIcon} className="team-member-icon" />
+                    <Member img={circleIcon} />
                 </div>
                 <div className="row">
                     <div className="col-lg-4">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-4">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-4">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-6">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                 </div>
             </div>
@@ -71,28 +73,28 @@ function Team() {
                     <div className="col-sm">
                         <h1>ML/Ai</h1>
                         <div>
-                            <img alt="member" src={circleIcon} className="team-member-icon" />
+                            <Member img={circleIcon} />
                         </div>
                         <div className="row">
                             <div className="col-sm">
-                                <img alt="member" src={circleIcon} className="team-member-icon" />
+                                <Member img={circleIcon} />
                             </div>
                             <div className="col-sm">
-                                <img alt="member" src={circleIcon} className="team-member-icon" />
+                                <Member img={circleIcon} />
                             </div>
                         </div>
                     </div>
                     <div className="col-sm">
                         <h1>publicity</h1>
                         <div>
-                            <img alt="member" src={circleIcon} className="team-member-icon" />
+                            <Member img={circleIcon} />
                         </div>
                         <div className="row">
                             <div className="col-sm">
-                                <img alt="member" src={circleIcon} className="team-member-icon" />
+                                <Member img={circleIcon} />
                             </div>
                             <div className="col-sm">
-                                <img alt="member" src={circleIcon} className="team-member-icon" />
+                                <Member img={circleIcon} />
                             </div>
                         </div>
                     </div>
@@ -101,25 +103,25 @@ function Team() {
             <div className="flutter-team-container">
                 <h1>Flutter</h1>
                 <div>
-                    <img alt="member" src={circleIcon} className="team-member-icon" />
+                    <Member img={circleIcon} />
                 </div>
                 <div className="row">
                     <div className="col-lg-4">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-4">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-4">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                     <div className="col-lg-6">
-                        <img alt="member" src={circleIcon} className="team-member-icon" />
+                        <Member img={circleIcon} />
                     </div>
                 </div>
             </div>
@@ -128,22 +130,22 @@ function Team() {
                     <div class="col-sm">
                         <h1>Organization</h1>
                         <div>
-                            <img alt="member" src={circleIcon} className="team-member-icon" />
+                            <Member img={circleIcon} />
                         </div>
                     </div>
                     <div class="col-sm">
                         <h1>Content</h1>
                         <div>
-                            <img alt="member" src={circleIcon} className="team-member-icon" />
+                            <Member img={circleIcon} />
                         </div>
                         <div>
-                            <img alt="member" src={circleIcon} className="team-member-icon" />
+                            <Member img={circleIcon} />
                         </div>
                     </div>
                     <div class="col-sm">
                         <h1>Marketing</h1>
                         <div>
-                            <img alt="member" src={circleIcon} className="team-member-icon" />
+                            <Member img={circleIcon} />
                         </div>
                     </div>
                 </div>
@@ -153,13 +155,13 @@ function Team() {
                     <div class="col-sm">
                         <h1>Social Media</h1>
                         <div>
-                            <img alt="member" src={circleIcon} className="team-member-icon" />
+                            <Member img={circleIcon} />
                         </div>
                     </div>
                     <div class="col-sm">
                         <h1>WTM</h1>
                         <div>
-                            <img alt="member" src={circleIcon} className="team-member-icon" />
+                            <Member img={circleIcon} />
                         </div>
                     </div>
                 </div>
