@@ -1,36 +1,38 @@
-.circle-icon{
-    position: relative;
-    display: inline-flex;
-    height: 8vw;
-    width: 8vw;
-    min-width: 100px;
-    min-height: 100px;
-    border-radius: 50%;
-    max-width: 200px;
-    max-height: 200px;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
-    object-fit: cover;
-    background: #ffffff;
-    z-index: -1;
+.circle-icon {
+  position: relative;
+  display: inline-flex;
+  height: 8vw;
+  width: 8vw;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+  /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); */
+  object-fit: cover;
+  background: #ffffff;
+  z-index: -1;
 }
 
-.ln-icon{
-    position: absolute;
-    display: inline-flex;
-    top:6.5vw;
-    left:3vw;
-    height: 2vw;
-    width: 2vw;
-    border-radius: 50%;
-    box-shadow:  0px 0px 20px #fff;
-    background: #ffffff;
+.ln-icon {
+  position: absolute;
+  display: inline-flex;
+  border: 6px solid #fff;
+  top: 8.1vw;
+  left: 4.3vw;
+  height: 3vw;
+  /* width: 2vw; */
+  border-radius: 50%;
+  /* box-shadow: 0px 0px 20px #fff; */
+  background: #ffffff;
 }
 
-.member{
-    position: relative;
-    height: auto;
-    max-width: 250px;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 25px;
+.member {
+  position: relative;
+  height: auto;
+  max-width: 250px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 25px;
+  padding: 25px;
 }
