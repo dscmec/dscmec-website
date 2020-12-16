@@ -127,14 +127,14 @@ function Team() {
                 </div>
             </div>
             <div className="org-content-marketing-team-container">
-                <div className="row">
-                    <div className="col-sm">
+                <div class="row">
+                    <div class="col-sm">
                         <h1 className="oheading">Organization</h1>
                         <div className="otop">
                             <Member img={circleIcon} link={link} />
                         </div>
                     </div>
-                    <div className="col-sm">
+                    <div class="col-sm">
                         <h1>Content</h1>
                         <div className="ctop">
                             <Member img={circleIcon} link={link} />
@@ -143,7 +143,7 @@ function Team() {
                             <Member img={circleIcon} link={link} />
                         </div>
                     </div>
-                    <div className="col-sm">
+                    <div class="col-sm">
                         <h1 className="mheading">Marketing</h1>
                         <div className="matop">
                             <Member img={circleIcon} link={link} />
@@ -152,14 +152,14 @@ function Team() {
                 </div>
             </div>
             <div className="social-wtm-team-container">
-                <div className="row">
-                    <div className="col-sm">
+                <div class="row">
+                    <div class="col-sm">
                         <h1>Social Media</h1>
                         <div className="smtop">
                             <Member img={circleIcon} link={link} />
                         </div>
                     </div>
-                    <div className="col-sm">
+                    <div class="col-sm">
                         <h1>WTM</h1>
                         <div className="wttop">
                             <Member img={circleIcon} link={link} />
