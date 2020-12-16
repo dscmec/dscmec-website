@@ -9,7 +9,7 @@ function Member(props){
         <div className="member">
             <Image className="circle-icon" src={props.img} alt="member" />
 
-            <a href={props.link} target="_blank" rel="noopener">
+            <a href={props.link} target="_blank" rel="noreferrer">
                 <Image className="ln-icon" src={linkedinIcon} alt="member" /> 
             </a>
         </div>
