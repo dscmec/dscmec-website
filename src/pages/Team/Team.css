@@ -112,3 +112,36 @@
 .social-wtm-team-container .wttop {
   padding-top: 50px;
 }
+
+.team-heading-resp {
+  margin-top: 100px;
+}
+
+.lead-container-resp {
+  padding-top: 20px;
+}
+
+.web-team-container-resp {
+  padding-top: 40px;
+}
+
+.web-team-container-resp > h1{
+  padding-bottom: 20px;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 760px) {
+  .team-normal{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 761px) {
+  .team-responsive{
+    display: none;
+  }
+}
