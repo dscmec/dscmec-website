@@ -14,15 +14,6 @@
   z-index: -1;
 }
 
-/* .ln-icon {
-  position: relative;
-  top: -28px;
-  height: 40px;
-  border: 6px solid #fff;
-  border-radius: 50%;
-  background: #ffffff;
-} */
-
 .ln-icon {
   position: absolute;
   display: inline-flex;
@@ -44,4 +35,21 @@
   display: inline-block;
   margin: 25px;
   padding: 25px;
+  padding-bottom: 5px;
+}
+
+.member-responsive{
+  padding-bottom: 1rem;
+}
+
+.rect-icon{
+  width:65%;
+  border-radius: 10px;
+}
+
+.ln-icon-resp {
+  height: 10vw;
+  border-radius: 50%;
+  /* box-shadow: 0px 0px 20px #fff; */
+  background: #ffffff;
 }
