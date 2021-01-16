@@ -14,6 +14,15 @@
   z-index: -1;
 }
 
+/* .ln-icon {
+  position: relative;
+  top: -28px;
+  height: 40px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  background: #ffffff;
+} */
+
 .ln-icon {
   position: absolute;
   display: inline-flex;
