@@ -213,7 +213,109 @@ const TeamResponsive = () => {
                         <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
                     </Carousel.Item>
                 </Carousel>   
+
             </div>    
+            <div className="design-team-container-resp">
+                <h1>Design</h1>
+                <Carousel>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                </Carousel>   
+            </div>
+            <div className="mlai-team-container-resp">
+                <h1>ML/AI</h1>
+                <Carousel>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                </Carousel>   
+            </div>    
+            <div className="publicity-team-container-resp">
+                <h1>Publicity</h1>
+                <Carousel>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                </Carousel>   
+            </div>       
+            <div className="flutter-team-container-resp">
+                <h1>Flutter</h1>
+                <Carousel>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                </Carousel>   
+            </div> 
+            <div className="organization-team-container-resp">
+                <h1>Organization</h1>
+                <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+            </div> 
+            <div className="content-team-container-resp">
+                <h1>Content</h1>
+                <Carousel>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+                    </Carousel.Item>
+                </Carousel>   
+            </div>           
+            <div className="marketing-team-container-resp">
+                <h1>Marketing</h1>
+                <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+            </div>   
+            <div className="social-team-container-resp">
+                <h1>Social Media</h1>
+                <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+            </div>   
+            <div className="wtm-team-container-resp">
+                <h1>WTM</h1>
+                <MemberResponsive img={rectangle} link={link} name={Name} designation={designation} />
+            </div>   
         </div>
         
     )
