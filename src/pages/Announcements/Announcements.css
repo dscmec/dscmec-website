@@ -1,6 +1,117 @@
-.announcements {
-    display: flex;
-    flex-direction: column;
-    min-height: 80vh;
+@font-face {
+  font-family: "Noto sans Regular";
+  src: url("../../assets/fonts/NotoSans-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Noto sans Light";
+  src: url("../../assets/fonts/NotoSans-Light.ttf");
+}
+
+.announcements {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+  padding: 7rem 2rem 2rem;
+  font-family: "Noto sans Light", sans-serif;
+}
+
+.announcements-header {
+  text-align: left;
+  margin: 0 0 24px 22px;
+}
+
+.announcements-left {
+  padding: 2rem 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+@media screen and (max-width: 600px) {
+  .announcements-left {
+    padding: 2rem 3rem;
+  }
+}
+
+/* ANNOUNCEMENT ITEM */
+
+.announcement-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 24px;
+  position: relative;
+}
+
+.announcement-item-left {
+  background: #e05252;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Noto sans Regular", sans-serif;
+}
+
+.announcement-item-right {
+  border: 2px solid #e05252;
+  min-height: 64px;
+  /* border-radius: 32px; */
+  border-radius: 32px;
+  padding: 16px;
+  /* margin-left: 16px; */
+  min-width: 200px;
+  max-width: 576px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+}
+
+.announcement-item-right span {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.announcement-item-join {
+  background: #e05252;
+  border: 1px solid #e05252;
+  width: 16px;
+}
+
+.announcement-item-chain {
+  position: absolute;
+  border-left: 0.23rem dashed #0f9d58;
+  height: 75px;
+  left: 32px;
+  bottom: 12px;
+  z-index: -1;
+}
+
+.announcements .waves-yellow-1 {
+  position: absolute;
+  top: 79px;
+  right: 32px;
+  width: 146px;
+  height: 146px;
+  z-index: -1;
+}
+
+.announcements .waves-yellow-2 {
+  position: absolute;
+  top: 70%;
+  right: 20%;
+  width: 146px;
+  height: 146px;
+  z-index: -1;
+}
