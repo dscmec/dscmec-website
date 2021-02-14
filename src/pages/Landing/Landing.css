@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
   font-family: "Noto sans Italic";
   src: url("../../assets/fonts/NotoSans-Italic.ttf");
 }
@@ -20,7 +20,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: calc(100vh - 5rem);
   margin-top: 5rem;
 }
 
@@ -43,7 +43,6 @@
 .landingLeftHeader > img {
   height: 7.3rem;
   width: auto;
-  
 }
 
 .LeftHeaderLogo {
@@ -69,8 +68,8 @@
   padding-right: 4rem; */
   text-align: left;
   margin-top: 2rem;
-  font-family: "Noto sans Italic", sans-serif ;
-  color: #547DBF;
+  font-family: "Noto sans Italic", sans-serif;
+  color: #547dbf;
 }
 
 .landingLeft > .joinButton {
@@ -80,7 +79,6 @@
   font-family: "Roboto Bold", monospace;
   font-size: 1.15rem;
 }
-
 
 .landingRight {
   position: absolute;
@@ -94,9 +92,9 @@
 }
 
 .scroll-down {
-  font-family: "Noto sans Light", sans-serif ;
+  font-family: "Noto sans Light", sans-serif;
   font-size: 24px;
-  color: #4F4F4F;
+  color: #4f4f4f;
   margin: 3rem auto;
 }
 
