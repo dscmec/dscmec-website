@@ -14,20 +14,20 @@ function App() {
   return (
     <Router>
       <div className="App">
-          <Switch>
-              <Route path="/team">
-                <Navbar />
-                <Team />
-              </Route>
-            <Route path="/">
-              <Navbar />
-              <Landing />
-              <Announcements />
-              <Focus />
-              <OurTeam />
-              <ContactUs />
-            </Route>
-          </Switch>
+        <Switch>
+          <Route path="/team">
+            <Navbar />
+            <Team />
+          </Route>
+          <Route path="/">
+            <Navbar />
+            <Landing />
+            <Announcements />
+            <Focus />
+            <OurTeam />
+            <ContactUs />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );

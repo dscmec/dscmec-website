@@ -112,3 +112,72 @@
 .social-wtm-team-container .wttop {
   padding-top: 50px;
 }
+
+.team-heading-resp {
+  margin-top: 100px;
+}
+
+.lead-container-resp {
+  padding-top: 20px;
+}
+
+.web-team-container-resp {
+  padding-top: 40px;
+}
+
+.design-team-container-resp {
+  padding-top: 40px;
+}
+
+.mlai-team-container-resp {
+  padding-top: 40px;
+}
+
+.publicity-team-container-resp {
+  padding-top: 40px;
+}
+
+.flutter-team-container-resp {
+  padding-top: 40px;
+}
+
+.organization-team-container-resp {
+  padding-top: 40px;
+}
+
+.content-team-container-resp {
+  padding-top: 40px;
+}
+
+.marketing-team-container-resp {
+  padding-top: 40px;
+}
+
+.social-team-container-resp {
+  padding-top: 40px;
+}
+
+.wtm-team-container-resp {
+  padding-top: 40px;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
+}
+
+.resp {
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 760px) {
+  .team-normal {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 761px) {
+  .team-responsive {
+    display: none;
+  }
+}
