@@ -49,7 +49,7 @@ function Announcements() {
   }, []);
   return (
     <section className="container-fluid announcements" id="announcements">
-      <div className="col-lg-8 col-md-12 announcements-left">
+      <div className="col-lg-12 col-md-12 announcements-left">
         <div className="announcements-header">
           <h1>Announcements</h1>
         </div>
