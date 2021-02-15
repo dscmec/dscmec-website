@@ -9,6 +9,7 @@ import Announcements from "./pages/Announcements/Announcements";
 import Focus from "./pages/Focus/Focus";
 import OurTeam from "./pages/OurTeam/OurTeam";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Focus />
             <OurTeam />
             <ContactUs />
+            <Footer />
           </Route>
         </Switch>
       </div>

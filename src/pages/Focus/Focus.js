@@ -1,6 +1,11 @@
 import React from "react";
 
 import ripplesYellow from "../../assets/svg/ripples-yellow.svg";
+import wavesYellow from "../../assets/svg/waves-yellow.svg";
+import shapes from "../../assets/svg/shapes.svg";
+import dotTriLeft from "../../assets/svg/dot-tri-left.svg";
+import dotTriRight from "../../assets/svg/dot-tri-right.svg";
+
 import "./Focus.css";
 
 function Focus() {
@@ -8,6 +13,12 @@ function Focus() {
     <section id="focus">
       <div className="focus">
         <img src={ripplesYellow} alt="" className="ripples-yellow" />
+        <img src={wavesYellow} alt="" className="waves-yellow-1" />
+        <img src={wavesYellow} alt="" className="waves-yellow-2" />
+        <img src={shapes} alt="" className="shapes-1" />
+        <img src={shapes} alt="" className="shapes-2" />
+        <img src={dotTriLeft} alt="" className="dot-tri-left" />
+        <img src={dotTriRight} alt="" className="dot-tri-right" />
         <h1>Our Focus</h1>
         <br />
         <p>

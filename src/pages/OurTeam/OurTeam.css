@@ -1,53 +1,61 @@
+@font-face {
+  font-family: "Noto sans Light";
+  src: url("../../assets/fonts/NotoSans-Light.ttf");
+}
+
 .ourteam {
-    display: flex;
-    flex-direction: column;
-    min-height: 85vh;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .ourteam > h1 {
-    margin: 3rem;
-    font-size: 2.8rem;
+  margin: 3rem;
+  font-size: 2.8rem;
+  font-family: "Noto sans Light", sans-serif;
 }
 
 .ourteam > p {
-    margin-top: 2rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    font-size: 1.85rem;
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  font-size: 1.85rem;
+  font-family: "Noto sans Light", sans-serif;
+  color: #828282;
 }
 
 .ourteam > .ourteamButton {
-    position: relative;
-    margin-top: 2rem;
-    padding: 0.75rem;
-    width: 200px;
-    font-family: "Roboto Bold", monospace;
-    font-size: 1.15rem;
-  }
-
+  position: relative;
+  margin-top: 2rem;
+  padding: 0.75rem;
+  width: 200px;
+  font-family: "Roboto Bold", monospace;
+  font-size: 1.15rem;
+}
 
 @media screen and (max-width: 992px) {
-    .ourteam > h1 {
-        margin: 1rem;
-        font-size: 2rem;
-    }
-    
-    .ourteam > p {
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-        font-size: 1.5rem;
-    }
+  .ourteam > h1 {
+    margin: 1rem;
+    font-size: 2rem;
+  }
+
+  .ourteam > p {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    font-size: 1.5rem;
+  }
 }
-  
-  @media screen and (max-width: 600px) {
-    .ourteam > h1 {
-        margin: 1rem;
-    }
-    
-    .ourteam > p {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
+
+@media screen and (max-width: 600px) {
+  .ourteam > h1 {
+    margin: 1rem;
+  }
+
+  .ourteam > p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
 }

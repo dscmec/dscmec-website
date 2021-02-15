@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
@@ -10,6 +10,7 @@ import discord from "../../assets/svg/discord.svg";
 import "./Navbar.css";
 
 function Navigation() {
+  const [tab, setTab] = useState(1);
   return (
     <div className="container-fluid">
       <Navbar expand="lg" fixed="top" style={{ background: "white" }}>
@@ -27,19 +28,44 @@ function Navigation() {
         >
           <Nav className="nav-item">
             <Nav.Link as={Link} to="/#home" className="nav-item">
-              Home
+              <span
+                className={tab === 1 ? "tab-selected" : ""}
+                onClick={() => setTab(1)}
+              >
+                Home
+              </span>
             </Nav.Link>
             <Nav.Link as={Link} to="/events" className="nav-item">
-              Events
+              <span
+                className={tab === 2 ? "tab-selected" : ""}
+                onClick={() => setTab(2)}
+              >
+                Events
+              </span>
             </Nav.Link>
             <Nav.Link as={Link} to="/team" className="nav-item">
-              Team
+              <span
+                className={tab === 3 ? "tab-selected" : ""}
+                onClick={() => setTab(3)}
+              >
+                Team
+              </span>
             </Nav.Link>
             <Nav.Link as={Link} to="/videos" className="nav-item">
-              Videos
+              <span
+                className={tab === 4 ? "tab-selected" : ""}
+                onClick={() => setTab(4)}
+              >
+                Videos
+              </span>
             </Nav.Link>
             <Nav.Link as={Link} to="/contact" className="nav-item">
-              Contact Us
+              <span
+                className={tab === 5 ? "tab-selected" : ""}
+                onClick={() => setTab(5)}
+              >
+                Contact Us
+              </span>
             </Nav.Link>
             <Nav.Link href="https://discord.com/invite/XpQEB5d" target="_blank">
               <img className="discord-container" src={discord} alt="discord" />

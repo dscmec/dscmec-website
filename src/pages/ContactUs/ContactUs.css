@@ -1,53 +1,61 @@
+@font-face {
+  font-family: "Noto sans Light";
+  src: url("../../assets/fonts/NotoSans-Light.ttf");
+}
+
 .contactus {
-    display: flex;
-    flex-direction: column;
-    min-height: 85vh;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .contactus > h1 {
-    margin: 3rem;
-    font-size: 2.8rem;
+  margin: 3rem;
+  font-size: 2.8rem;
+  font-family: "Noto sans Light", sans-serif;
 }
 
 .contactus > p {
-    margin-top: 2rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    font-size: 1.85rem;
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  font-size: 1.85rem;
+  font-family: "Noto sans Light", sans-serif;
+  color: #828282;
 }
 
 .contactus > .contactusButton {
-    position: relative;
-    margin-top: 2rem;
-    padding: 0.75rem;
-    width: 200px;
-    font-family: "Roboto Bold", monospace;
-    font-size: 1.15rem;
-  }
-
+  position: relative;
+  margin-top: 2rem;
+  padding: 0.75rem;
+  width: 200px;
+  font-family: "Roboto Bold", monospace;
+  font-size: 1.15rem;
+}
 
 @media screen and (max-width: 992px) {
-    .contactus > h1 {
-        margin: 1rem;
-        font-size: 2rem;
-    }
-    
-    .contactus > p {
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-        font-size: 1.5rem;
-    }
+  .contactus > h1 {
+    margin: 1rem;
+    font-size: 2rem;
+  }
+
+  .contactus > p {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    font-size: 1.5rem;
+  }
 }
-  
-  @media screen and (max-width: 600px) {
-    .contactus > h1 {
-        margin: 1rem;
-    }
-    
-    .contactus > p {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
+
+@media screen and (max-width: 600px) {
+  .contactus > h1 {
+    margin: 1rem;
+  }
+
+  .contactus > p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
 }
