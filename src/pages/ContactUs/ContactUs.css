@@ -6,7 +6,7 @@
 .contactus {
   display: flex;
   flex-direction: column;
-  min-height: 85vh;
+  min-height: calc(100vh - 5rem); /* 85vh */
   align-items: center;
   justify-content: center;
   position: relative;
@@ -36,6 +36,43 @@
   font-size: 1.15rem;
 }
 
+.contactus .objects {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  height: 150px;
+  width: auto;
+  z-index: -1;
+}
+
+.contactus .dot-tri {
+  position: absolute;
+  top: 20%;
+  right: 7%;
+  height: 150px;
+  width: auto;
+  z-index: -1;
+}
+
+.contactus .triangles {
+  position: absolute;
+  bottom: 0;
+  left: 3.7%;
+  height: 100px;
+  width: auto;
+  z-index: -1;
+}
+
+.contactus .shapes-2 {
+  position: absolute;
+  bottom: 3%;
+  right: 10%;
+  height: 100px;
+  width: auto;
+  z-index: -1;
+  transform: rotate(-19.78deg);
+}
+
 @media screen and (max-width: 992px) {
   .contactus > h1 {
     margin: 1rem;
@@ -57,5 +94,20 @@
   .contactus > p {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .contactus .objects {
+    position: relative;
+    top: 115px;
+    left: -64px;
+    height: 150px;
+    width: auto;
+    z-index: -1;
+  }
+
+  .contactus .dot-tri,
+  .contactus .triangles,
+  .contactus .shapes-2 {
+    display: none;
   }
 }
