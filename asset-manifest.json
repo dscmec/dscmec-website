@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dscmec-website/static/css/main.cc1f40f1.chunk.css",
-    "main.js": "/dscmec-website/static/js/main.04c87e75.chunk.js",
+    "main.css": "/dscmec-website/static/css/main.89950d19.chunk.css",
+    "main.js": "/dscmec-website/static/js/main.777023f8.chunk.js",
     "runtime-main.js": "/dscmec-website/static/js/runtime-main.8e3e7d11.js",
     "static/css/2.8000774e.chunk.css": "/dscmec-website/static/css/2.8000774e.chunk.css",
     "static/js/2.2cefe40a.chunk.js": "/dscmec-website/static/js/2.2cefe40a.chunk.js",
@@ -11,24 +11,34 @@
     "static/media/Landing.css": "/dscmec-website/static/media/bg-1024.3971739e.png",
     "static/media/ContactUs.css": "/dscmec-website/static/media/NotoSans-Light.c9290d4c.ttf",
     "static/media/Announcements.css": "/dscmec-website/static/media/NotoSans-Regular.fa11626f.ttf",
+    "static/media/circles.39880cfe.svg": "/dscmec-website/static/media/circles.39880cfe.svg",
     "static/media/discord.587794e6.svg": "/dscmec-website/static/media/discord.587794e6.svg",
     "static/media/dot-tri-left.9460f34a.svg": "/dscmec-website/static/media/dot-tri-left.9460f34a.svg",
     "static/media/dot-tri-right.7f1ec5f1.svg": "/dscmec-website/static/media/dot-tri-right.7f1ec5f1.svg",
+    "static/media/dot-tri.d2775c01.svg": "/dscmec-website/static/media/dot-tri.d2775c01.svg",
     "static/media/footer.4c254f60.svg": "/dscmec-website/static/media/footer.4c254f60.svg",
+    "static/media/frames-1.03f0d110.svg": "/dscmec-website/static/media/frames-1.03f0d110.svg",
+    "static/media/frames.68d815c1.svg": "/dscmec-website/static/media/frames.68d815c1.svg",
     "static/media/logo-full.3e7ace31.svg": "/dscmec-website/static/media/logo-full.3e7ace31.svg",
+    "static/media/logo-mobile.70df94cc.png": "/dscmec-website/static/media/logo-mobile.70df94cc.png",
     "static/media/logo.e027571a.svg": "/dscmec-website/static/media/logo.e027571a.svg",
+    "static/media/mascots-mobile.4930f88a.svg": "/dscmec-website/static/media/mascots-mobile.4930f88a.svg",
     "static/media/mascots.e7616663.svg": "/dscmec-website/static/media/mascots.e7616663.svg",
+    "static/media/objects.9c1b05db.svg": "/dscmec-website/static/media/objects.9c1b05db.svg",
     "static/media/rectangle-icon.66930360.jpg": "/dscmec-website/static/media/rectangle-icon.66930360.jpg",
     "static/media/ripples-yellow.2e5a2efa.svg": "/dscmec-website/static/media/ripples-yellow.2e5a2efa.svg",
     "static/media/scroll-down.1e01eb72.svg": "/dscmec-website/static/media/scroll-down.1e01eb72.svg",
+    "static/media/shapes-1.362f81e5.svg": "/dscmec-website/static/media/shapes-1.362f81e5.svg",
+    "static/media/shapes-2.5147342f.svg": "/dscmec-website/static/media/shapes-2.5147342f.svg",
     "static/media/shapes.47a35a68.svg": "/dscmec-website/static/media/shapes.47a35a68.svg",
+    "static/media/triangles.2f900a88.svg": "/dscmec-website/static/media/triangles.2f900a88.svg",
     "static/media/waves-yellow.918c2391.svg": "/dscmec-website/static/media/waves-yellow.918c2391.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8e3e7d11.js",
     "static/css/2.8000774e.chunk.css",
     "static/js/2.2cefe40a.chunk.js",
-    "static/css/main.cc1f40f1.chunk.css",
-    "static/js/main.04c87e75.chunk.js"
+    "static/css/main.89950d19.chunk.css",
+    "static/js/main.777023f8.chunk.js"
   ]
 }
