@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 85vh;
+  min-height: 85vh; /* calc(100vh - 5rem) */
   position: relative;
 }
 
@@ -36,7 +36,7 @@
   position: absolute;
   width: 175px;
   height: 175px;
-  top: 7.3rem;
+  top: 7.3rem; /* 8.3rem */
   z-index: -1;
 }
 
@@ -69,7 +69,7 @@
   position: absolute;
   width: 106px;
   height: 106px;
-  bottom: -6%;
+  bottom: -3%;
   right: 20%;
   z-index: -1;
 }
@@ -77,7 +77,7 @@
 .focus .dot-tri-left {
   position: absolute;
   height: 126px;
-  bottom: -6%;
+  bottom: -3%;
   right: 0;
   z-index: -1;
 }
@@ -85,7 +85,7 @@
 .focus .dot-tri-right {
   position: absolute;
   height: 126px;
-  top: 79px;
+  top: 73px;
   left: 0;
   z-index: -1;
 }
@@ -106,7 +106,7 @@
     width: 125px;
     height: 125px;
     /* top: 0.9rem; */
-    top: 25%;
+    top: 25%; /* 26% */
   }
   .focus .waves-yellow-1 {
     right: 10%;
@@ -126,7 +126,7 @@
     width: 125px;
     height: 125px;
     /* top: 0.9rem; */
-    top: 14.8vh !important;
+    top: 14.8vh !important; /* 17.8vh */
   }
   .focus .waves-yellow-1,
   .focus .waves-yellow-2,
@@ -143,6 +143,6 @@
     width: 125px;
     height: 125px;
     /* top: 0.9rem; */
-    top: 2.8vh !important;
+    top: 2.8vh !important; /* 5.2vh */
   }
 }

@@ -22,6 +22,11 @@
   background-size: cover;
   min-height: calc(100vh - 5rem);
   margin-top: 5rem;
+  /* position: relative; */
+}
+
+.landing .mascots-mobile {
+  display: none;
 }
 
 .landingLeft {
@@ -43,6 +48,10 @@
 .landingLeftHeader > img {
   height: 7.3rem;
   width: auto;
+}
+
+.landingLeftHeader .logo-mobile {
+  display: none;
 }
 
 .LeftHeaderLogo {
@@ -114,8 +123,63 @@
     padding-top: 4rem;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
+
   .landingLeft {
-    padding: 2rem 3rem;
+    padding: 2rem 0.7rem; /* 2rem 3rem */
+    align-items: center;
+  }
+
+  .landingLeftHeader > img {
+    display: none;
+  }
+
+  .landingLeftHeader .logo-mobile {
+    display: block !important;
+    width: 100%;
+    height: auto;
+  }
+
+  .landingLeftInfo > h4 {
+    color: #828282;
+    font-size: 15px;
+    margin-top: 25vh;
+    text-align: center;
+  }
+
+  .landingLeft > .joinButton {
+    width: 200px;
+  }
+
+  .landing .scroll-down {
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .landing {
+    background: none;
+  }
+
+  .landingLeftHeader .logo-mobile {
+    position: relative;
+    bottom: 3.9rem;
+  }
+
+  .landing .mascots-mobile {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    /* bottom: -2.9rem; */
+    top: 37vh;
+    width: 100vw;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .landingLeftInfo > h4 {
+    margin-top: 20vh;
   }
 }

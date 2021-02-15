@@ -6,7 +6,7 @@
 .ourteam {
   display: flex;
   flex-direction: column;
-  min-height: 85vh;
+  min-height: calc(100vh - 5rem); /* 85vh */
   align-items: center;
   justify-content: center;
   position: relative;
@@ -36,6 +36,51 @@
   font-size: 1.15rem;
 }
 
+.ourteam .circles {
+  position: relative;
+  top: 15%;
+  left: 3%;
+  height: 125px;
+  width: auto;
+  z-index: -1;
+}
+
+.ourteam .frames {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  height: 100px;
+  width: auto;
+  z-index: -1;
+}
+
+.ourteam .frames-1 {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  height: 100px;
+  width: auto;
+  z-index: -1;
+}
+
+.ourteam .shapes-1 {
+  position: absolute;
+  bottom: 3%;
+  right: 10%;
+  height: 100px;
+  width: auto;
+  z-index: -1;
+}
+
+.ourteam .shapes-2 {
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  height: 100px;
+  width: auto;
+  z-index: -1;
+}
+
 @media screen and (max-width: 992px) {
   .ourteam > h1 {
     margin: 1rem;
@@ -57,5 +102,19 @@
   .ourteam > p {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .ourteam .circles {
+    top: 95px;
+    left: -20px;
+    height: initial;
+    width: auto;
+  }
+
+  .ourteam .frames,
+  .ourteam .frames-1,
+  .ourteam .shapes-1,
+  .ourteam .shapes-2 {
+    display: none;
   }
 }

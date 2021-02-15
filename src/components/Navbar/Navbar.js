@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-import logo from "../../assets/img/logo.svg";
+import logo from "../../assets/svg/logo.svg";
 import discord from "../../assets/svg/discord.svg";
 
 import "./Navbar.css";
@@ -15,8 +15,8 @@ function Navigation() {
     <div className="container-fluid">
       <Navbar expand="lg" fixed="top" style={{ background: "white" }}>
         <Navbar.Brand>
-          <NavLink to="/#home" smooth={true} spy={true} duration={2000}>
-            <img src={logo} alt="Home" />
+          <NavLink to="/" duration={2000}>
+            <img src={logo} alt="Home" className="logo-nav" />
           </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
@@ -59,7 +59,7 @@ function Navigation() {
                 Videos
               </span>
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="nav-item">
+            <Nav.Link as={Link} to="/#contactus" className="nav-item">
               <span
                 className={tab === 5 ? "tab-selected" : ""}
                 onClick={() => setTab(5)}
