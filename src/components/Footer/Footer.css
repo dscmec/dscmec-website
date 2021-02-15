@@ -1,0 +1,25 @@
+.footer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-background {
+  width: 100%;
+  height: auto;
+  /* position: absolute; */
+  left: 0;
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .footer-background {
+    width: auto;
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-background {
+    width: auto;
+    transform: scale(1.2);
+  }
+}

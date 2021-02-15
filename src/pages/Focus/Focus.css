@@ -29,6 +29,65 @@
   margin-right: 15rem;
   font-size: 1.85rem;
   font-family: "Noto sans Light", sans-serif;
+  color: #828282;
+}
+
+.ripples-yellow {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  top: 7.3rem;
+  z-index: -1;
+}
+
+.focus .waves-yellow-1 {
+  position: absolute;
+  top: 79px;
+  right: 20%;
+  width: 106px;
+  height: 106px;
+  z-index: -1;
+}
+
+.focus .waves-yellow-2 {
+  position: absolute;
+  bottom: -6%;
+  left: 20%;
+  width: 146px;
+  height: 146px;
+  z-index: -1;
+}
+
+.focus .shapes-1 {
+  position: absolute;
+  top: 79px;
+  left: 20%;
+  z-index: -1;
+}
+
+.focus .shapes-2 {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  bottom: -6%;
+  right: 20%;
+  z-index: -1;
+}
+
+.focus .dot-tri-left {
+  position: absolute;
+  height: 126px;
+  bottom: -6%;
+  right: 0;
+  z-index: -1;
+}
+
+.focus .dot-tri-right {
+  position: absolute;
+  height: 126px;
+  top: 79px;
+  left: 0;
+  z-index: -1;
 }
 
 @media screen and (max-width: 992px) {
@@ -42,6 +101,16 @@
     margin-left: 2.5rem;
     margin-right: 2.5rem;
   }
+
+  .focus .ripples-yellow {
+    width: 125px;
+    height: 125px;
+    /* top: 0.9rem; */
+    top: 25%;
+  }
+  .focus .waves-yellow-1 {
+    right: 10%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -53,12 +122,27 @@
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
+  .ripples-yellow {
+    width: 125px;
+    height: 125px;
+    /* top: 0.9rem; */
+    top: 14.8vh !important;
+  }
+  .focus .waves-yellow-1,
+  .focus .waves-yellow-2,
+  .focus .shapes-1,
+  .focus .shapes-2,
+  .focus .dot-tri-left,
+  .focus .dot-tri-right {
+    display: none;
+  }
 }
 
-.ripples-yellow {
-  position: absolute;
-  width: 175px;
-  height: 175px;
-  top: 7.3rem;
-  z-index: -1;
+@media screen and (max-width: 360px) {
+  .focus .ripples-yellow {
+    width: 125px;
+    height: 125px;
+    /* top: 0.9rem; */
+    top: 2.8vh !important;
+  }
 }
