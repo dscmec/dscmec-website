@@ -32,11 +32,11 @@
   color: #828282;
 }
 
-.ripples-yellow {
+.focus .ripples-yellow {
   position: absolute;
   width: 175px;
   height: 175px;
-  top: 7.3rem; /* 8.3rem */
+  top: 7.3rem; /* 8.3rem */ /* 23vh */
   z-index: -1;
 }
 
@@ -103,10 +103,11 @@
   }
 
   .focus .ripples-yellow {
+    position: relative;
     width: 125px;
     height: 125px;
     /* top: 0.9rem; */
-    top: 25%; /* 26% */
+    top: 14vh; /* 26% */ /* 25% */
   }
   .focus .waves-yellow-1 {
     right: 10%;
@@ -122,11 +123,9 @@
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
-  .ripples-yellow {
-    width: 125px;
-    height: 125px;
+  .focus .ripples-yellow {
     /* top: 0.9rem; */
-    top: 14.8vh !important; /* 17.8vh */
+    top: 12.8vh !important; /* 17.8vh */ /* 14.8vh */
   }
   .focus .waves-yellow-1,
   .focus .waves-yellow-2,
@@ -140,9 +139,7 @@
 
 @media screen and (max-width: 360px) {
   .focus .ripples-yellow {
-    width: 125px;
-    height: 125px;
-    /* top: 0.9rem; */
-    top: 2.8vh !important; /* 5.2vh */
+    /* top: 0.9rem;  */
+    top: 14.8vh !important; /* 5.2vh  */
   }
 }
