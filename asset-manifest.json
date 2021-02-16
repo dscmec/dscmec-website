@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dscmec-website/static/css/main.89950d19.chunk.css",
-    "main.js": "/dscmec-website/static/js/main.777023f8.chunk.js",
+    "main.css": "/dscmec-website/static/css/main.fe9c92ce.chunk.css",
+    "main.js": "/dscmec-website/static/js/main.ecb47cf7.chunk.js",
     "runtime-main.js": "/dscmec-website/static/js/runtime-main.8e3e7d11.js",
     "static/css/2.8000774e.chunk.css": "/dscmec-website/static/css/2.8000774e.chunk.css",
     "static/js/2.2cefe40a.chunk.js": "/dscmec-website/static/js/2.2cefe40a.chunk.js",
@@ -38,7 +38,7 @@
     "static/js/runtime-main.8e3e7d11.js",
     "static/css/2.8000774e.chunk.css",
     "static/js/2.2cefe40a.chunk.js",
-    "static/css/main.89950d19.chunk.css",
-    "static/js/main.777023f8.chunk.js"
+    "static/css/main.fe9c92ce.chunk.css",
+    "static/js/main.ecb47cf7.chunk.js"
   ]
 }
