@@ -15,7 +15,7 @@ function Navigation() {
     <div className="container-fluid">
       <Navbar expand="lg" fixed="top" style={{ background: "white" }}>
         <Navbar.Brand>
-          <NavLink to="/" duration={2000}>
+          <NavLink to="/#home" duration={2000}>
             <img src={logo} alt="Home" className="logo-nav" />
           </NavLink>
         </Navbar.Brand>
