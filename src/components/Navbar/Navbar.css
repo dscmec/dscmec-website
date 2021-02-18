@@ -11,6 +11,11 @@
   color: black !important;
   font-weight: 500 !important;
   font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  text-decoration: none;
 }
 
 .logo-nav {
@@ -33,6 +38,8 @@
 .tab-selected {
   color: #4285f4 !important;
 }
+
+
 
 @media screen and (max-width: 992px) {
   .discord-container {
