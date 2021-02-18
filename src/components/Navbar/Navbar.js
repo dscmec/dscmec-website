@@ -49,18 +49,18 @@ function Navigation() {
             <NavLink as={Link} to="/" className="nav-item">
                 Home
             </NavLink>
-            <NavLink as={Link} to="/events" className="nav-item" activeStyle={{borderBottom:'2px solid #4285f4'}}>
+            <NavLink as={Link} to="/events" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Events
             </NavLink>
-            <NavLink as={Link} to="/team" className="nav-item" activeStyle={{borderBottom:'2px solid #4285f4'}}>
+            <NavLink as={Link} to="/team" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Team
             </NavLink>
-            <NavLink as={Link} to="/videos" className="nav-item" activeStyle={{borderBottom:'2px solid #4285f4'}}>
+            <NavLink as={Link} to="/videos" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Videos
             </NavLink>
-            <NavLink as={Link} to="/#contactus" className="nav-item" >
+            <HashLink as={Link} to="/#contactus" className="nav-item" >
                 Contact Us
-            </NavLink>
+            </HashLink>
 
             <a href="https://discord.com/invite/XpQEB5d" target="_blank" rel="noreferrer">
               <img className="discord-container" src={discord} alt="discord" />
