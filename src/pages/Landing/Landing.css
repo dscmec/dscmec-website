@@ -14,14 +14,14 @@
 
 .landing {
   /* margin: 2rem; */
-  padding: 7rem 2rem 2rem;
+  padding: 12rem 2rem 2rem; /* 7rem 2rem 2rem */
   /* display: flex; */
   background: url("../../assets/img/bg-1024.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   min-height: calc(100vh - 5rem);
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   /* position: relative; */
 }
 
@@ -109,7 +109,7 @@
 
 @media screen and (max-width: 992px) {
   .landing {
-    padding-top: 5rem;
+    padding-top: 10rem; /* 5rem */
     display: flex;
     flex-direction: column;
   }
@@ -120,7 +120,7 @@
 
 @media screen and (max-width: 600px) {
   .landing {
-    padding-top: 4rem;
+    padding-top: 9rem; /* 4rem */
     display: flex;
     flex-direction: column;
     overflow: hidden;

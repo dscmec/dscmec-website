@@ -10,7 +10,6 @@ import discord from "../../assets/svg/discord.svg";
 import "./Navbar.css";
 
 function Navigation() {
-  const [tab, setTab] = useState(1);
   const [opacity, setOpacity] = useState(0);
 
   if (typeof window !== "undefined") {
@@ -46,23 +45,59 @@ function Navigation() {
           id="responsive-navbar-nav"
         >
           <Nav className="nav-item">
-            <HashLink as={Link} to="/#home" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
-                Home
+            <HashLink
+              as={Link}
+              to="/#home"
+              className="nav-item nav-link"
+              activeStyle={{ borderBottom: "3px solid #4285f4" }}
+              isActive={(match, { pathname, hash }) => {
+                return (
+                  (pathname === "/" && hash === "#home") ||
+                  (pathname === "/" && hash === "")
+                );
+              }}
+            >
+              Home
             </HashLink>
-            <NavLink as={Link} to="/events" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
-                Events
+            <NavLink
+              as={Link}
+              to="/events"
+              className="nav-item nav-link"
+              activeStyle={{ borderBottom: "3px solid #4285f4" }}
+            >
+              Events
             </NavLink>
-            <NavLink as={Link} to="/team" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
-                Team
+            <NavLink
+              as={Link}
+              to="/team"
+              className="nav-item nav-link"
+              activeStyle={{ borderBottom: "3px solid #4285f4" }}
+            >
+              Team
             </NavLink>
-            <NavLink as={Link} to="/videos" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
-                Videos
+            <NavLink
+              as={Link}
+              to="/videos"
+              className="nav-item nav-link"
+              activeStyle={{ borderBottom: "3px solid #4285f4" }}
+            >
+              Videos
             </NavLink>
-            <HashLink as={Link} to="/#contactus" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
-                Contact Us
+            <HashLink
+              as={Link}
+              to="/#contactus"
+              className="nav-item nav-link"
+              activeStyle={{ borderBottom: "3px solid #4285f4" }}
+            >
+              Contact Us
             </HashLink>
 
-            <a href="https://discord.com/invite/XpQEB5d" target="_blank" rel="noreferrer">
+            <a
+              href="https://discord.com/invite/XpQEB5d"
+              target="_blank"
+              rel="noreferrer"
+              className="nav-link"
+            >
               <img className="discord-container" src={discord} alt="discord" />
             </a>
           </Nav>
