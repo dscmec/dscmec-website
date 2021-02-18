@@ -39,7 +39,7 @@ function AnnouncementItem({ date, info, variant }) {
 function Announcements() {
   const [announcements, setAnnouncements] = useState([]);
   useEffect(() => {
-    fetch("/dscmec-website/data.json")
+    fetch("/dscmec-website/announcements.json")
       .then((res) => res.json())
       .then((data) => {
         let truncatedData = [];

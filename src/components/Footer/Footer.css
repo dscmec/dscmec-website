@@ -1,18 +1,23 @@
+@font-face {
+  font-family: "Noto sans Light";
+  src: url("../../assets/fonts/NotoSans-Light.ttf");
+}
+
 .footer {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-background {
-    width: 100%;
-    height: auto;
-    /* position: absolute; */
-    left: 0;
-    z-index: -1;
+  width: 100%;
+  height: auto;
+  /* position: absolute; */
+  left: 0;
+  z-index: -1;
 }
 
 .footer-container {
@@ -48,6 +53,32 @@
   font-size: 1.5rem;
 }
 
+.footer-copyright {
+  width: 100%;
+  color: #ffffff;
+  font-family: "Noto sans Light", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright div {
+  background-color: #ffffff;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  margin: 2px 4px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 0.9rem;
+  width: auto;
+  margin-left: -1px;
+}
 
 @media (min-width: 992px) and (max-width: 1380px) {
   .footer-container {
@@ -57,46 +88,61 @@
     padding: 2rem;
     padding-bottom: 1rem;
   }
+  .footer-icons {
+    padding: 1rem 5rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.9rem;
+  }
 }
 
-
 @media screen and (max-width: 992px) {
-    .footer-background {
-      width: auto;
-      transform: scale(1.5);
-    }
+  .footer-background {
+    width: auto;
+    transform: scale(1.5);
+  }
 
-    .footer-container {
-      padding: 2rem;
-      padding-bottom: 1rem;
-    }
+  .footer-container {
+    padding: 2rem;
+    padding-bottom: 1rem;
+  }
 
-    .footer-icons {
-      padding: 0.5rem 1rem;
-    }
+  .footer-icons {
+    padding: 0.5rem 1rem;
+  }
 
-    .footer-icons > a {
-      background-color: white;
-      width: 45px;
-      height: 45px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 1.2rem;
-      border-radius: 99px;
-      color: black;
-      text-decoration: none;
-    }
+  .footer-icons > a {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.2rem;
+    border-radius: 99px;
+    /* color: black; */
+    color: #4285f4;
+    text-decoration: none;
+  }
 
-    .f-icon {
-      font-size: 1.3rem;
-    }
+  .f-icon {
+    font-size: 1.3rem;
+  }
+
+  .footer-copyright {
+    margin-top: 1rem;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .footer-background {
-      width: auto;
-      transform: scale(1.2);
-    }
+  .footer-background {
+    width: auto;
+    transform: scale(1.2);
+  }
+  .footer-copyright {
+    margin-top: 1.2rem;
+  }
 }

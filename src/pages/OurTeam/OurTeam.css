@@ -104,6 +104,12 @@
     margin-right: 1.5rem;
   }
 
+  .ourteam .ourteamButton {
+    padding: 0.375rem 0.75rem;
+    height: auto;
+    width: 200px;
+  }
+
   .ourteam .circles {
     top: 95px;
     left: -20px;

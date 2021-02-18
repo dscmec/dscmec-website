@@ -11,12 +11,31 @@ import "./Navbar.css";
 
 function Navigation() {
   const [tab, setTab] = useState(1);
+  const [opacity, setOpacity] = useState(0);
+
+  if (typeof window !== "undefined") {
+    window.onscroll = () => {
+      let currentScrollPos = window.pageYOffset;
+      // let maxScroll = document.body.scrollHeight - window.innerHeight;
+      if (currentScrollPos > 0) {
+        setOpacity(1);
+      } else {
+        setOpacity(0);
+      }
+    };
+  }
+
   return (
     <div className="container-fluid">
       <Navbar expand="lg" fixed="top" style={{ background: "white" }}>
         <Navbar.Brand>
           <NavLink to="/#home" duration={2000}>
-            <img src={logo} alt="Home" className="logo-nav" />
+            <img
+              src={logo}
+              alt="Home"
+              className="logo-nav"
+              style={{ opacity: opacity }}
+            />
           </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">

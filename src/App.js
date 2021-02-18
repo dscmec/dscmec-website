@@ -26,9 +26,9 @@ function App() {
             <Focus />
             <OurTeam />
             <ContactUs />
-            <Footer />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
