@@ -8,6 +8,7 @@ import "./App.css";
 import Announcements from "./pages/Announcements/Announcements";
 import Focus from "./pages/Focus/Focus";
 import OurTeam from "./pages/OurTeam/OurTeam";
+import Events from "./pages/Events/Events";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
 
@@ -17,8 +18,11 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route path="/team">
+          <Route path="/team" exact>
             <Team />
+          </Route>
+          <Route path="/events" exact>
+            <Events />
           </Route>
           <Route path="/">
             <Landing />
