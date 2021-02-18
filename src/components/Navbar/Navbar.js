@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { NavHashLink as NavLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+import { NavHashLink as HashLink } from "react-router-hash-link";
+import { Link, NavLink } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -29,14 +29,14 @@ function Navigation() {
     <div className="container-fluid">
       <Navbar expand="lg" fixed="top" style={{ background: "white" }}>
         <Navbar.Brand>
-          <NavLink to="/#home" duration={2000}>
+          <HashLink to="/#home" duration={2000}>
             <img
               src={logo}
               alt="Home"
               className="logo-nav"
               style={{ opacity: opacity }}
             />
-          </NavLink>
+          </HashLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           <GiHamburgerMenu style={{ color: "#808080", fontSize: "1.5rem" }} />
@@ -46,49 +46,25 @@ function Navigation() {
           id="responsive-navbar-nav"
         >
           <Nav className="nav-item">
-            <Nav.Link as={Link} to="/#home" className="nav-item">
-              <span
-                className={tab === 1 ? "tab-selected" : ""}
-                onClick={() => setTab(1)}
-              >
+            <HashLink as={Link} to="/#home" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Home
-              </span>
-            </Nav.Link>
-            <Nav.Link as={Link} to="/events" className="nav-item">
-              <span
-                className={tab === 2 ? "tab-selected" : ""}
-                onClick={() => setTab(2)}
-              >
+            </HashLink>
+            <NavLink as={Link} to="/events" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Events
-              </span>
-            </Nav.Link>
-            <Nav.Link as={Link} to="/team" className="nav-item">
-              <span
-                className={tab === 3 ? "tab-selected" : ""}
-                onClick={() => setTab(3)}
-              >
+            </NavLink>
+            <NavLink as={Link} to="/team" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Team
-              </span>
-            </Nav.Link>
-            <Nav.Link as={Link} to="/videos" className="nav-item">
-              <span
-                className={tab === 4 ? "tab-selected" : ""}
-                onClick={() => setTab(4)}
-              >
+            </NavLink>
+            <NavLink as={Link} to="/videos" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Videos
-              </span>
-            </Nav.Link>
-            <Nav.Link as={Link} to="/#contactus" className="nav-item">
-              <span
-                className={tab === 5 ? "tab-selected" : ""}
-                onClick={() => setTab(5)}
-              >
+            </NavLink>
+            <HashLink as={Link} to="/#contactus" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Contact Us
-              </span>
-            </Nav.Link>
-            <Nav.Link href="https://discord.com/invite/XpQEB5d" target="_blank">
+            </HashLink>
+
+            <a href="https://discord.com/invite/XpQEB5d" target="_blank" rel="noreferrer">
               <img className="discord-container" src={discord} alt="discord" />
-            </Nav.Link>
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
