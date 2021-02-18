@@ -282,8 +282,8 @@ const TeamNormal = () => {
         </div>
       </div>
       <div className="org-content-marketing-team-container">
-        <div class="row">
-          <div class="col-sm">
+        <div className="row">
+          <div className="col-sm">
             <h1 className="oheading">Organization</h1>
             <div className="otop">
               <Member
@@ -294,7 +294,7 @@ const TeamNormal = () => {
               />
             </div>
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <h1>Content</h1>
             <div className="ctop">
               <Member
@@ -313,7 +313,7 @@ const TeamNormal = () => {
               />
             </div>
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <h1 className="mheading">Marketing</h1>
             <div className="matop">
               <Member
@@ -327,8 +327,8 @@ const TeamNormal = () => {
         </div>
       </div>
       <div className="social-wtm-team-container">
-        <div class="row">
-          <div class="col-sm">
+        <div className="row">
+          <div className="col-sm">
             <h1>Social Media</h1>
             <div className="smtop">
               <Member
@@ -339,7 +339,7 @@ const TeamNormal = () => {
               />
             </div>
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <h1>WTM</h1>
             <div className="wttop">
               <Member
