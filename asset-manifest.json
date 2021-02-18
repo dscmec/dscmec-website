@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dscmec-website/static/css/main.d99900cc.chunk.css",
-    "main.js": "/dscmec-website/static/js/main.c788418c.chunk.js",
-    "runtime-main.js": "/dscmec-website/static/js/runtime-main.255be794.js",
+    "main.css": "/dscmec-website/static/css/main.d21093ce.chunk.css",
+    "main.js": "/dscmec-website/static/js/main.78a2ec11.chunk.js",
+    "runtime-main.js": "/dscmec-website/static/js/runtime-main.aff78a7d.js",
     "static/css/2.8000774e.chunk.css": "/dscmec-website/static/css/2.8000774e.chunk.css",
-    "static/js/2.358b5926.chunk.js": "/dscmec-website/static/js/2.358b5926.chunk.js",
-    "static/js/3.84e0e9ba.chunk.js": "/dscmec-website/static/js/3.84e0e9ba.chunk.js",
+    "static/js/2.9b8b0bd7.chunk.js": "/dscmec-website/static/js/2.9b8b0bd7.chunk.js",
+    "static/js/3.2f8b6ac6.chunk.js": "/dscmec-website/static/js/3.2f8b6ac6.chunk.js",
     "index.html": "/dscmec-website/index.html",
-    "static/js/2.358b5926.chunk.js.LICENSE.txt": "/dscmec-website/static/js/2.358b5926.chunk.js.LICENSE.txt",
+    "static/js/2.9b8b0bd7.chunk.js.LICENSE.txt": "/dscmec-website/static/js/2.9b8b0bd7.chunk.js.LICENSE.txt",
     "static/media/Landing.css": "/dscmec-website/static/media/bg-1024.3971739e.png",
     "static/media/Footer.css": "/dscmec-website/static/media/NotoSans-Light.c9290d4c.ttf",
     "static/media/Announcements.css": "/dscmec-website/static/media/NotoSans-Regular.fa11626f.ttf",
@@ -35,10 +35,10 @@
     "static/media/waves-yellow.918c2391.svg": "/dscmec-website/static/media/waves-yellow.918c2391.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.255be794.js",
+    "static/js/runtime-main.aff78a7d.js",
     "static/css/2.8000774e.chunk.css",
-    "static/js/2.358b5926.chunk.js",
-    "static/css/main.d99900cc.chunk.css",
-    "static/js/main.c788418c.chunk.js"
+    "static/js/2.9b8b0bd7.chunk.js",
+    "static/css/main.d21093ce.chunk.css",
+    "static/js/main.78a2ec11.chunk.js"
   ]
 }
