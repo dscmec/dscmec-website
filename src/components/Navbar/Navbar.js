@@ -49,11 +49,13 @@ function Navigation() {
               as={Link}
               to="/#home"
               className="nav-item nav-link"
-              activeStyle={{ borderBottom: "3px solid #4285f4" }}
+              // activeStyle={{ borderBottom: "3px solid #4285f4" }}
+              activeClassName="tab-selected"
               isActive={(match, { pathname, hash }) => {
                 return (
                   (pathname === "/" && hash === "#home") ||
-                  (pathname === "/" && hash === "")
+                  (pathname === "/" &&
+                    (hash === "" || hash === "#announcements"))
                 );
               }}
             >
@@ -63,7 +65,8 @@ function Navigation() {
               as={Link}
               to="/events"
               className="nav-item nav-link"
-              activeStyle={{ borderBottom: "3px solid #4285f4" }}
+              // activeStyle={{ borderBottom: "3px solid #4285f4" }}
+              activeClassName="tab-selected"
             >
               Events
             </NavLink>
@@ -71,7 +74,8 @@ function Navigation() {
               as={Link}
               to="/team"
               className="nav-item nav-link"
-              activeStyle={{ borderBottom: "3px solid #4285f4" }}
+              // activeStyle={{ borderBottom: "3px solid #4285f4" }}
+              activeClassName="tab-selected"
             >
               Team
             </NavLink>
@@ -79,7 +83,8 @@ function Navigation() {
               as={Link}
               to="/videos"
               className="nav-item nav-link"
-              activeStyle={{ borderBottom: "3px solid #4285f4" }}
+              // activeStyle={{ borderBottom: "3px solid #4285f4" }}
+              activeClassName="tab-selected"
             >
               Videos
             </NavLink>
@@ -87,7 +92,8 @@ function Navigation() {
               as={Link}
               to="/#contactus"
               className="nav-item nav-link"
-              activeStyle={{ borderBottom: "3px solid #4285f4" }}
+              // activeStyle={{ borderBottom: "3px solid #4285f4" }}
+              activeClassName="tab-selected"
             >
               Contact Us
             </HashLink>

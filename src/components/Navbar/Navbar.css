@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Noto sans";
+  font-family: "Noto sans Regular";
   src: url("../../assets/fonts/NotoSans-Regular.ttf");
 }
 
@@ -10,7 +10,7 @@
   margin-right: 2rem;
   color: black !important;
   font-weight: 500 !important;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto sans Regular", sans-serif;
   text-decoration: none;
 }
 
@@ -36,14 +36,35 @@
 }
 
 .tab-selected {
+  position: relative;
   color: #4285f4 !important;
+  /* color: #ffffff !important; */
+  /* font-weight: 600 !important; */
+  /* background-color: #4285f4; */
+  /* border-radius: 0.25rem; */
 }
 
-
+.tab-selected:after {
+  background-color: #4285f4;
+  width: 100%;
+  height: 0.17rem;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
 
 @media screen and (max-width: 992px) {
   .discord-container {
     margin-left: 0;
+  }
+
+  .nav-item a {
+    width: 75%;
+    max-width: 600px;
+    justify-content: center;
   }
 }
 
@@ -51,6 +72,24 @@
   .logo-nav {
     opacity: 1 !important;
   }
+
+  /* .tab-selected {
+    color: #4285f4 !important;
+    background-color: #ffffff !important;
+    font-weight: initial !important;
+  } */
+
+  /* .tab-selected:after {
+    background-color: #4285f4;
+    width: 100%;
+    height: 0.17rem;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  } */
 }
 
 @media screen and (max-width: 600px) {
