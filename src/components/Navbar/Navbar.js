@@ -46,9 +46,9 @@ function Navigation() {
           id="responsive-navbar-nav"
         >
           <Nav className="nav-item">
-            <NavLink as={Link} to="/" className="nav-item">
+            <HashLink as={Link} to="/#home" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Home
-            </NavLink>
+            </HashLink>
             <NavLink as={Link} to="/events" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Events
             </NavLink>
@@ -58,7 +58,7 @@ function Navigation() {
             <NavLink as={Link} to="/videos" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Videos
             </NavLink>
-            <HashLink as={Link} to="/#contactus" className="nav-item" >
+            <HashLink as={Link} to="/#contactus" className="nav-item" activeStyle={{borderBottom:'3px solid #4285f4'}}>
                 Contact Us
             </HashLink>
 
