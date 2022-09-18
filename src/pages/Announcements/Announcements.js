@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import wavesYellow from "../../assets/svg/waves-yellow.svg";
 import "./Announcements.css";
+import announcements from '../../data/AnnouncementData'
 
 function AnnouncementItem({ date, info, variant }) {
   let colorVariant = "";
@@ -37,16 +38,6 @@ function AnnouncementItem({ date, info, variant }) {
 }
 
 function Announcements() {
-  const [announcements, setAnnouncements] = useState([]);
-  useEffect(() => {
-    fetch("/dscmec-website/announcements.json")
-      .then((res) => res.json())
-      .then((data) => {
-        let truncatedData = [];
-        for (let i = 0; i < 4; i++) truncatedData.push(data.announcements[i]);
-        setAnnouncements(truncatedData);
-      });
-  }, []);
   return (
     <section className="container-fluid announcements" id="announcements">
       <div className="col-lg-12 col-md-12 announcements-left">

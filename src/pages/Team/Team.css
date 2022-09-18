@@ -14,166 +14,34 @@
 
 .lead-container {
   padding-top: 40px;
+  flex-wrap: nowrap;
 }
 
-.web-team-container {
+.team-container {
   margin-top: 120px;
 }
 
-.web-team-container .row {
+.team-container .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-left: 100px;
   padding-right: 100px;
-}
-
-.design-team-container {
-  margin-top: 100px;
-}
-
-.design-team-container .dtop {
-  margin-top: 30px;
-}
-
-.design-team-container .dmid {
-  padding-left: 250px;
-  padding-right: 250px;
-}
-
-.design-team-container .dlow {
-  padding-left: 350px;
-  padding-right: 350px;
-}
-
-.ml-publicity-team-container {
-  margin-top: 100px;
-}
-
-.ml-publicity-team-container .mheading {
-  padding-right: 90px;
-  padding-top: 15px;
-  padding-bottom: 30px;
-}
-
-.ml-publicity-team-container .pheading {
-  padding-top: 15px;
-  padding-bottom: 30px;
-}
-
-.ml-publicity-team-container .mtop {
-  padding-right: 80px;
-}
-
-.ml-publicity-team-container .mbottom {
-  padding-right: 60px;
-}
-
-.flutter-team-container {
-  margin-top: 100px;
-}
-
-.flutter-team-container .fheading {
-  padding-bottom: 20px;
-}
-
-.flutter-team-container .fmid {
-  padding-left: 250px;
-  padding-right: 250px;
-}
-
-.flutter-team-container .flow {
-  padding-left: 400px;
-  padding-right: 400px;
-  padding-bottom: 100px;
-}
-
-.org-content-marketing-team-container {
-  margin-top: 50px;
-}
-
-.org-content-marketing-team-container .otop {
-  padding-top: 25px;
-  padding-left: 50px;
-}
-
-.org-content-marketing-team-container .matop {
-  padding-top: 25px;
-  padding-right: 50px;
-}
-
-.org-content-marketing-team-container .ctop {
-  padding-top: 25px;
-  padding-bottom: 10px;
-}
-
-.org-content-marketing-team-container .oheading {
-  padding-left: 50px;
-}
-
-.org-content-marketing-team-container .mheading {
-  padding-right: 50px;
-}
-
-.social-wtm-team-container {
-  margin-top: 100px;
-}
-
-.social-wtm-team-container .smtop {
-  padding-top: 50px;
-}
-.social-wtm-team-container .wttop {
-  padding-top: 50px;
+  justify-content: center;
 }
 
 .team-heading-resp {
   margin-top: 100px;
 }
 
-.lead-container-resp {
-  padding-top: 20px;
-}
-
-.web-team-container-resp {
-  padding-top: 40px;
-}
-
-.design-team-container-resp {
-  padding-top: 40px;
-}
-
-.mlai-team-container-resp {
-  padding-top: 40px;
-}
-
-.publicity-team-container-resp {
-  padding-top: 40px;
-}
-
-.flutter-team-container-resp {
-  padding-top: 40px;
-}
-
-.organization-team-container-resp {
-  padding-top: 40px;
-}
-
-.content-team-container-resp {
-  padding-top: 40px;
-}
-
-.marketing-team-container-resp {
-  padding-top: 40px;
-}
-
-.social-team-container-resp {
-  padding-top: 40px;
-}
-
-.wtm-team-container-resp {
+.team-container-resp {
   padding-top: 40px;
 }
 
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
   filter: invert(100%);
+margin-top: 100px;
 }
 
 .resp {

@@ -32,23 +32,34 @@
   height: auto;
   max-width: 250px;
   border-radius: 50%;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 25px;
   padding: 25px;
   padding-bottom: 5px;
 }
+.details{
+  padding-top: 25px;
 
-.member-responsive {
-  padding-bottom: 1rem;
 }
 
+.member-responsive {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.member-responsive h4{
+  padding-top: 1rem;
+}
 .rect-icon {
-  width: 65%;
+  width: 200px;
+  border-radius: 50%;
   border-radius: 10px;
+  max-height: 300px;
 }
 
 .ln-icon-resp {
-  height: 45px;
+  height: 48px;
   border-radius: 50%;
   /* box-shadow: 0px 0px 20px #fff; */
   background: #ffffff;

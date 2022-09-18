@@ -13,10 +13,11 @@ export const Member = (props) => {
                 <a href={props.link} target="_blank" rel="noreferrer">
                     <Image className="ln-icon" src={linkedinIcon} alt="member" />
                 </a>
-            </div>
+            
             <div className="details">
                 <h4><strong>{props.name}</strong></h4>
                 <h5>{props.designation}</h5>
+            </div>
             </div>
         </>
     )
@@ -27,9 +28,6 @@ export const MemberResponsive = (props) => {
         <>
             <div className="member-responsive">
                 <Image className="rect-icon" src={props.img} alt="member" />
-            </div>
-
-            <div className="details-responsive">
                 <h4><strong>{props.name}</strong></h4>
                 <h5>{props.designation}</h5>
                 <a href={props.link} target="_blank" rel="noreferrer">

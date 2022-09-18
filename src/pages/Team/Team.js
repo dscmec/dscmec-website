@@ -2,8 +2,14 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 
 import { Member, MemberResponsive } from "./Member";
-import rectangle from "../../assets/img/rectangle-icon.jpg";
 import "./Team.css";
+import coreData from '../../data/CoreTeamData';
+import webTeamData from '../../data/WebTeamMemberData';
+import appTeamData from '../../data/AppTeamMemberData';
+import eventTeamData from '../../data/EventTeamMemberData';
+import designTeamData from '../../data/DesignTeamMemberData';
+import publicityTeamData from '../../data/PublicityTeamMemberData';
+import contentTeamData from '../../data/ContentTeamMemberData';
 
 export default function Team() {
   return (
@@ -15,341 +21,206 @@ export default function Team() {
 }
 
 const TeamNormal = () => {
-  let circleIcon =
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Circle_Grey_Solid.svg/1200px-Circle_Grey_Solid.svg.png";
-  let link = "https://www.linkedin.com/";
-  let Name = "NAME";
-  let designation = "designation";
 
   return (
     <div className="team-normal">
       <h1 className="team-heading">Meet Our Team</h1>
       <div className="lead-container">
-        <Member
-          img={circleIcon}
-          link={link}
-          name={Name}
-          designation={designation}
-        />
+      {coreData.map((item, index) => {return (
+            <Member
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
+          />);
+    }
+          )}
+        
       </div>
-      <div className="web-team-container">
+      <div className="team-container">
         <h1>Web Team</h1>
-        <Member
-          img={circleIcon}
-          link={link}
-          name={Name}
-          designation={designation}
-        />
-        <div className="row">
-          <div className="col-lg-3">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-3">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-3">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-3">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-3">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-3">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-3">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-3">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="design-team-container">
-        <h1>Design</h1>
-        <div className="dtop">
-          <Member
-            img={circleIcon}
-            link={link}
-            name={Name}
-            designation={designation}
+        {webTeamData.map((item, index) => {
+            if(item.isLead===true){return (
+              <Member
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
           />
-        </div>
-        <div className="row dmid">
-          <div className="col-lg-4">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-4">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-4">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-        </div>
-        <div className="row dlow">
-          <div className="col-lg-6">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-6">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="ml-publicity-team-container">
+              );}
+          else
+          return null;
+    }
+          )}
         <div className="row">
-          <div className="col-sm">
-            <h1 className="mheading">ML/AI</h1>
-            <div className="mtop">
+        {webTeamData.map((item, index) => {
+            if(item.isLead===false){return (
               <Member
-                img={circleIcon}
-                link={link}
-                name={Name}
-                designation={designation}
-              />
-            </div>
-            <div className="row mbottom">
-              <div className="col-sm">
-                <Member
-                  img={circleIcon}
-                  link={link}
-                  name={Name}
-                  designation={designation}
-                />
-              </div>
-              <div className="col-sm">
-                <Member
-                  img={circleIcon}
-                  link={link}
-                  name={Name}
-                  designation={designation}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="col-sm">
-            <h1 className="pheading">Publicity</h1>
-            <div>
-              <Member
-                img={circleIcon}
-                link={link}
-                name={Name}
-                designation={designation}
-              />
-            </div>
-            <div className="row">
-              <div className="col-sm">
-                <Member
-                  img={circleIcon}
-                  link={link}
-                  name={Name}
-                  designation={designation}
-                />
-              </div>
-              <div className="col-sm">
-                <Member
-                  img={circleIcon}
-                  link={link}
-                  name={Name}
-                  designation={designation}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="flutter-team-container">
-        <h1 className="fheading">Flutter</h1>
-        <div className="ftop">
-          <Member
-            img={circleIcon}
-            link={link}
-            name={Name}
-            designation={designation}
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
           />
-        </div>
-        <div className="row fmid">
-          <div className="col-lg-4">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-4">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-4">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-        </div>
-        <div className="row flow">
-          <div className="col-lg-6">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
-          <div className="col-lg-6">
-            <Member
-              img={circleIcon}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </div>
+              );}
+          else
+          return null;
+    }
+          )}
         </div>
       </div>
-      <div className="org-content-marketing-team-container">
+      <div className="team-container">
+        <h1>App Team</h1>
+        {appTeamData.map((item, index) => {
+            if(item.isLead===true){return (
+              <Member
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
+          />
+              );}
+          else
+          return null;
+    }
+          )}
         <div className="row">
-          <div className="col-sm">
-            <h1 className="oheading">Organization</h1>
-            <div className="otop">
+        {appTeamData.map((item, index) => {
+            if(item.isLead===false){return (
               <Member
-                img={circleIcon}
-                link={link}
-                name={Name}
-                designation={designation}
-              />
-            </div>
-          </div>
-          <div className="col-sm">
-            <h1>Content</h1>
-            <div className="ctop">
-              <Member
-                img={circleIcon}
-                link={link}
-                name={Name}
-                designation={designation}
-              />
-            </div>
-            <div className="cbottom">
-              <Member
-                img={circleIcon}
-                link={link}
-                name={Name}
-                designation={designation}
-              />
-            </div>
-          </div>
-          <div className="col-sm">
-            <h1 className="mheading">Marketing</h1>
-            <div className="matop">
-              <Member
-                img={circleIcon}
-                link={link}
-                name={Name}
-                designation={designation}
-              />
-            </div>
-          </div>
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
+          />
+              );}
+          else
+          return null;
+    }
+          )}
         </div>
       </div>
-      <div className="social-wtm-team-container">
+      <div className="team-container">
+        <h1>Events Team</h1>
+        {eventTeamData.map((item, index) => {
+            if(item.isLead===true){return (
+              <Member
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
+          />
+              );}
+          else
+          return null;
+    }
+          )}
         <div className="row">
-          <div className="col-sm">
-            <h1>Social Media</h1>
-            <div className="smtop">
+        {eventTeamData.map((item, index) => {
+            if(item.isLead===false){return (
               <Member
-                img={circleIcon}
-                link={link}
-                name={Name}
-                designation={designation}
-              />
-            </div>
-          </div>
-          <div className="col-sm">
-            <h1>WTM</h1>
-            <div className="wttop">
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
+          />
+              );}
+          else
+          return null;
+    }
+          )}
+        </div>
+      </div>
+      <div className="team-container">
+        <h1>Design Team</h1>
+        {designTeamData.map((item, index) => {
+            if(item.isLead===true){return (
               <Member
-                img={circleIcon}
-                link={link}
-                name={Name}
-                designation={designation}
-              />
-            </div>
-          </div>
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
+          />
+              );}
+          else
+          return null;
+    }
+          )}
+        <div className="row">
+        {designTeamData.map((item, index) => {
+            if(item.isLead===false){return (
+              <Member
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
+          />
+              );}
+          else
+          return null;
+    }
+          )}
+        </div>
+      </div>
+      <div className="team-container">
+        <h1>Publicity Team</h1>
+        {publicityTeamData.map((item, index) => {
+            if(item.isLead===true){return (
+              <Member
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
+          />
+              );}
+          else
+          return null;
+    }
+          )}
+        <div className="row">
+        {publicityTeamData.map((item, index) => {
+            if(item.isLead===false){return (
+              <Member
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
+          />
+              );}
+          else
+          return null;
+    }
+          )}
+        </div>
+      </div>
+      <div className="team-container">
+        <h1>Content Team</h1>
+        {contentTeamData.map((item, index) => {
+            if(item.isLead===true){return (
+              <Member
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
+          />
+              );}
+          else
+          return null;
+    }
+          )}
+        <div className="row">
+        {contentTeamData.map((item, index) => {
+            if(item.isLead===false){return (
+              <Member
+            img={item.img}
+            link={item.link}
+            name={item.name}
+            designation={item.designation}
+          />
+              );}
+          else
+          return null;
+    }
+          )}
         </div>
       </div>
     </div>
@@ -357,278 +228,102 @@ const TeamNormal = () => {
 };
 
 const TeamResponsive = () => {
-  let link = "https://www.linkedin.com/";
-  let Name = "NAME";
-  let designation = "designation";
 
   return (
     <div className="team-responsive">
       <h1 className="team-heading-resp">Meet Our Team</h1>
       <div className="lead-container-resp">
-        <MemberResponsive
-          img={rectangle}
-          link={link}
-          name={Name}
-          designation={designation}
-        />
+      {coreData.map((item, index) => {
+        return (<MemberResponsive
+              img={item.img}
+              link={item.link}
+              name={item.name}
+              designation={item.designation}/>);
+    })}
       </div>
-      <div className="web-team-container-resp">
+      <div className="team-container-resp">
         <h1>Web Team</h1>
-        <Carousel>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-        </Carousel>
+        <Carousel>{webTeamData.map((item, index) => {return (
+      <Carousel.Item><MemberResponsive
+              img={item.img}
+              link={item.link}
+              
+              name={item.name}
+              designation={item.designation}
+            /></Carousel.Item>);
+    }
+          )}
+    </Carousel>
       </div>
-      <div className="design-team-container-resp">
-        <h1>Design</h1>
-        <Carousel>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-        </Carousel>
+      <div className="team-container-resp">
+        <h1>App Team</h1>
+        <Carousel>{appTeamData.map((item, index) => {return (
+      <Carousel.Item><MemberResponsive
+              img={item.img}
+              link={item.link}
+              
+              name={item.name}
+              designation={item.designation}
+            /></Carousel.Item>);
+    }
+          )}
+    </Carousel>
       </div>
-      <div className="mlai-team-container-resp">
-        <h1>ML/AI</h1>
-        <Carousel>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-        </Carousel>
+      <div className="team-container-resp">
+        <h1>Events Team</h1>
+        <Carousel>{eventTeamData.map((item, index) => {return (
+      <Carousel.Item><MemberResponsive
+              img={item.img}
+              link={item.link}
+              
+              name={item.name}
+              designation={item.designation}
+            /></Carousel.Item>);
+    }
+          )}
+    </Carousel>
       </div>
-      <div className="publicity-team-container-resp">
-        <h1>Publicity</h1>
-        <Carousel>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-        </Carousel>
+      <div className="team-container-resp">
+        <h1>Design Team</h1>
+        <Carousel>{designTeamData.map((item, index) => {return (
+      <Carousel.Item><MemberResponsive
+              img={item.img}
+              link={item.link}
+              
+              name={item.name}
+              designation={item.designation}
+            /></Carousel.Item>);
+    }
+          )}
+    </Carousel>
       </div>
-      <div className="flutter-team-container-resp">
-        <h1>Flutter</h1>
-        <Carousel>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-        </Carousel>
+      <div className="team-container-resp">
+        <h1>Publicity Team</h1>
+        <Carousel>{publicityTeamData.map((item, index) => {return (
+      <Carousel.Item><MemberResponsive
+              img={item.img}
+              link={item.link}
+              
+              name={item.name}
+              designation={item.designation}
+            /></Carousel.Item>);
+    }
+          )}
+    </Carousel>
       </div>
-      <div className="organization-team-container-resp">
-        <h1>Organization</h1>
-        <MemberResponsive
-          img={rectangle}
-          link={link}
-          name={Name}
-          designation={designation}
-        />
-      </div>
-      <div className="content-team-container-resp">
-        <h1>Content</h1>
-        <Carousel>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <MemberResponsive
-              img={rectangle}
-              link={link}
-              name={Name}
-              designation={designation}
-            />
-          </Carousel.Item>
-        </Carousel>
-      </div>
-      <div className="marketing-team-container-resp">
-        <h1>Marketing</h1>
-        <MemberResponsive
-          img={rectangle}
-          link={link}
-          name={Name}
-          designation={designation}
-        />
-      </div>
-      <div className="social-team-container-resp">
-        <h1>Social Media</h1>
-        <MemberResponsive
-          img={rectangle}
-          link={link}
-          name={Name}
-          designation={designation}
-        />
-      </div>
-      <div className="wtm-team-container-resp">
-        <h1>WTM</h1>
-        <MemberResponsive
-          img={rectangle}
-          link={link}
-          name={Name}
-          designation={designation}
-        />
+      <div className="team-container-resp">
+        <h1>Content Team</h1>
+        <Carousel>{contentTeamData.map((item, index) => {return (
+      <Carousel.Item><MemberResponsive
+              img={item.img}
+              link={item.link}
+              
+              name={item.name}
+              designation={item.designation}
+            /></Carousel.Item>);
+    }
+          )}
+    </Carousel>
       </div>
     </div>
   );

@@ -2,10 +2,8 @@ import React from 'react'
 
 import EventCard from './EventCard/EventCard'
 import './Events.css'
+import events from '../../data/EventData'
 
-
-const img = 'https://api.time.com/wp-content/uploads/2016/06/game-of-thrones-episode-9-4.jpg'
-const desc = 'It is a long established fact that a reader will be distracted by the readable...'
 
 function Events() {
     return (
@@ -15,19 +13,27 @@ function Events() {
                 <div className="event-upcoming">
                     <h3>Upcoming</h3>
                     <div className="upcoming-cards">
-                        <EventCard img={img} title="TITLE" time="8pm" date="FEB 21" desc={desc}/>
-                        <EventCard img={img} title="TITLE" time="8pm" date="FEB 21" desc={desc}/>
-                        <EventCard img={img} title="TITLE" time="8pm" date="FEB 21" desc={desc}/>
-                        <EventCard img={img} title="TITLE" time="8pm" date="FEB 21" desc={desc}/>
+                    {events.map((item, index) => {
+              if(item.isArchived===false){return (
+            <EventCard img={item.img} title={item.title} time={item.time} date={item.date} desc={item.desc}/>
+            );}
+        else
+        return null;
+    }
+          )}
                     </div>
                 </div>
                 <div className="event-archive">
                     <h3>Archive</h3>
                     <div className="archive-cards">
-                        <EventCard img={img} title="TITLE" time="8pm" date="FEB 21" desc={desc}/>
-                        <EventCard img={img} title="TITLE" time="8pm" date="FEB 21" desc={desc}/>
-                        <EventCard img={img} title="TITLE" time="8pm" date="FEB 21" desc={desc}/>
-                        <EventCard img={img} title="TITLE" time="8pm" date="FEB 21" desc={desc}/>
+                    {events.map((item, index) => {
+              if(item.isArchived===true){return (
+            <EventCard img={item.img} title={item.title} time={item.time} date={item.date} desc={item.desc}/>
+            );}
+        else
+        return null;
+    }
+          )}
                     </div>
                 </div>
             </div>

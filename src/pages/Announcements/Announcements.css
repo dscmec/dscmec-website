@@ -1,13 +1,3 @@
-@font-face {
-  font-family: "Noto sans Regular";
-  src: url("../../assets/fonts/NotoSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Noto sans Light";
-  src: url("../../assets/fonts/NotoSans-Light.ttf");
-}
-
 .announcements {
   width: 100%;
   position: relative;

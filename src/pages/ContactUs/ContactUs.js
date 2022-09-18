@@ -16,7 +16,7 @@ function OurTeam() {
         <img src={dotTri} className="dot-tri" alt="" />
         <img src={triangles} className="triangles" alt="" />
         <img src={shapes2} className="shapes-2" alt="" />
-        <h1>Contact US</h1>
+        <h1>Contact Us</h1>
         <br />
         <p>
           Posting tips, updates, the occasional tidbit of wisdom and more, we
