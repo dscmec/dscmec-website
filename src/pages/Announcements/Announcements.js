@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-
 import wavesYellow from "../../assets/svg/waves-yellow.svg";
 import "./Announcements.css";
 import announcements from '../../data/AnnouncementData'
