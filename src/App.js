@@ -11,8 +11,10 @@ import OurTeam from "./pages/OurTeam/OurTeam";
 import Events from "./pages/Events/Events";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function App() {
+  AOS.init();
   return (
     <Router>
       <div className="App">

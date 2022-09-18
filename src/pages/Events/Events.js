@@ -8,11 +8,11 @@ import events from '../../data/EventData'
 function Events() {
     return (
         <div className="events">
-            <h1>Events</h1>
+            <h1 data-aos="slide-up" data-aos-duration="2000">Events</h1>
             <div className="event-container">
                 <div className="event-upcoming">
-                    <h3>Upcoming</h3>
-                    <div className="upcoming-cards">
+                    <h3 data-aos="slide-up" data-aos-duration="2000">Upcoming</h3>
+                    <div className="upcoming-cards" data-aos="slide-up" data-aos-duration="2000">
                     {events.map((item, index) => {
               if(item.isArchived===false){return (
             <EventCard img={item.img} title={item.title} time={item.time} date={item.date} desc={item.desc}/>
@@ -24,8 +24,8 @@ function Events() {
                     </div>
                 </div>
                 <div className="event-archive">
-                    <h3>Archive</h3>
-                    <div className="archive-cards">
+                    <h3 data-aos="slide-up" data-aos-duration="2000">Archive</h3>
+                    <div className="archive-cards" data-aos="slide-up" data-aos-duration="2000">
                     {events.map((item, index) => {
               if(item.isArchived===true){return (
             <EventCard img={item.img} title={item.title} time={item.time} date={item.date} desc={item.desc}/>

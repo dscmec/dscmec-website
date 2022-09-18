@@ -11,18 +11,18 @@ import "./ContactUs.css";
 function OurTeam() {
   return (
     <section id="contactus">
-      <div className="contactus">
+      <div className="contactus" >
         <img src={objects} className="objects" alt="" />
         <img src={dotTri} className="dot-tri" alt="" />
         <img src={triangles} className="triangles" alt="" />
         <img src={shapes2} className="shapes-2" alt="" />
-        <h1>Contact Us</h1>
+        <h1 data-aos="slide-up" data-aos-duration="2000">Contact Us</h1>
         <br />
-        <p>
+        <p data-aos="slide-up" data-aos-duration="2000">
           Posting tips, updates, the occasional tidbit of wisdom and more, we
           are just a few click away at these social media accounts.
         </p>
-        <Button className="contactusButton" variant="success">
+        <Button data-aos="slide-up" data-aos-duration="2000" className="contactusButton" variant="success">
           SAY HI!
         </Button>
       </div>

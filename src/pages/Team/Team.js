@@ -24,8 +24,8 @@ const TeamNormal = () => {
 
   return (
     <div className="team-normal">
-      <h1 className="team-heading">Meet Our Team</h1>
-      <div className="lead-container">
+      <h1 className="team-heading" data-aos="slide-up" data-aos-duration="2000">Meet Our Team</h1>
+      <div className="lead-container" data-aos="slide-up" data-aos-duration="2000">
       {coreData.map((item, index) => {return (
             <Member
             img={item.img}
@@ -37,9 +37,9 @@ const TeamNormal = () => {
           )}
         
       </div>
-      <div className="team-container">
-        <h1>Web Team</h1>
-        <div className="lead-container">
+      <div className="team-container" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">Web Team</h1>
+        <div className="lead-container" data-aos="slide-up" data-aos-duration="2000">
         {webTeamData.map((item, index) => {
             if(item.isLead===true){return (
               <Member
@@ -54,7 +54,7 @@ const TeamNormal = () => {
     }
           )}
           </div>
-        <div className="row">
+        <div className="row" data-aos="slide-up" data-aos-duration="2000">
         {webTeamData.map((item, index) => {
             if(item.isLead===false){return (
               <Member
@@ -70,9 +70,9 @@ const TeamNormal = () => {
           )}
         </div>
       </div>
-      <div className="team-container">
-        <h1>App Team</h1>
-        <div className="lead-container">
+      <div className="team-container" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">App Team</h1>
+        <div className="lead-container" data-aos="slide-up" data-aos-duration="2000">
         {appTeamData.map((item, index) => {
             if(item.isLead===true){return (
               <Member
@@ -87,7 +87,7 @@ const TeamNormal = () => {
     }
           )}
           </div>
-        <div className="row">
+        <div className="row" data-aos="slide-up" data-aos-duration="2000">
         {appTeamData.map((item, index) => {
             if(item.isLead===false){return (
               <Member
@@ -103,9 +103,9 @@ const TeamNormal = () => {
           )}
         </div>
       </div>
-      <div className="team-container">
-        <h1>Events Team</h1>
-        <div className="lead-container">
+      <div className="team-container" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">Events Team</h1>
+        <div className="lead-container" data-aos="slide-up" data-aos-duration="2000">
         {eventTeamData.map((item, index) => {
             if(item.isLead===true){return (
               <Member
@@ -120,7 +120,7 @@ const TeamNormal = () => {
     }
           )}
           </div>
-        <div className="row">
+        <div className="row" data-aos="slide-up" data-aos-duration="2000">
         {eventTeamData.map((item, index) => {
             if(item.isLead===false){return (
               <Member
@@ -136,8 +136,8 @@ const TeamNormal = () => {
           )}
         </div>
       </div>
-      <div className="team-container">
-        <h1>Design Team</h1>
+      <div className="team-container" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">Design Team</h1>
         {designTeamData.map((item, index) => {
             if(item.isLead===true){return (
               <Member
@@ -151,7 +151,7 @@ const TeamNormal = () => {
           return null;
     }
           )}
-        <div className="row">
+        <div className="row" data-aos="slide-up" data-aos-duration="2000">
         {designTeamData.map((item, index) => {
             if(item.isLead===false){return (
               <Member
@@ -167,8 +167,8 @@ const TeamNormal = () => {
           )}
         </div>
       </div>
-      <div className="team-container">
-        <h1>Publicity Team</h1>
+      <div className="team-container" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">Publicity Team</h1>
         {publicityTeamData.map((item, index) => {
             if(item.isLead===true){return (
               <Member
@@ -182,7 +182,7 @@ const TeamNormal = () => {
           return null;
     }
           )}
-        <div className="row">
+        <div className="row" data-aos="slide-up" data-aos-duration="2000">
         {publicityTeamData.map((item, index) => {
             if(item.isLead===false){return (
               <Member
@@ -198,8 +198,8 @@ const TeamNormal = () => {
           )}
         </div>
       </div>
-      <div className="team-container">
-        <h1>Content Team</h1>
+      <div className="team-container" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">Content Team</h1>
         {contentTeamData.map((item, index) => {
             if(item.isLead===true){return (
               <Member
@@ -213,7 +213,7 @@ const TeamNormal = () => {
           return null;
     }
           )}
-        <div className="row">
+        <div className="row" data-aos="slide-up" data-aos-duration="2000">
         {contentTeamData.map((item, index) => {
             if(item.isLead===false){return (
               <Member
@@ -237,8 +237,8 @@ const TeamResponsive = () => {
 
   return (
     <div className="team-responsive">
-      <h1 className="team-heading-resp">Meet Our Team</h1>
-      <div className="lead-container-resp">
+      <h1 data-aos="slide-up" data-aos-duration="2000" className="team-heading-resp">Meet Our Team</h1>
+      <div className="lead-container-resp" data-aos="slide-up" data-aos-duration="2000">
       {coreData.map((item, index) => {
         return (<MemberResponsive
               img={item.img}
@@ -247,8 +247,8 @@ const TeamResponsive = () => {
               designation={item.designation}/>);
     })}
       </div>
-      <div className="team-container-resp">
-        <h1>Web Team</h1>
+      <div className="team-container-resp" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">Web Team</h1>
         <Carousel>{webTeamData.map((item, index) => {return (
       <Carousel.Item><MemberResponsive
               img={item.img}
@@ -261,8 +261,8 @@ const TeamResponsive = () => {
           )}
     </Carousel>
       </div>
-      <div className="team-container-resp">
-        <h1>App Team</h1>
+      <div className="team-container-resp" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">App Team</h1>
         <Carousel>{appTeamData.map((item, index) => {return (
       <Carousel.Item><MemberResponsive
               img={item.img}
@@ -275,8 +275,8 @@ const TeamResponsive = () => {
           )}
     </Carousel>
       </div>
-      <div className="team-container-resp">
-        <h1>Events Team</h1>
+      <div className="team-container-resp" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">Events Team</h1>
         <Carousel>{eventTeamData.map((item, index) => {return (
       <Carousel.Item><MemberResponsive
               img={item.img}
@@ -289,8 +289,8 @@ const TeamResponsive = () => {
           )}
     </Carousel>
       </div>
-      <div className="team-container-resp">
-        <h1>Design Team</h1>
+      <div className="team-container-resp" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">Design Team</h1>
         <Carousel>{designTeamData.map((item, index) => {return (
       <Carousel.Item><MemberResponsive
               img={item.img}
@@ -303,8 +303,8 @@ const TeamResponsive = () => {
           )}
     </Carousel>
       </div>
-      <div className="team-container-resp">
-        <h1>Publicity Team</h1>
+      <div className="team-container-resp" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">Publicity Team</h1>
         <Carousel>{publicityTeamData.map((item, index) => {return (
       <Carousel.Item><MemberResponsive
               img={item.img}
@@ -317,8 +317,8 @@ const TeamResponsive = () => {
           )}
     </Carousel>
       </div>
-      <div className="team-container-resp">
-        <h1>Content Team</h1>
+      <div className="team-container-resp" data-aos="slide-up" data-aos-duration="2000">
+        <h1 data-aos="slide-up" data-aos-duration="2000">Content Team</h1>
         <Carousel>{contentTeamData.map((item, index) => {return (
       <Carousel.Item><MemberResponsive
               img={item.img}

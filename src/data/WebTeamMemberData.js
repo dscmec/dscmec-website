@@ -2,7 +2,7 @@
 const WebTeamMemberData=[
     {
         id:1,
-        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498072/dscmec-team/Jaison_Dennis_j9pb8y.jpg',
+        img:'https://res.cloudinary.com/ds5qxtc0t/image/upload/v1663510609/dscmec-team/Jaison_Dennis_kmkg0r.jpg',
         name:'Jaison Dennis',
         designation:'Web Lead',
         link:'https://linkedin.com/in/jaison080',
@@ -10,7 +10,7 @@ const WebTeamMemberData=[
     },
     {
         id:2,
-        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498072/dscmec-team/Bijoy_V_Babu_vybgso.png',
+        img:'https://res.cloudinary.com/ds5qxtc0t/image/upload/v1663510609/dscmec-team/Bijoy_V_Babu_nbsrjt.png',
         name:'Bijoy V Babu',
         designation:'Web Sub Lead',
         link:'',

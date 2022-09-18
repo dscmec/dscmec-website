@@ -39,10 +39,10 @@ function Announcements() {
   return (
     <section className="container-fluid announcements" id="announcements">
       <div className="col-lg-12 col-md-12 announcements-left">
-        <div className="announcements-header">
+        <div className="announcements-header" data-aos="slide-up" data-aos-duration="2000">
           <h1>Announcements</h1>
         </div>
-        <div className="announcements-body">
+        <div className="announcements-body" data-aos="slide-up" data-aos-duration="2000">
           {announcements.map((item, index) => {
             return (
               <AnnouncementItem {...item} key={index} variant={index + 1} />

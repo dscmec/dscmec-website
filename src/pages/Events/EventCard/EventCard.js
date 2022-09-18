@@ -4,7 +4,7 @@ import './EventCard.css'
 
 function EventCard({ img, title, date, time, desc }) {
     return (
-        <div className="eventCard">
+        <div className="eventCard" >
             <div className="event-card-image">
                 <div className="image-overlay"></div>
                 <img src={img} alt=""/>

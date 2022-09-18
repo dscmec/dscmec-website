@@ -15,8 +15,10 @@
 .landing {
   /* margin: 2rem; */
   padding: 12rem 2rem 2rem; /* 7rem 2rem 2rem */
+  pointer-events: none;
   /* display: flex; */
   background: url("../../assets/img/bg-1024.png");
+ 
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -61,6 +63,7 @@
 }
 .LeftHeaderLogo > img {
   height: 5rem;
+  pointer-events: none;
   width: auto;
 }
 
@@ -98,13 +101,16 @@
 .mascots {
   height: auto;
   width: 25rem;
+  pointer-events: none;
 }
 
 .scroll-down {
   font-family: "Noto sans Light", sans-serif;
   font-size: 24px;
   color: #4f4f4f;
-  margin: 3rem auto;
+  cursor: pointer;
+  pointer-events: none;
+  margin-top: 10rem auto;
 }
 
 @media screen and (max-width: 992px) {
@@ -114,6 +120,7 @@
     flex-direction: column;
   }
   .landingLeftHeader > img {
+
     width: 100%;
   }
 }
@@ -138,6 +145,7 @@
   .landingLeftHeader .logo-mobile {
     display: block !important;
     width: 100%;
+    pointer-events: none;
     height: auto;
   }
 
@@ -165,11 +173,13 @@
   .landingLeftHeader .logo-mobile {
     position: relative;
     bottom: 3.9rem;
+    pointer-events: none;
   }
 
   .landing .mascots-mobile {
     display: block;
     position: absolute;
+    pointer-events: none;
     z-index: -1;
     /* bottom: -2.9rem; */
     top: 37vh;

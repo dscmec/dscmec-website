@@ -1,7 +1,7 @@
 const PublicityTeamMemberData=[
     {
         id:1,
-        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498073/dscmec-team/Erine_Theressa_Jose_orgapc.jpg',
+        img:'https://res.cloudinary.com/ds5qxtc0t/image/upload/v1663512122/dscmec-team/Erine_Theressa_Jose_wzc2bv.jpg',
         name:'Erine Theressa Jose',
         designation:'Publicity Lead',
         link:'',
@@ -9,7 +9,7 @@ const PublicityTeamMemberData=[
     },
     {
         id:2,
-        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498075/dscmec-team/Tresa_Maria_Biju_s75u0q.jpg',
+        img:'https://res.cloudinary.com/ds5qxtc0t/image/upload/v1663510611/dscmec-team/Tresa_Maria_Biju_nsm0wn.jpg',
         name:'Tresa Maria Biju',
         designation:'Publicity Sub Lead',
         link:'',

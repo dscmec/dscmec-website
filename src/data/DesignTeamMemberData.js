@@ -1,7 +1,7 @@
 const DesignTeamMemberData=[
     {
         id:1,
-        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498074/dscmec-team/Swetha_R_appars.jpg',
+        img:'https://res.cloudinary.com/ds5qxtc0t/image/upload/v1663510609/dscmec-team/Swetha_R_hjcq0o.jpg',
         name:'Swetha R',
         designation:'Design Lead',
         link:'',
@@ -9,7 +9,7 @@ const DesignTeamMemberData=[
     },
     {
         id:2,
-        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498073/dscmec-team/Netanya_Jaison_mfeg32.jpg',
+        img:'https://res.cloudinary.com/ds5qxtc0t/image/upload/v1663510611/dscmec-team/Netanya_Jaison_g7oote.jpg',
         name:'Netanya Jaison',
         designation:'Design Sub Lead',
         isLead:true

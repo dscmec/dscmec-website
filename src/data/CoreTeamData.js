@@ -1,7 +1,7 @@
 const TeamData=[
     {
         id:1,
-        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498726/dscmec-team/Hanna_Salam_yiuact.jpg',
+        img:'https://res.cloudinary.com/ds5qxtc0t/image/upload/v1663510610/dscmec-team/Hanna_Salam_a06n7k.jpg',
         name:'Hanna Salam',
         link:'',
         designation:'DSC Campus Lead',
@@ -9,8 +9,8 @@ const TeamData=[
     {
         id:2,
         stack:'web',
-        img:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Circle_Grey_Solid.svg/1200px-Circle_Grey_Solid.svg.png',
-        name:'TITLE',
+        img:'https://res.cloudinary.com/ds5qxtc0t/image/upload/v1663511983/dscmec-team/Sreekumar_K_ufb07u.jpg',
+        name:'Mr.Sreekumar K',
         link:'',
         designation:'Faculty Advisor',
     }
