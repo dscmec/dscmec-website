@@ -8,16 +8,15 @@ export const Member = (props) => {
     return (
         <>
             <div className="member">
-                <Image className="circle-icon" src={props.img} alt="member" />
-
-                <a href={props.link} target="_blank" rel="noreferrer">
+            <a href={props.link} target="_blank" rel="noreferrer">
                     <Image className="ln-icon" src={linkedinIcon} alt="member" />
                 </a>
-            
-            <div className="details">
+                <Image className="circle-icon" src={props.img} alt="member" />
+
+                <div className='details'>
                 <h4><strong>{props.name}</strong></h4>
                 <h5>{props.designation}</h5>
-            </div>
+                </div>
             </div>
         </>
     )
@@ -27,12 +26,14 @@ export const MemberResponsive = (props) => {
     return (
         <>
             <div className="member-responsive">
-                <Image className="rect-icon" src={props.img} alt="member" />
-                <h4><strong>{props.name}</strong></h4>
-                <h5>{props.designation}</h5>
-                <a href={props.link} target="_blank" rel="noreferrer">
+            <a href={props.link} target="_blank" rel="noreferrer">
                     <Image className="ln-icon-resp" src={linkedinIcon} alt="member" />
                 </a>
+                <Image className="rect-icon" src={props.img} alt="member" />
+               
+                <h4><strong>{props.name}</strong></h4>
+                <h5>{props.designation}</h5>
+               
             </div>
         </>
     )

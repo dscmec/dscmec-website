@@ -1,16 +1,16 @@
 const PublicityTeamMemberData=[
     {
         id:1,
-        img:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Circle_Grey_Solid.svg/1200px-Circle_Grey_Solid.svg.png',
-        name:'TITLE',
+        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498073/dscmec-team/Erine_Theressa_Jose_orgapc.jpg',
+        name:'Erine Theressa Jose',
         designation:'Publicity Lead',
         link:'',
         isLead:true
     },
     {
         id:2,
-        img:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Circle_Grey_Solid.svg/1200px-Circle_Grey_Solid.svg.png',
-        name:'TITLE',
+        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498075/dscmec-team/Tresa_Maria_Biju_s75u0q.jpg',
+        name:'Tresa Maria Biju',
         designation:'Publicity Sub Lead',
         link:'',
         isLead:true

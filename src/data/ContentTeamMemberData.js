@@ -1,8 +1,8 @@
 const ContentTeamMemberData=[
     {
         id:1,
-        img:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Circle_Grey_Solid.svg/1200px-Circle_Grey_Solid.svg.png',
-        name:'TITLE',
+        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498074/dscmec-team/Sonah_S_Tiju_wpcsb7.jpg',
+        name:'Sonah S Tiju',
         designation:'Content Lead',
         link:'',
         isLead:true

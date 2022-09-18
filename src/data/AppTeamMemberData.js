@@ -1,8 +1,8 @@
 const AppTeamMemberData=[
     {
         id:1,
-        img:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Circle_Grey_Solid.svg/1200px-Circle_Grey_Solid.svg.png',
-        name:'TITLE',
+        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498073/dscmec-team/Pooja_Johnson_khgrly.jpg',
+        name:'Pooja Johnson',
         designation:'App Lead',
         link:'',
         isLead:true

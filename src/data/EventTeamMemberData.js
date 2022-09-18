@@ -1,16 +1,16 @@
 const EventTeamMemberData=[
     {
         id:1,
-        img:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Circle_Grey_Solid.svg/1200px-Circle_Grey_Solid.svg.png',
-        name:'TITLE',
+        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498072/dscmec-team/Miya_Mariam_George_wcqimw.jpg',
+        name:'Miya Mariam George',
         designation:'Events Lead',
         link:'',
         isLead:true
     },
     {
         id:2,
-        img:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Circle_Grey_Solid.svg/1200px-Circle_Grey_Solid.svg.png',
-        name:'TITLE',
+        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498073/dscmec-team/Jayden_Chacko_Saji_rygzwe.png',
+        name:'Jaydan Chacko Saji',
         designation:'Events Sub Lead',
         link:'',
         isLead:true

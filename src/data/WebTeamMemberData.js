@@ -1,16 +1,17 @@
+
 const WebTeamMemberData=[
     {
         id:1,
-        img:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Circle_Grey_Solid.svg/1200px-Circle_Grey_Solid.svg.png',
-        name:'TITLE',
+        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498072/dscmec-team/Jaison_Dennis_j9pb8y.jpg',
+        name:'Jaison Dennis',
         designation:'Web Lead',
-        link:'',
+        link:'https://linkedin.com/in/jaison080',
         isLead:true
     },
     {
         id:2,
-        img:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Circle_Grey_Solid.svg/1200px-Circle_Grey_Solid.svg.png',
-        name:'TITLE',
+        img:'https://res.cloudinary.com/chatzoo/image/upload/v1663498072/dscmec-team/Bijoy_V_Babu_vybgso.png',
+        name:'Bijoy V Babu',
         designation:'Web Sub Lead',
         link:'',
         isLead:true

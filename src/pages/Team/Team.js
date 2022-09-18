@@ -39,6 +39,7 @@ const TeamNormal = () => {
       </div>
       <div className="team-container">
         <h1>Web Team</h1>
+        <div className="lead-container">
         {webTeamData.map((item, index) => {
             if(item.isLead===true){return (
               <Member
@@ -52,6 +53,7 @@ const TeamNormal = () => {
           return null;
     }
           )}
+          </div>
         <div className="row">
         {webTeamData.map((item, index) => {
             if(item.isLead===false){return (
@@ -70,6 +72,7 @@ const TeamNormal = () => {
       </div>
       <div className="team-container">
         <h1>App Team</h1>
+        <div className="lead-container">
         {appTeamData.map((item, index) => {
             if(item.isLead===true){return (
               <Member
@@ -83,6 +86,7 @@ const TeamNormal = () => {
           return null;
     }
           )}
+          </div>
         <div className="row">
         {appTeamData.map((item, index) => {
             if(item.isLead===false){return (
@@ -101,6 +105,7 @@ const TeamNormal = () => {
       </div>
       <div className="team-container">
         <h1>Events Team</h1>
+        <div className="lead-container">
         {eventTeamData.map((item, index) => {
             if(item.isLead===true){return (
               <Member
@@ -114,6 +119,7 @@ const TeamNormal = () => {
           return null;
     }
           )}
+          </div>
         <div className="row">
         {eventTeamData.map((item, index) => {
             if(item.isLead===false){return (
