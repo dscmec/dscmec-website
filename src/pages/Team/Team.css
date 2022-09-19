@@ -1,11 +1,8 @@
-@font-face {
-  font-family: "Noto sans Light";
-  src: url("../../assets/fonts/NotoSans-Light.ttf");
-}
+
 
 .team-normal,
 .team-responsive {
-  font-family: "Noto sans Light", sans-serif !important;
+  font-family: "Poppins";
 }
 
 .team-heading {

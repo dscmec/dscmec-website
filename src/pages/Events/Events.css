@@ -8,7 +8,7 @@
 
 .events > h1 {
     padding-top: 3rem;
-    font-family: "Noto Sans";
+    font-family: "Poppins";
     justify-content: center;
     font-size: 45px;
     line-height: 87px;
@@ -19,7 +19,7 @@
 .event-upcoming > h3 {
     padding-top: 2rem;
     padding-bottom: 1rem;
-    font-family: "Noto Sans";
+    font-family: "Poppins";
     font-weight: 300;
     font-size: 35px;
     line-height: 55px;
@@ -45,7 +45,7 @@
 }
 
 .event-archive > h3 {
-    font-family: "Noto Sans";
+    font-family: "Poppins";
     font-weight: 300;
     font-size: 35px;
     line-height: 55px;

@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "Noto sans Light";
-  src: url("../../assets/fonts/NotoSans-Light.ttf");
-}
+
 
 .focus {
   display: flex;
@@ -13,9 +10,9 @@
 }
 
 .focus > h1 {
-  margin: 3rem;
+  padding: 3rem;
   font-size: 2.8rem;
-  font-family: "Noto sans Light", sans-serif;
+  font-family: "Poppins";
 }
 
 /* .focus > h1::before {
@@ -24,11 +21,11 @@
 } */
 
 .focus > p {
-  margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
+  padding-top: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   font-size: 1.85rem;
-  font-family: "Noto sans Light", sans-serif;
+  font-family: "Poppins";
   color: #828282;
 }
 
@@ -92,22 +89,21 @@
 
 @media screen and (max-width: 992px) {
   .focus > h1 {
-    margin: 1rem;
+    padding: 1rem;
     font-size: 2rem;
   }
 
   .focus > p {
     font-size: 1.5rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .focus .ripples-yellow {
     position: relative;
     width: 125px;
     height: 125px;
-    /* top: 0.9rem; */
-    top: 14vh; /* 26% */ /* 25% */
+    top: 14vh; 
   }
   .focus .waves-yellow-1 {
     right: 10%;
@@ -116,16 +112,16 @@
 
 @media screen and (max-width: 600px) {
   .focus > h1 {
-    margin: 1rem;
+    padding: 1rem;
   }
 
   .focus > p {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .focus .ripples-yellow {
     /* top: 0.9rem; */
-    top: 12.8vh !important; /* 17.8vh */ /* 14.8vh */
+    top: 12.8vh ; /* 17.8vh */ /* 14.8vh */
   }
   .focus .waves-yellow-1,
   .focus .waves-yellow-2,
@@ -139,7 +135,6 @@
 
 @media screen and (max-width: 360px) {
   .focus .ripples-yellow {
-    /* top: 0.9rem;  */
-    top: 14.8vh !important; /* 5.2vh  */
+    top: 14.8vh ;
   }
 }

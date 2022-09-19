@@ -14,7 +14,7 @@ export const Member = (props) => {
                 <Image className="circle-icon" src={props.img} alt="member" />
 
                 <div className='details'>
-                <h4><strong>{props.name}</strong></h4>
+                <h4>{props.name}</h4>
                 <h5>{props.designation}</h5>
                 </div>
             </div>

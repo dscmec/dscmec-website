@@ -1,17 +1,3 @@
-@font-face {
-  font-family: "Noto sans Italic";
-  src: url("../../assets/fonts/NotoSans-Italic.ttf");
-}
-@font-face {
-  font-family: "Roboto Bold";
-  src: url("../../assets/fonts/Roboto-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Noto sans Light";
-  src: url("../../assets/fonts/NotoSans-Light.ttf");
-}
-
 .landing {
   /* margin: 2rem; */
   padding: 12rem 2rem 2rem; /* 7rem 2rem 2rem */
@@ -37,7 +23,7 @@
   align-items: flex-start;
   justify-content: left;
   /* flex: 0.6; */
-  padding: 2rem 7rem;
+  padding: 7rem 7rem;
 }
 
 .landingLeftHeader {
@@ -80,7 +66,8 @@
   padding-right: 4rem; */
   text-align: left;
   margin-top: 2rem;
-  font-family: "Noto sans Italic", sans-serif;
+  font-family: "Poppins";
+  font-style: italic;
   color: #547dbf;
 }
 
@@ -88,7 +75,8 @@
   margin-top: 2rem;
   height: auto;
   width: 150px;
-  font-family: "Roboto Bold", monospace;
+  font-family: "Poppins";
+  font-style: bold;
   font-size: 1.15rem;
 }
 
@@ -105,12 +93,12 @@
 }
 
 .scroll-down {
-  font-family: "Noto sans Light", sans-serif;
+  font-family: "Poppins";
   font-size: 24px;
   color: #4f4f4f;
   cursor: pointer;
   pointer-events: none;
-  margin-top: 10rem auto;
+  padding-top: 5%;
 }
 
 @media screen and (max-width: 992px) {
@@ -143,7 +131,7 @@
   }
 
   .landingLeftHeader .logo-mobile {
-    display: block !important;
+    display: block;
     width: 100%;
     pointer-events: none;
     height: auto;
@@ -152,7 +140,7 @@
   .landingLeftInfo > h4 {
     color: #828282;
     font-size: 15px;
-    margin-top: 25vh;
+    padding-top: 25vh;
     text-align: center;
   }
 
@@ -161,7 +149,7 @@
   }
 
   .landing .scroll-down {
-    margin: 0px auto;
+    padding: 0px auto;
   }
 }
 
@@ -181,7 +169,6 @@
     position: absolute;
     pointer-events: none;
     z-index: -1;
-    /* bottom: -2.9rem; */
     top: 37vh;
     width: 100vw;
     left: 0;
@@ -190,6 +177,6 @@
 
 @media screen and (max-width: 360px) {
   .landingLeftInfo > h4 {
-    margin-top: 20vh;
+    padding-top: 20vh;
   }
 }

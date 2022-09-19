@@ -31,6 +31,9 @@
 
 .details{
   padding-top: 25px;
+  font-family: "Poppins";
+
+  row-gap: 10px;
 
 }
 
@@ -45,6 +48,8 @@
 }
 .member-responsive h4{
   padding-top: 1rem;
+  font-weight: 500;
+  font-family: "Poppins";
 }
 .rect-icon {
   border-radius: 50%;
@@ -70,5 +75,6 @@
 
 .details-responsive{
   margin: 25px;
+  font-family: "Poppins";
   padding: 25px;
 }
