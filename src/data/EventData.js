@@ -25,9 +25,9 @@ const EventData=[
         title:'TITLE',
         isArchived:true,
         date :'FEB 21',
-        desc:'It is a long established fact that a reader will be distracted by the readable...',
+        desc:'It is a long established fact that a reader will be distracted dfgsfdgbh dsgf hgdh by the readable...',
         reglink:"",
-        youtube:""
+        youtube:"https://youtube.com"
     },
     {
         id:4,
@@ -35,7 +35,7 @@ const EventData=[
         title:'TITLE',
         isArchived:true,
         date :'FEB 21',
-        desc:'It is a long established fact that a reader will be distracted by the readable...',
+        desc:'It is a long established fact that a reader will be distracted by fgdhdhgf the readable...',
         reglink:"",
         youtube:""
     },

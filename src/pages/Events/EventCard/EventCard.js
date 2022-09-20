@@ -18,7 +18,7 @@ function EventCard({ img, title, date, time, desc,isArchived ,reglink,youtube}) 
             <p>{desc}</p>
             {(isArchived===false)?<a href={reglink} target="_blank" rel="noreferrer" className='register_btn'>
           Register Here
-        </a>:<div className='youtube_btn'><a  href={youtube}><AiFillYoutube color='#FF0000' size={40}/></a></div>}
+        </a>:(youtube)&&<a className='youtube_btn' href={youtube}><AiFillYoutube color='#FF0000' size={40}/></a>}
         </div>
     )
 }
