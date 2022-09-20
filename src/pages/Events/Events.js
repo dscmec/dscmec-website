@@ -15,7 +15,7 @@ function Events() {
                     <div className="upcoming-cards" data-aos="slide-up" data-aos-duration="2000">
                     {events.map((item, index) => {
               if(item.isArchived===false){return (
-            <EventCard img={item.img} title={item.title} time={item.time} date={item.date} desc={item.desc}/>
+            <EventCard img={item.img} title={item.title} time={item.time} date={item.date} desc={item.desc} isArchived={item.isArchived} reglink={item.reglink} youtube={item.youtube}/>
             );}
         else
         return null;
@@ -28,7 +28,7 @@ function Events() {
                     <div className="archive-cards" data-aos="slide-up" data-aos-duration="2000">
                     {events.map((item, index) => {
               if(item.isArchived===true){return (
-            <EventCard img={item.img} title={item.title} time={item.time} date={item.date} desc={item.desc}/>
+            <EventCard img={item.img} title={item.title} time={item.time} date={item.date} desc={item.desc} isArchived={item.isArchived} reglink={item.reglink} youtube={item.youtube}/>
             );}
         else
         return null;

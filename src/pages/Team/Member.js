@@ -31,7 +31,7 @@ export const MemberResponsive = (props) => {
                 </a>
                 <Image className="rect-icon" src={props.img} alt="member" />
                
-                <h4><strong>{props.name}</strong></h4>
+                <h4>{props.name}</h4>
                 <h5>{props.designation}</h5>
                
             </div>
