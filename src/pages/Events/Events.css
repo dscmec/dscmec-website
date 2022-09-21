@@ -36,7 +36,16 @@
     align-items: center;
     justify-content: center;
 }
-
+.upcoming-cards h4 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #4F4F4F;
+    justify-content: center;
+}
 .event-archive {
     padding-top: 5rem;
     display: flex;

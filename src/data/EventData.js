@@ -3,7 +3,7 @@ const EventData=[
         id:1,
         img:'https://api.time.com/wp-content/uploads/2016/06/game-of-thrones-episode-9-4.jpg',
         title:'Heyy',
-        isArchived:false,
+        isArchived:true,
         date :'FEB 21',
         desc:'It is a long established fact that a reader will be distracted by the readable...',
         reglink:"https://www.google.com",
@@ -13,7 +13,7 @@ const EventData=[
         id:2,
         img:'https://api.time.com/wp-content/uploads/2016/06/game-of-thrones-episode-9-4.jpg',
         title:'TITLE',
-        isArchived:false,
+        isArchived:true,
         date :'FEB 21',
         desc:'It is a long established fact that a reader will be distracted by the readable...',
         reglink:"https://www.google.com",
@@ -37,7 +37,7 @@ const EventData=[
         date :'FEB 21',
         desc:'It is a long established fact that a reader will be distracted by fgdhdhgf the readable...',
         reglink:"",
-        youtube:""
+        youtube:"https://youtube.com"
     },
     {
         id:5,
@@ -57,7 +57,7 @@ const EventData=[
         date :'FEB 21',
         desc:'It is a long established fact that a reader will be distracted by the readable...',
         reglink:"",
-        youtube:""
+        youtube:"https://youtube.com"
     },
     {
         id:7,
@@ -87,7 +87,7 @@ const EventData=[
         date :'FEB 21',
         desc:'It is a long established fact that a reader will be distracted by the readable...',
         reglink:"",
-        youtube:""
+        youtube:"https://youtube.com"
     },
     {
         id:10,
@@ -107,7 +107,7 @@ const EventData=[
         date :'FEB 21',
         desc:'It is a long established fact that a reader will be distracted by the readable...',
         reglink:"",
-        youtube:""
+        youtube:"https://youtube.com"
     },
 ]
 export default EventData

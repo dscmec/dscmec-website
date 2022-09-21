@@ -3,7 +3,6 @@ import {AiFillYoutube} from 'react-icons/ai'
 import './EventCard.css'
 
 function EventCard({ img, title, date, time, desc,isArchived ,reglink,youtube}) {
-    console.log(reglink)
     return (
         <div className="eventCard" >
             <div className="event-card-image">
@@ -16,9 +15,9 @@ function EventCard({ img, title, date, time, desc,isArchived ,reglink,youtube}) 
                 <p>{time}</p>
             </div>
             <p>{desc}</p>
-            {(isArchived===false)?<a href={reglink} target="_blank" rel="noreferrer" className='register_btn'>
+            {(isArchived===false)?(<a href={reglink} target="_blank" rel="noreferrer" className='register_btn'>
           Register Here
-        </a>:(youtube)&&<a className='youtube_btn' href={youtube}><AiFillYoutube color='#FF0000' size={40}/></a>}
+        </a>):((youtube)?<a className='youtube_btn' href={youtube}><AiFillYoutube color='#FF0000' size={40}/></a>:<div style={{width:"50px",height:"50px"}}></div>)}
         </div>
     )
 }
