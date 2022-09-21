@@ -8,7 +8,6 @@ const TeamData=[
     },
     {
         id:2,
-        stack:'web',
         img:'https://res.cloudinary.com/ds5qxtc0t/image/upload/v1663511983/dscmec-team/Sreekumar_K_ufb07u.jpg',
         name:'Mr.Sreekumar K',
         link:'',

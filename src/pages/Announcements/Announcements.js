@@ -1,14 +1,33 @@
 import wavesYellow from "../../assets/svg/waves-yellow.svg";
 import "./Announcements.css";
+import { collection, getDocs, getFirestore } from "firebase/firestore";
+import Announcement from "../../utils/models/AnnouncementModel";
 import announcements from '../../data/AnnouncementData'
-
-function AnnouncementItem({ date, info, variant }) {
+import firebaseApp from "../../utils/firebase";
+import { useEffect } from "react";
+const announcementsArray = [];
+async function getAnnouncements()
+{
+  const db=getFirestore(firebaseApp);
+  const data= await getDocs(collection(db, 'announcements'))
+  
+      data.forEach(doc => {
+          const blog = new Announcement(
+              doc.id,
+              doc.data().date,
+              doc.data().info,
+          );
+          announcementsArray.push(blog);
+  })
+}
+ function AnnouncementItem({ date, info, variant }) {
+  
   let colorVariant = "";
   if (variant % 4 === 1) colorVariant = "#e05252";
   else if (variant % 4 === 2) colorVariant = "#fbbc04";
   else if (variant % 4 === 3) colorVariant = "#4285f4";
   else colorVariant = "#0f9d58";
-
+  
   return (
     <div className="announcement-item-container">
       <div
@@ -36,6 +55,9 @@ function AnnouncementItem({ date, info, variant }) {
 }
 
 function Announcements() {
+  useEffect(() => {
+    getAnnouncements()
+  }, [])
   return (
     <section className="container-fluid announcements" id="announcements">
       <div className="col-lg-12 col-md-12 announcements-left">
@@ -55,5 +77,5 @@ function Announcements() {
     </section>
   );
 }
-
+ 
 export default Announcements;
