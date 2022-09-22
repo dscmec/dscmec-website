@@ -5,5 +5,4 @@ class Announcement {
             this.info = info;
     }
 }
-
 module.exports = Announcement;
