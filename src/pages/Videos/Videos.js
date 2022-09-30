@@ -11,7 +11,7 @@ function Videos() {
     const data = await getDocs(
         query(
           collection(db, "videos"),
-          orderBy("id", "asc")
+          orderBy("id", "desc")
         )
       );
   let videosArray=[];
@@ -31,8 +31,8 @@ function Videos() {
         <div className="videos">
         {item.yids.map((item1, index) => {return( <iframe
         className="video_iframe"
-        src={`https://www.youtube.com/embed/${item1}`}
-        title="Android Study Jams 2021 | Session 3 - Project Lemonade | DSC MEC"
+        src={item1.replace("watch?v=","embed/")}
+        title="DSC MEC Videos"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
