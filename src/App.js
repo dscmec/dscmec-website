@@ -13,6 +13,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Videos from "./pages/Videos/Videos";
 function App() {
   AOS.init();
   return (
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/events" exact>
             <Events />
+          </Route>
+          <Route path="/videos" exact>
+            <Videos />
           </Route>
           <Route path="/">
             <Landing />
