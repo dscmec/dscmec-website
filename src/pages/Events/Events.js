@@ -1,8 +1,27 @@
-import React from 'react'
+import { collection, getDocs, getFirestore } from 'firebase/firestore';
+import React, { useEffect, useState } from 'react'
+import firebaseApp from '../../utils/firebase';
 
 import EventCard from './EventCard/EventCard'
 import './Events.css'
-import events from '../../data/EventData'
+
+
+function Events() {
+    const [events,setEvents]=useState([]) 
+ 
+  async function getEvents()
+{
+  const db=getFirestore(firebaseApp);
+  const data= await getDocs(collection(db, 'events'))
+let eventsArray=[];
+  data.forEach((doc) => {
+      eventsArray.push(doc.data())
+     })
+     setEvents(eventsArray)
+ 
+  }
+  useEffect(() => {
+getEvents();},[])
 var count=0;
 function number()
 {
@@ -14,9 +33,7 @@ function number()
             count++;
         }
     }
-    console.log(count);
 }
-function Events() {
     return (
         <div className="events">
             <h1 data-aos="slide-up" data-aos-duration="2000">Events</h1>
