@@ -27,7 +27,7 @@ function EventCard({
       </div>
       <p>{desc}</p>
       <div className="card-bottom">
-      {isArchived === false ? (
+      {/* {isArchived === false ? (
         <a
           href={reglink}
           target="_blank"
@@ -36,7 +36,8 @@ function EventCard({
         >
           Register Here
         </a>
-      ) : ((youtube||link) ? (
+      ) : (
+        (youtube||link) ? (
         youtube?(
         <a href={youtube} className="youtube_btn">
           <AiFillYoutube color="#FF0000" size={40} />
@@ -46,7 +47,25 @@ function EventCard({
       
     </a>)): (
         <div style={{ width: "50px", height: "50px" }}></div>
-      ))}
+      )
+      )} */}
+      {!isArchived&&(<a
+          href={reglink}
+          target="_blank"
+          rel="noreferrer"
+          className="register_btn"
+        >
+          Register Here
+        </a>)}{
+          isArchived&&youtube&&(<a href={youtube} className="youtube_btn"> <AiFillYoutube color="#FF0000" size={40} />
+          </a>)
+        }{
+          isArchived&&link&&(<a href={link} className="youtube_btn_1"> <HiOutlineLink color="#3667d6" size={45} className="youtube_btn_1"/>
+          </a>)
+        }
+        {
+          isArchived&&!link&&!youtube&&(<div style={{ width: "50px", height: "50px" }}></div>)
+        }
       </div>
     </div>
   );

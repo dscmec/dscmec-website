@@ -105,11 +105,12 @@ justify-content: flex-start;
 }
 .youtube_btn
 {
-  padding-left: 10px;
+  padding-left: 15px;
   padding-bottom: 10px;
 }
 .youtube_btn_1
 {
   padding-left: 10px;
+  margin-top: 1.5px;
   padding-bottom: 12px;
 }

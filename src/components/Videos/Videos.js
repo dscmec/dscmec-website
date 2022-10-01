@@ -7,9 +7,11 @@ import {
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import firebaseApp from "../../utils/firebase";
+import Loader from "../Loader/Loader";
 import "./Videos.css";
 function Videos() {
   const [videos, setVideos] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   async function getVideos() {
     const db = getFirestore(firebaseApp);
@@ -25,12 +27,18 @@ function Videos() {
   useEffect(() => {
     getVideos();
   }, []);
-  return (
+  useEffect(() => {
+    if(videos.length > 0){
+   setLoading(false);}
+  }, [videos]); 
+  return loading ? (
+    <Loader />
+  ) : (
     <div className="videos_container">
       <h1
         className="videos_heading"
         data-aos="slide-up"
-        data-aos-duraion="4000"
+        data-aos-duraion="500"
       >
         Our Videos
       </h1>
@@ -41,7 +49,7 @@ function Videos() {
               key={index}
               className="videos_heading_1"
               data-aos="slide-up"
-              data-aos-duraion="2000"
+              data-aos-duraion="4000"
             >
               {item.title}
             </h1>

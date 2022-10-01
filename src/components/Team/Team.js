@@ -11,6 +11,7 @@ import {
   orderBy,
   query,
 } from "firebase/firestore";
+import Loader from "../Loader/Loader";
 
 export default function Team() {
   const [coreTeam, setCoreTeam] = useState([]);
@@ -20,6 +21,11 @@ export default function Team() {
   const [designTeam, setDesignTeam] = useState([]);
   const [publicityTeam, setPublicityTeam] = useState([]);
   const [contentTeam, setContentTeam] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    if(coreTeam.length > 0){
+   setLoading(false);}
+  }, [coreTeam]); 
   async function getCoreTeam() {
     const db = getFirestore(firebaseApp);
     const data = await getDocs(
@@ -128,7 +134,9 @@ export default function Team() {
     getContentTeam();
   }, []);
 
-  return (
+  return loading ? (
+    <Loader />
+  ) : (
     <>
       <TeamNormal
         coreTeam={coreTeam}

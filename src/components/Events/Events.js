@@ -1,12 +1,16 @@
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import firebaseApp from "../../utils/firebase";
+import Loader from "../Loader/Loader";
 
 import EventCard from "./EventCard/EventCard";
 import "./Events.css";
 
 function Events() {
+
+
   const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   async function getEvents() {
     const db = getFirestore(firebaseApp);
@@ -20,6 +24,10 @@ function Events() {
   useEffect(() => {
     getEvents();
   }, []);
+  useEffect(() => {
+    if(events.length > 0){
+   setLoading(false);}
+  }, [events]); 
   var count = 0;
   function number() {
     for (var i = 0; i < events.length; i++) {
@@ -28,7 +36,9 @@ function Events() {
       }
     }
   }
-  return (
+    return loading ? (
+      <Loader />
+    ) : (
     <div className="events">
       <h1 data-aos="slide-up" data-aos-duration="2000">
         Events
