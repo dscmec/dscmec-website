@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillYoutube } from "react-icons/ai";
+import { HiOutlineLink } from "react-icons/hi";
 import "./EventCard.css";
 
 function EventCard({
@@ -11,9 +12,10 @@ function EventCard({
   isArchived,
   reglink,
   youtube,
+  link
 }) {
   return (
-    <div className="eventCard">
+    <div className="eventCard" >
       <div className="event-card-image">
         <div className="image-overlay"></div>
         <img src={img} alt="" />
@@ -24,6 +26,7 @@ function EventCard({
         <p>{time}</p>
       </div>
       <p>{desc}</p>
+      <div className="card-bottom">
       {isArchived === false ? (
         <a
           href={reglink}
@@ -33,13 +36,18 @@ function EventCard({
         >
           Register Here
         </a>
-      ) : youtube ? (
-        <a className="youtube_btn" href={youtube}>
+      ) : ((youtube||link) ? (
+        youtube?(
+        <a href={youtube} className="youtube_btn">
           <AiFillYoutube color="#FF0000" size={40} />
         </a>
-      ) : (
+      ): (<a  href={link}>
+      <HiOutlineLink color="#3667d6" size={45} className="youtube_btn_1"/>
+      
+    </a>)): (
         <div style={{ width: "50px", height: "50px" }}></div>
-      )}
+      ))}
+      </div>
     </div>
   );
 }

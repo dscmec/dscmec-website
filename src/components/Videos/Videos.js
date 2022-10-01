@@ -38,6 +38,7 @@ function Videos() {
         return (
           <>
             <h1
+              key={index}
               className="videos_heading_1"
               data-aos="slide-up"
               data-aos-duraion="2000"
@@ -45,17 +46,17 @@ function Videos() {
               {item.title}
             </h1>
             <div className="videos" data-aos="slide-up" data-aos-duraion="4000">
-              {item.yids.map((item1, index) => {
+              {item.yids.map((item1, index1) => {
                 return (
-                  <div data-aos="slide-up" data-aos-duraion="4000">
+                  <div data-aos="slide-up" data-aos-duraion="4000" key={index1}>
                     {" "}
                     <iframe
                       className="video_iframe"
                       src={item1.replace("watch?v=", "embed/")}
                       title="DSC MEC Videos"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                   </div>
                 );

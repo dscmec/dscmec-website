@@ -53,6 +53,7 @@ function Events() {
                 if (item.isArchived === false) {
                   return (
                     <EventCard
+                    key={index}
                       img={item.img}
                       title={item.title}
                       time={item.time}
@@ -61,6 +62,7 @@ function Events() {
                       isArchived={item.isArchived}
                       reglink={item.reglink}
                       youtube={item.youtube}
+                      link={item.link}
                     />
                   );
                 } else return null;
@@ -81,6 +83,7 @@ function Events() {
               if (item.isArchived === true) {
                 return (
                   <EventCard
+                  key={index}
                     img={item.img}
                     title={item.title}
                     time={item.time}
@@ -89,6 +92,7 @@ function Events() {
                     isArchived={item.isArchived}
                     reglink={item.reglink}
                     youtube={item.youtube}
+                    link={item.link}
                   />
                 );
               } else return null;

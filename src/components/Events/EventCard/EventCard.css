@@ -96,9 +96,20 @@
   text-decoration: none;
   color: white;
 }
-.youtube_btn {
-  padding-bottom: 10px;
+.card-bottom
+{
   display: flex;
-  padding-left: 15px;
-  justify-content: flex-start;
+  flex-direction: row;
+
+justify-content: flex-start;
+}
+.youtube_btn
+{
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.youtube_btn_1
+{
+  padding-left: 10px;
+  padding-bottom: 12px;
 }
