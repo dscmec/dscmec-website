@@ -25,18 +25,18 @@ function Videos() {
   getVideos();},[])
   return (
     <div className="videos_container">
-        <h1 className="videos_heading">Our Videos</h1>
+        <h1 className="videos_heading" data-aos="slide-up" data-aos-duraion="4000">Our Videos</h1>
 {videos.map((item, index) => {return(<>
-        <h1 className="videos_heading_1">{item.title}</h1>
-        <div className="videos">
-        {item.yids.map((item1, index) => {return( <iframe
+        <h1 className="videos_heading_1" data-aos="slide-up" data-aos-duraion="2000">{item.title}</h1>
+        <div className="videos" data-aos="slide-up" data-aos-duraion="4000">
+        {item.yids.map((item1, index) => {return(<div data-aos="slide-up" data-aos-duraion="4000"> <iframe
         className="video_iframe"
         src={item1.replace("watch?v=","embed/")}
         title="DSC MEC Videos"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe>);})}
+      ></iframe></div>);})}
       </div></>);})}
     </div>
   );

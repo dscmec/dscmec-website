@@ -1,46 +1,34 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ScrollToTop from "../src/utils/ScrollToTop";
-import Team from "./pages/Team/Team";
-import Navbar from "./components/Navbar/Navbar";
-import Landing from "./pages/Landing/Landing";
-import "./App.css";
-import Announcements from "./pages/Announcements/Announcements";
-import Focus from "./pages/Focus/Focus";
-import OurTeam from "./pages/OurTeam/OurTeam";
-import Events from "./pages/Events/Events";
-import ContactUs from "./pages/ContactUs/ContactUs";
-import Footer from "./components/Footer/Footer";
+
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import ScrollToTop from "../src/utils/ScrollToTop";import "./App.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Videos from "./pages/Videos/Videos";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import EventsPage from "./pages/EventsPage/EventsPage";
+import TeamsPage from "./pages/TeamsPage/TeamsPage";
+import VideosPage from "./pages/VideosPage/VideosPage";
+
 function App() {
+  
   AOS.init();
   return (
     <Router>
       <div className="App">
-      
-        <Navbar />
         <ScrollToTop />
         <Switch>
           <Route path="/team" exact>
-            <Team />
+            <TeamsPage />
           </Route>
           <Route path="/events" exact>
-            <Events />
+            <EventsPage />
           </Route>
           <Route path="/videos" exact>
-            <Videos />
+            <VideosPage />
           </Route>
           <Route path="/">
-            <Landing />
-            <Announcements />
-            <Focus />
-            <OurTeam />
-            <ContactUs />
+            <LandingPage />
           </Route>
         </Switch>
-        <Footer />
       </div>
     </Router>
   );

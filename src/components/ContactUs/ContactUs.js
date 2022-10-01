@@ -8,7 +8,7 @@ import shapes2 from "../../assets/svg/shapes-2.svg";
 
 import "./ContactUs.css";
 
-function OurTeam() {
+function ContactUs() {
   return (
     <section id="contactus">
       <div className="contactus" >
@@ -30,4 +30,4 @@ function OurTeam() {
   );
 }
 
-export default OurTeam;
+export default ContactUs;
