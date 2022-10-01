@@ -1,9 +1,7 @@
-
-
 .contactus {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 5rem); 
+  min-height: calc(100vh - 5rem);
   align-items: center;
   justify-content: center;
   position: relative;

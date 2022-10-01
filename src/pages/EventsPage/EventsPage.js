@@ -9,13 +9,14 @@ function EventsPage() {
   useEffect(() => {
     setTimeout(() => setSpinner(false), 1500);
   }, []);
-  return (spinner ? (
-    <Loader/>
-  ) : (<>
+  return spinner ? (
+    <Loader />
+  ) : (
+    <>
       <Navbar />
-      <Events/>
+      <Events />
       <Footer />
     </>
-  ));
+  );
 }
 export default EventsPage;

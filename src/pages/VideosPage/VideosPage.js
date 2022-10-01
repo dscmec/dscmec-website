@@ -9,13 +9,14 @@ function VideosPage() {
   useEffect(() => {
     setTimeout(() => setSpinner(false), 1500);
   }, []);
-  return (spinner ? (
-    <Loader/>
-  ) : (<>
+  return spinner ? (
+    <Loader />
+  ) : (
+    <>
       <Navbar />
-      <Videos/>
+      <Videos />
       <Footer />
-    </>)
+    </>
   );
 }
 export default VideosPage;

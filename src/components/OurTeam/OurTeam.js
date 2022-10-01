@@ -20,14 +20,17 @@ function OurTeam() {
         <img src={frames1} className="frames-1" alt="" />
         <img src={shapes1} className="shapes-1" alt="" />
         <img src={shapes2} className="shapes-2" alt="" />
-        <h1 data-aos="slide-up" data-aos-duration="2000">Our Team</h1>
+        <h1 data-aos="slide-up" data-aos-duration="2000">
+          Our Team
+        </h1>
         <br />
         <p data-aos="slide-up" data-aos-duration="2000">
           The group of high energy individuals banding together to take on the
           world using code and constant vibe checks.
         </p>
         <Button
-        data-aos="slide-up" data-aos-duration="2000"
+          data-aos="slide-up"
+          data-aos-duration="2000"
           className="ourteamButton"
           variant="success"
           onClick={() => {

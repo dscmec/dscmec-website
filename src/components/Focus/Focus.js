@@ -19,7 +19,9 @@ function Focus() {
         <img src={shapes} alt="" className="shapes-2" />
         <img src={dotTriLeft} alt="" className="dot-tri-left" />
         <img src={dotTriRight} alt="" className="dot-tri-right" />
-        <h1 data-aos="slide-up" data-aos-duration="2000">Our Focus</h1>
+        <h1 data-aos="slide-up" data-aos-duration="2000">
+          Our Focus
+        </h1>
         <br />
         <p data-aos="slide-up" data-aos-duration="2000">
           DSC MEC seeks to encourage learning dynamically and provide a boost to

@@ -45,7 +45,7 @@
   border-radius: 50%;
   color: #ffffff;
   font-size: 24px;
-  font-family: "Poppins", ;
+  font-family: "Poppins";
 }
 
 .announcement-item-right {
@@ -116,7 +116,7 @@
     bottom: 52px;
     border-left: 2.8px dashed #0f9d58;
   }
-  .waves-yellow-2{
+  .waves-yellow-2 {
     display: none;
   }
 }

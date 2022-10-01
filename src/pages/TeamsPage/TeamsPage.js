@@ -9,12 +9,14 @@ function TeamsPage() {
   useEffect(() => {
     setTimeout(() => setSpinner(false), 1500);
   }, []);
-  return (spinner ? (
-    <Loader/>
-  ) : (<><Navbar />
-      <Team/>
+  return spinner ? (
+    <Loader />
+  ) : (
+    <>
+      <Navbar />
+      <Team />
       <Footer />
-    </>)
+    </>
   );
 }
 export default TeamsPage;

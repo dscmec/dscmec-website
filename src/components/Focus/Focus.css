@@ -1,5 +1,3 @@
-
-
 .focus {
   display: flex;
   align-items: center;
@@ -103,7 +101,7 @@
     position: relative;
     width: 125px;
     height: 125px;
-    top: 14vh; 
+    top: 14vh;
   }
   .focus .waves-yellow-1 {
     right: 10%;
@@ -121,7 +119,7 @@
   }
   .focus .ripples-yellow {
     /* top: 0.9rem; */
-    top: 12.8vh ; /* 17.8vh */ /* 14.8vh */
+    top: 12.8vh; /* 17.8vh */ /* 14.8vh */
   }
   .focus .waves-yellow-1,
   .focus .waves-yellow-2,
@@ -135,6 +133,6 @@
 
 @media screen and (max-width: 360px) {
   .focus .ripples-yellow {
-    top: 14.8vh ;
+    top: 14.8vh;
   }
 }

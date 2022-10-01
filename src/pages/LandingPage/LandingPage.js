@@ -13,18 +13,18 @@ function LandingPage() {
   useEffect(() => {
     setTimeout(() => setSpinner(false), 1500);
   }, []);
-    return (spinner ? (
-      <Loader/>
-    ) : (
-      <>
-        <Navbar />
-        <Landing />
-        <Announcements />
-        <Focus />
-        <OurTeam />
-        <ContactUs />
-        <Footer />
-      </>
-    ));
+  return spinner ? (
+    <Loader />
+  ) : (
+    <>
+      <Navbar />
+      <Landing />
+      <Announcements />
+      <Focus />
+      <OurTeam />
+      <ContactUs />
+      <Footer />
+    </>
+  );
 }
 export default LandingPage;
