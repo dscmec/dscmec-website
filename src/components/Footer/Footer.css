@@ -1,12 +1,8 @@
-@font-face {
-  font-family: "Noto sans Light";
-  src: url("../../assets/fonts/NotoSans-Light.ttf");
-}
-
 .footer {
   width: 100%;
   overflow: hidden;
   position: relative;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;

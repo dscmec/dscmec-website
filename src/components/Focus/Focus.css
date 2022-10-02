@@ -1,0 +1,138 @@
+.focus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 85vh; /* calc(100vh - 5rem) */
+  position: relative;
+}
+
+.focus > h1 {
+  padding: 3rem;
+  font-size: 2.8rem;
+  font-family: "Poppins";
+}
+
+/* .focus > h1::before {
+  content: url("../../assets/svg/ripples-yellow.svg");
+  
+} */
+
+.focus > p {
+  padding-top: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-size: 1.85rem;
+  font-family: "Poppins";
+  color: #828282;
+}
+
+.focus .ripples-yellow {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  top: 7.3rem; /* 8.3rem */ /* 23vh */
+  z-index: -1;
+}
+
+.focus .waves-yellow-1 {
+  position: absolute;
+  top: 79px;
+  right: 20%;
+  width: 106px;
+  height: 106px;
+  z-index: -1;
+}
+
+.focus .waves-yellow-2 {
+  position: absolute;
+  bottom: -6%;
+  left: 20%;
+  width: 146px;
+  height: 146px;
+  z-index: -1;
+}
+
+.focus .shapes-1 {
+  position: absolute;
+  top: 79px;
+  left: 20%;
+  z-index: -1;
+}
+
+.focus .shapes-2 {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  bottom: -3%;
+  right: 20%;
+  z-index: -1;
+}
+
+.focus .dot-tri-left {
+  position: absolute;
+  height: 126px;
+  bottom: -3%;
+  right: 0;
+  z-index: -1;
+}
+
+.focus .dot-tri-right {
+  position: absolute;
+  height: 126px;
+  top: 73px;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 992px) {
+  .focus > h1 {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .focus > p {
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .focus .ripples-yellow {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    top: 14vh;
+  }
+  .focus .waves-yellow-1 {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .focus > h1 {
+    padding: 1rem;
+  }
+
+  .focus > p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .focus .ripples-yellow {
+    /* top: 0.9rem; */
+    top: 12.8vh; /* 17.8vh */ /* 14.8vh */
+  }
+  .focus .waves-yellow-1,
+  .focus .waves-yellow-2,
+  .focus .shapes-1,
+  .focus .shapes-2,
+  .focus .dot-tri-left,
+  .focus .dot-tri-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .focus .ripples-yellow {
+    top: 14.8vh;
+  }
+}

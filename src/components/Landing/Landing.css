@@ -1,0 +1,181 @@
+.landing {
+  /* margin: 2rem; */
+  padding: 12rem 2rem 2rem; /* 7rem 2rem 2rem */
+  pointer-events: none;
+  /* display: flex; */
+  background: url("../../assets/img/bg-1024.png");
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: calc(100vh - 5rem);
+  /* margin-top: 5rem; */
+  /* position: relative; */
+}
+
+.landing .mascots-mobile {
+  display: none;
+}
+
+.landingLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  /* flex: 0.6; */
+  padding: 7rem 7rem;
+}
+
+.landingLeftHeader {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-top: 0rem;
+}
+
+.landingLeftHeader > img {
+  height: 7.3rem;
+  width: auto;
+}
+
+.landingLeftHeader .logo-mobile {
+  display: none;
+}
+
+.LeftHeaderLogo {
+  position: relative;
+  right: 1rem;
+  bottom: 1rem;
+}
+.LeftHeaderLogo > img {
+  height: 5rem;
+  pointer-events: none;
+  width: auto;
+}
+
+.LeftHeaderText > h3 {
+  color: #666666;
+}
+.LeftHeaderText > h4 {
+  color: #737373;
+  float: left;
+}
+
+.landingLeftInfo > h4 {
+  /* padding-left: 8rem;
+  padding-right: 4rem; */
+  text-align: left;
+  margin-top: 2rem;
+  font-family: "Poppins";
+  font-style: italic;
+  color: #547dbf;
+}
+
+.landingLeft > .joinButton {
+  margin-top: 2rem;
+  height: auto;
+  width: 150px;
+  font-family: "Poppins";
+  font-style: bold;
+  font-size: 1.15rem;
+}
+
+.landingRight {
+  position: absolute;
+  top: 7.5rem;
+  right: 0;
+}
+
+.mascots {
+  height: auto;
+  width: 25rem;
+  pointer-events: none;
+}
+
+.scroll-down {
+  font-family: "Poppins";
+  font-size: 24px;
+  color: #4f4f4f;
+  cursor: pointer;
+  pointer-events: none;
+  padding-top: 5%;
+}
+
+@media screen and (max-width: 992px) {
+  .landing {
+    padding-top: 10rem; /* 5rem */
+    display: flex;
+    flex-direction: column;
+  }
+  .landingLeftHeader > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landing {
+    padding-top: 9rem; /* 4rem */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .landingLeft {
+    padding: 2rem 0.7rem; /* 2rem 3rem */
+    align-items: center;
+  }
+
+  .landingLeftHeader > img {
+    display: none;
+  }
+
+  .landingLeftHeader .logo-mobile {
+    display: block;
+    width: 100%;
+    pointer-events: none;
+    height: auto;
+  }
+
+  .landingLeftInfo > h4 {
+    color: #828282;
+    font-size: 15px;
+    padding-top: 25vh;
+    text-align: center;
+  }
+
+  .landingLeft > .joinButton {
+    width: 200px;
+  }
+
+  .landing .scroll-down {
+    padding: 0px auto;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .landing {
+    background: none;
+  }
+
+  .landingLeftHeader .logo-mobile {
+    position: relative;
+    bottom: 3.9rem;
+    pointer-events: none;
+  }
+
+  .landing .mascots-mobile {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+    top: 37vh;
+    width: 100vw;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .landingLeftInfo > h4 {
+    padding-top: 20vh;
+  }
+}

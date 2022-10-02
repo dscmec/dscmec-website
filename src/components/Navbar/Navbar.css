@@ -1,16 +1,10 @@
-@font-face {
-  font-family: "Noto sans Regular";
-  src: url("../../assets/fonts/NotoSans-Regular.ttf");
-}
-
 .nav-item {
   display: flex;
   align-items: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  column-gap: 40px;
   color: black !important;
   font-weight: 500 !important;
-  font-family: "Noto sans Regular", sans-serif;
+  font-family: "Poppins";
   text-decoration: none;
 }
 
@@ -30,22 +24,19 @@
 }
 
 .discord-container {
-  margin-left: 2rem;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
 }
 
 .tab-selected {
   position: relative;
   color: #4285f4 !important;
-  /* color: #ffffff !important; */
-  /* font-weight: 600 !important; */
-  /* background-color: #4285f4; */
-  /* border-radius: 0.25rem; */
 }
 
 .tab-selected:after {
   background-color: #4285f4;
+
+  transition: 1s ease-in;
   width: 100%;
   height: 0.17rem;
   content: "";
@@ -57,10 +48,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  .discord-container {
-    margin-left: 0;
-  }
-
   .nav-item a {
     width: 75%;
     max-width: 600px;
@@ -72,37 +59,9 @@
   .logo-nav {
     opacity: 1 !important;
   }
-
-  /* .tab-selected {
-    color: #4285f4 !important;
-    background-color: #ffffff !important;
-    font-weight: initial !important;
-  } */
-
-  /* .tab-selected:after {
-    background-color: #4285f4;
-    width: 100%;
-    height: 0.17rem;
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    z-index: 1;
-    pointer-events: none;
-  } */
 }
 
 @media screen and (max-width: 600px) {
-  .discord-container {
-    margin-left: 0;
-  }
-
-  /* .navbar-brand,
-  .logo-nav {
-    opacity: 0;
-    position: relative;
-    z-index: -1;
-  } */
   .logo-nav {
     height: 2.8rem;
     width: auto;

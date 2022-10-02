@@ -1,0 +1,46 @@
+.videos_container {
+  padding-top: 5rem;
+}
+.videos_heading_1 {
+  font-size: 2.8rem;
+  padding-top: 4%;
+  font-weight: 300;
+  font-family: "Poppins";
+}
+.videos_heading {
+  font-size: 2.8rem;
+  padding-top: 3%;
+  font-family: "Poppins";
+}
+.videos {
+  padding-top: 2%;
+
+  padding-bottom: 5%;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.video_iframe {
+  width: 500px;
+  height: 300px;
+  border: none;
+}
+
+@media (max-width: 550px) {
+  .video_iframe {
+    width: 300px;
+    height: 200px;
+    border: none;
+  }
+  .videos_heading_1 {
+    font-size: 2rem;
+    padding-top: 3%;
+    font-weight: 300;
+    font-family: "Poppins";
+  }
+  .videos {
+    padding-bottom: 10%;
+  }
+}
