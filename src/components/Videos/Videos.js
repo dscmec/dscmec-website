@@ -28,18 +28,15 @@ function Videos() {
     getVideos();
   }, []);
   useEffect(() => {
-    if(videos.length > 0){
-   setLoading(false);}
-  }, [videos]); 
+    if (videos.length > 0) {
+      setLoading(false);
+    }
+  }, [videos]);
   return loading ? (
     <Loader />
   ) : (
     <div className="videos_container">
-      <h1
-        className="videos_heading"
-        data-aos="slide-up"
-        data-aos-duraion="500"
-      >
+      <h1 className="videos_heading" data-aos="slide-up" data-aos-duraion="500">
         Our Videos
       </h1>
       {videos.map((item, index) => {
