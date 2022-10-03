@@ -11,7 +11,7 @@ import footerBackground from "../../assets/svg/footer.svg";
 import logo from "../../assets/svg/logo.svg";
 import "./Footer.css";
 
- function Footer() {
+function Footer() {
   return (
     <div className="footer">
       <img className="footer-background" src={footerBackground} alt="" />

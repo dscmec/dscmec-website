@@ -7,8 +7,6 @@ import EventCard from "./EventCard/EventCard";
 import "./Events.css";
 
 function Events() {
-
-
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -25,9 +23,10 @@ function Events() {
     getEvents();
   }, []);
   useEffect(() => {
-    if(events.length > 0){
-   setLoading(false);}
-  }, [events]); 
+    if (events.length > 0) {
+      setLoading(false);
+    }
+  }, [events]);
   var count = 0;
   function number() {
     for (var i = 0; i < events.length; i++) {
@@ -36,9 +35,9 @@ function Events() {
       }
     }
   }
-    return loading ? (
-      <Loader />
-    ) : (
+  return loading ? (
+    <Loader />
+  ) : (
     <div className="events">
       <h1 data-aos="slide-up" data-aos-duration="2000">
         Events
@@ -63,7 +62,7 @@ function Events() {
                 if (item.isArchived === false) {
                   return (
                     <EventCard
-                    key={index}
+                      key={index}
                       img={item.img}
                       title={item.title}
                       time={item.time}
@@ -93,7 +92,7 @@ function Events() {
               if (item.isArchived === true) {
                 return (
                   <EventCard
-                  key={index}
+                    key={index}
                     img={item.img}
                     title={item.title}
                     time={item.time}

@@ -68,71 +68,70 @@ function ContactUs() {
   };
   return (
     <>
-    <div id="contactus" className="contactus_container">
-    <img src={objects} className="objects" alt="" />
+      <div id="contactus" className="contactus_container">
+        <img src={objects} className="objects" alt="" />
         <img src={dotTri} className="dot-tri" alt="" />
         <img src={triangles} className="triangles" alt="" />
         <img src={shapes2} className="shapes-2" alt="" />
-    
-      <div className="contactus">
-        
-        <div className="contact_form">
-        <h1 className="contactUs__header">Contact Us</h1>
-        <form
-          className="contactUs__form"
-          onSubmit={handleContactForm}
-          name="contact"
-          method="post"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <div className="contact_form_div">
-            <label htmlFor="name" className="contact_form_label">
-              Your Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="contact_form_input"
-            />
-            <p className="contact_form_error">{nameErr}</p>
-          </div>
-          <div className="contact_form_div">
-            <label htmlFor="email" className="contact_form_label">
-              Your Email
-            </label>
-            <input
-              type="text"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="contact_form_input"
-            />
-            <p className="contact_form_error">{emailErr}</p>
-          </div>
-          <div className="contact_form_div">
-            <label htmlFor="message" className="contact_form_label">
-              Your Message
-            </label>
-            <textarea
-              type="text"
-              name="message"
-              value={msg}
-              onChange={(e) => setMsg(e.target.value)}
-              className="contact_form_input textarea"
-            />
-            <p className="contact_form_error">{msgErr}</p>
-          </div>
 
-          <button type="submit" className="contact_form_btn">
-            Send
-            <IoIosPaperPlane size={20} />
-          </button>
-        </form>
+        <div className="contactus">
+          <div className="contact_form">
+            <h1 className="contactUs__header">Contact Us</h1>
+            <form
+              className="contactUs__form"
+              onSubmit={handleContactForm}
+              name="contact"
+              method="post"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <div className="contact_form_div">
+                <label htmlFor="name" className="contact_form_label">
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="contact_form_input"
+                />
+                <p className="contact_form_error">{nameErr}</p>
+              </div>
+              <div className="contact_form_div">
+                <label htmlFor="email" className="contact_form_label">
+                  Your Email
+                </label>
+                <input
+                  type="text"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="contact_form_input"
+                />
+                <p className="contact_form_error">{emailErr}</p>
+              </div>
+              <div className="contact_form_div">
+                <label htmlFor="message" className="contact_form_label">
+                  Your Message
+                </label>
+                <textarea
+                  type="text"
+                  name="message"
+                  value={msg}
+                  onChange={(e) => setMsg(e.target.value)}
+                  className="contact_form_input textarea"
+                />
+                <p className="contact_form_error">{msgErr}</p>
+              </div>
+
+              <button type="submit" className="contact_form_btn">
+                Send
+                <IoIosPaperPlane size={20} />
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-      </div>
-    </div>
     </>
   );
 }

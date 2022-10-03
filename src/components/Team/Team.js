@@ -23,9 +23,10 @@ export default function Team() {
   const [contentTeam, setContentTeam] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    if(coreTeam.length > 0){
-   setLoading(false);}
-  }, [coreTeam]); 
+    if (coreTeam.length > 0) {
+      setLoading(false);
+    }
+  }, [coreTeam]);
   async function getCoreTeam() {
     const db = getFirestore(firebaseApp);
     const data = await getDocs(
@@ -174,7 +175,7 @@ const TeamNormal = (props) => {
         {props.coreTeam.map((item, index) => {
           return (
             <Member
-            key={index}
+              key={index}
               img={item.img}
               link={item.link}
               name={item.name}
@@ -200,7 +201,7 @@ const TeamNormal = (props) => {
             if (item.isLead === true) {
               return (
                 <Member
-                key={index}
+                  key={index}
                   img={item.img}
                   link={item.link}
                   name={item.name}
@@ -215,7 +216,7 @@ const TeamNormal = (props) => {
             if (item.isLead === false) {
               return (
                 <Member
-                key={index}
+                  key={index}
                   img={item.img}
                   link={item.link}
                   name={item.name}
@@ -243,7 +244,7 @@ const TeamNormal = (props) => {
             if (item.isLead === true) {
               return (
                 <Member
-                key={index}
+                  key={index}
                   img={item.img}
                   link={item.link}
                   name={item.name}
@@ -258,7 +259,7 @@ const TeamNormal = (props) => {
             if (item.isLead === false) {
               return (
                 <Member
-                key={index}
+                  key={index}
                   img={item.img}
                   link={item.link}
                   name={item.name}
@@ -286,8 +287,7 @@ const TeamNormal = (props) => {
             if (item.isLead === true) {
               return (
                 <Member
-
-                key={index}
+                  key={index}
                   img={item.img}
                   link={item.link}
                   name={item.name}
@@ -302,7 +302,7 @@ const TeamNormal = (props) => {
             if (item.isLead === false) {
               return (
                 <Member
-                key={index}
+                  key={index}
                   img={item.img}
                   link={item.link}
                   name={item.name}
@@ -325,7 +325,7 @@ const TeamNormal = (props) => {
           if (item.isLead === true) {
             return (
               <Member
-              key={index}
+                key={index}
                 img={item.img}
                 link={item.link}
                 name={item.name}
@@ -339,7 +339,7 @@ const TeamNormal = (props) => {
             if (item.isLead === false) {
               return (
                 <Member
-                key={index}
+                  key={index}
                   img={item.img}
                   link={item.link}
                   name={item.name}
@@ -362,7 +362,7 @@ const TeamNormal = (props) => {
           if (item.isLead === true) {
             return (
               <Member
-              key={index}
+                key={index}
                 img={item.img}
                 link={item.link}
                 name={item.name}
@@ -376,7 +376,7 @@ const TeamNormal = (props) => {
             if (item.isLead === false) {
               return (
                 <Member
-                key={index}
+                  key={index}
                   img={item.img}
                   link={item.link}
                   name={item.name}
@@ -399,7 +399,7 @@ const TeamNormal = (props) => {
           if (item.isLead === true) {
             return (
               <Member
-              key={index}
+                key={index}
                 img={item.img}
                 link={item.link}
                 name={item.name}
@@ -413,7 +413,7 @@ const TeamNormal = (props) => {
             if (item.isLead === false) {
               return (
                 <Member
-                key={index}
+                  key={index}
                   img={item.img}
                   link={item.link}
                   name={item.name}
@@ -446,7 +446,7 @@ const TeamResponsive = (props) => {
         {props.coreTeam.map((item, index) => {
           return (
             <MemberResponsive
-            key={index}
+              key={index}
               img={item.img}
               link={item.link}
               name={item.name}
@@ -466,8 +466,7 @@ const TeamResponsive = (props) => {
         <Carousel>
           {props.webTeam.map((item, index) => {
             return (
-              <Carousel.Item 
-              key={index}>
+              <Carousel.Item key={index}>
                 <MemberResponsive
                   img={item.img}
                   link={item.link}
@@ -490,8 +489,7 @@ const TeamResponsive = (props) => {
         <Carousel>
           {props.appTeam.map((item, index) => {
             return (
-              <Carousel.Item 
-              key={index}>
+              <Carousel.Item key={index}>
                 <MemberResponsive
                   img={item.img}
                   link={item.link}
@@ -514,8 +512,7 @@ const TeamResponsive = (props) => {
         <Carousel>
           {props.eventsTeam.map((item, index) => {
             return (
-              <Carousel.Item 
-              key={index}>
+              <Carousel.Item key={index}>
                 <MemberResponsive
                   img={item.img}
                   link={item.link}
@@ -538,8 +535,7 @@ const TeamResponsive = (props) => {
         <Carousel>
           {props.designTeam.map((item, index) => {
             return (
-              <Carousel.Item 
-              key={index}>
+              <Carousel.Item key={index}>
                 <MemberResponsive
                   img={item.img}
                   link={item.link}
@@ -562,8 +558,7 @@ const TeamResponsive = (props) => {
         <Carousel>
           {props.publicityTeam.map((item, index) => {
             return (
-              <Carousel.Item 
-              key={index}>
+              <Carousel.Item key={index}>
                 <MemberResponsive
                   img={item.img}
                   link={item.link}
@@ -586,8 +581,7 @@ const TeamResponsive = (props) => {
         <Carousel>
           {props.contentTeam.map((item, index) => {
             return (
-              <Carousel.Item 
-              key={index}>
+              <Carousel.Item key={index}>
                 <MemberResponsive
                   img={item.img}
                   link={item.link}
