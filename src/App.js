@@ -7,8 +7,14 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import EventsPage from "./pages/EventsPage/EventsPage";
 import TeamsPage from "./pages/TeamsPage/TeamsPage";
 import VideosPage from "./pages/VideosPage/VideosPage";
-
+import ReactGA from 'react-ga';
+import { useEffect } from "react";
+const TRACKING_ID =process.env.REACT_APP_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 function App() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   AOS.init();
   return (
     <Router>
