@@ -1,67 +1,47 @@
-# dscmec-website
-Website for DSC MEC
+# Website for DSC MEC
 
-# Getting Started with Create React App
+Official Website of DSC MEC.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Getting Started
+Create `.env` file.
+Add to .env file
+```
+GENERATE_SOURCEMAP=false
+REACT_APP_FIREBASE_API_KEY=xxxxXXXX.firebaseapp.com
+REACT_APP_FIREBASE_AUTH_DOMAIN=https://xxxXXXX.firebaseio.com
+REACT_APP_FIREBASE_PROJECT_ID=xxxxXXXX
+REACT_APP_FIREBASE_STORAGE_BUCKET=xxxxXXXX.appspot.com
+REACT_APP_FIREBASE_MESSAGE_SENDER_ID=xxxxXXXX
+REACT_APP_FIREBASE_APP_ID=xxxxXXXX
+REACT_APP_FORMSPREE_API=https://formspree.io/f/xxxxXXXX
+```
+### We request you if you are about to contribute, write clean and well documented code and also we expect you to follow undermentioned commit message format:
 
-## Available Scripts
+    Build: A new feature or Feat: A new feature.
+    Fix: A bug fix.
+    Docs: Documentation only changes.
+    Style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc).
+    Refactor: A code change that neither fixes a bug nor adds a feature.
+    Perf: A code change that improves performance.
+    Test: Adding missing tests.
+    Chore: Changes to the build process or auxiliary tools and libraries such as documentation generation.
 
-In the project directory, you can run:
+### For Example:-
 
-### `npm install`
+    git commit -m "Feat: Added UI component to add file" or git commit -m "Feat: Added UI component to add file",
+    git commit -m "Fix: Bug in SomeView was fixed",
+    etc.
+    
+# Steps To Run the Project:
+### Fork the Repository and then run the below lines.
 
-Installs all the required dependencies.
+```bash
+git clone https://github.com/{your_github_username}/dscmec-website.git
+cd dscmec-website
+npm install
+npm start
+```
 
-### `npm start`
+## Technologies Used:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React js for Front-End, Firebase
