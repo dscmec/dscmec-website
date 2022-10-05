@@ -28,8 +28,6 @@ function Routes()
 }
 function App() {
   AOS.init();
-  
-
   return (
     <BrowserRouter>
       <div className="App">
