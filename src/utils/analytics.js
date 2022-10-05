@@ -16,7 +16,6 @@ function sendPageview(path) {
   ReactGA.set({ page: path })
   ReactGA.pageview(path)
 }
-
 export default {
   init,
   sendEvent,
