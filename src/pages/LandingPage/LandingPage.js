@@ -9,7 +9,6 @@ import { useEffect, useState } from "react";
 import Loader from "../../components/Loader/Loader";
 function LandingPage() {
   const [spinner, setSpinner] = useState(true);
-
   useEffect(() => {
     setTimeout(() => setSpinner(false), 1500);
   }, []);
