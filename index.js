@@ -17,7 +17,7 @@ try {
     child.on("close", (code) => {
       console.log(`child process exited with code ${code}`);
     });
-  }, 2000);
+  }, 300000);
 }
 catch(err) {
   console.log(err);
