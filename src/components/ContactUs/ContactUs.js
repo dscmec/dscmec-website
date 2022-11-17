@@ -76,7 +76,7 @@ function ContactUs() {
 
         <div className="contactus">
           <div className="contact_form">
-            <h1 className="contactUs__header">Contact Us</h1>
+            <h1 className="contactUs__header">Contact</h1>
             <form
               className="contactUs__form"
               onSubmit={handleContactForm}
