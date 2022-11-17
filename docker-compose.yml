@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  frontend:
+    container_name: dscmec-frontend
+    build:
+      context: .
+    ports:
+      - 80

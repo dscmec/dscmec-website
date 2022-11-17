@@ -9,6 +9,7 @@
     "aos": "^3.0.0-beta.6",
     "axios": "^0.27.2",
     "bootstrap": "^4.5.3",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.2",
     "firebase": "^9.10.0",
     "react": "^17.0.1",
@@ -24,7 +25,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env PORT=80 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
