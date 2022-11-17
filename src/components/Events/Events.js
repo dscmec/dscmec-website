@@ -55,7 +55,7 @@ function Events() {
             {number()}
             {count === 0 ? (
               <h4 data-aos="slide-up" data-aos-duration="2000">
-                There are no upcoming events right now, check back later!
+                There are no upcoming events right now !!
               </h4>
             ) : (
               events.map((item, index) => {
