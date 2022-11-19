@@ -4,3 +4,11 @@ services:
     container_name: dscmec-frontend
     build:
       context: .
+    environment:
+      - VIRTUAL_HOST=dscblogs.mec.ac.in
+    restart: "always"
+
+networks:
+  default:
+    external:
+      name: mec
