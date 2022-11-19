@@ -5,7 +5,7 @@ services:
     build:
       context: .
     environment:
-      - VIRTUAL_HOST=dscblogs.mec.ac.in
+      - VIRTUAL_HOST=dsc.mec.ac.in
     restart: "always"
 
 networks:
