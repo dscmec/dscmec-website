@@ -49,6 +49,11 @@
     height: 200px;
     border: none;
   }
+  .video_iframe_img {
+    width: 300px;
+    height: auto;
+    border: none;
+  }
   .videos_heading_1 {
     font-size: 2rem;
     padding-top: 3%;
