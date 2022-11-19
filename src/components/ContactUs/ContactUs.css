@@ -1,32 +1,32 @@
-.contactus .objects {
-  position: relative;
-  top: 60%;
-  left: 10%;
+.objects {
+  position: absolute;
+  top:100px;
+  left: 3.7%;
   height: 150px;
   width: auto;
   z-index: -1;
 }
 
-.contactus .dot-tri {
-  position: relative;
-  top: 60%;
-  right: 7%;
+.dot-tri {
+  position: absolute;
+  top:100px;
+  right: 3.7%;
   height: 150px;
   width: auto;
   z-index: -1;
 }
 
-.contactus .triangles {
-  position: relative;
-  bottom: 0;
+.triangles {
+  position: absolute;
+  bottom: 3%;
   left: 3.7%;
   height: 100px;
   width: auto;
   z-index: -1;
 }
 
-.contactus .shapes-2 {
-  position: relative;
+.shapes-2 {
+  position: absolute;
   bottom: 3%;
   right: 10%;
   height: 100px;
@@ -34,22 +34,7 @@
   z-index: -1;
   transform: rotate(-19.78deg);
 }
-@media screen and (max-width: 600px) {
-  .contactus .objects {
-    position: relative;
-    top: 115px;
-    left: -64px;
-    height: 150px;
-    width: auto;
-    z-index: -1;
-  }
 
-  .contactus .dot-tri,
-  .contactus .triangles,
-  .contactus .shapes-2 {
-    display: none;
-  }
-}
 .contactUs__header {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -150,18 +135,33 @@
   background: #05486e;
   color: white;
 }
-.contactus {
-  min-height: 100vh;
-  justify-content: center;
+.contactus_container {
+  position: relative;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .contactus .objects {
+    position: relative;
+    top: 115px;
+    left: -64px;
+    height: 150px;
+    width: auto;
+    z-index: -1;
+  }
+
+  .contactus .dot-tri,
+  .contactus .triangles,
+  .contactus .shapes-2 {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .contactUs__form {
     width: 90%;
   }
-}
-.contactus_container {
-  position: relative;
 }
