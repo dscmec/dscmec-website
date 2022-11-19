@@ -42,6 +42,9 @@ function Landing() {
             data-aos="slide-up"
             data-aos-duration="2000"
             variant="success"
+            onClick={() => {
+              window.open("https://gdsc.community.dev/government-model-engineering-college-thrikkakara/", "_blank");
+            }}
           >
             JOIN NOW
           </Button>
