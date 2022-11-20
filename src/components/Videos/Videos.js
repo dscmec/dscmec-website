@@ -11,6 +11,7 @@ import Loader from "../Loader/Loader";
 import "./Videos.css";
 import { AiFillCloseCircle, AiOutlinePlayCircle } from "react-icons/ai";
 import { Box, Modal } from "@mui/material";
+import Backdrop from "@mui/material/Backdrop";
 function Videos() {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -18,24 +19,6 @@ function Videos() {
   const [videoId, setVideoId] = useState("");
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: "fit-content",
-    display:"flex",
-    flexDirection:"column",
-    alignItems:"flex-end",
-    height: "fit-content",
-    borderRadius: "10px",
-    bgcolor: "background.paper",
-    border: "none",
-    outline:"none",
-    rowGap:"1rem",
-    boxShadow: 24,
-    p: 3,
-  };
   async function getVideos() {
     const db = getFirestore(firebaseApp);
     const data = await getDocs(
@@ -82,7 +65,6 @@ function Videos() {
                     key={index1}
                     className="video"
                   >
-
                     <img
                       src={`https://img.youtube.com/vi/${item1}/0.jpg`}
                       alt=""
@@ -100,7 +82,6 @@ function Videos() {
                 );
               })}
             </div>
-            
           </>
         );
       })}
@@ -109,11 +90,21 @@ function Videos() {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
       >
-        <Box sx={style}>
-        <AiFillCloseCircle size={40} color="red" onClick={handleClose} style={{cursor:"pointer"}}/>
-          <object
-            data={`https://www.youtube.com/embed/${videoId}`}
+        <Box className="modal_box">
+          <AiFillCloseCircle
+            size={40}
+            color="red"
+            onClick={handleClose}
+            style={{ cursor: "pointer" }}
+          />
+          <iframe
+            src={`https://www.youtube.com/embed/${videoId}`}
             width="100%"
             height="auto"
             title="DSC MEC Videos"
@@ -121,7 +112,7 @@ function Videos() {
             className="video_iframe"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></object>
+          ></iframe>
         </Box>
       </Modal>
     </div>
