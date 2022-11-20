@@ -63,6 +63,7 @@ function Events() {
                   return (
                     <EventCard
                       key={index}
+                      event={item}
                       img={item.img}
                       title={item.title}
                       time={item.time}
@@ -93,6 +94,7 @@ function Events() {
                 return (
                   <EventCard
                     key={index}
+                    event={item}
                     img={item.img}
                     title={item.title}
                     time={item.time}

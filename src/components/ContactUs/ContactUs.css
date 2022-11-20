@@ -1,6 +1,6 @@
 .objects {
   position: absolute;
-  top:100px;
+  top: 100px;
   left: 3.7%;
   height: 150px;
   width: auto;
@@ -9,7 +9,7 @@
 
 .dot-tri {
   position: absolute;
-  top:100px;
+  top: 100px;
   right: 3.7%;
   height: 150px;
   width: auto;
