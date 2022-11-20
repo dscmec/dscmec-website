@@ -8,23 +8,24 @@ import EventsPage from "./pages/EventsPage/EventsPage";
 import TeamsPage from "./pages/TeamsPage/TeamsPage";
 import VideosPage from "./pages/VideosPage/VideosPage";
 import useGoogleAnalytics from "./hooks/useGoogleAnalytics";
-function Routes()
-  {
-    useGoogleAnalytics()
-    return(<Switch>
-          <Route path="/team" exact>
-            <TeamsPage />
-          </Route>
-          <Route path="/events" exact>
-            <EventsPage />
-          </Route>
-          <Route path="/videos" exact>
-            <VideosPage />
-          </Route>
-          <Route path="/">
-            <LandingPage />
-          </Route>
-        </Switch>);
+function Routes() {
+  useGoogleAnalytics();
+  return (
+    <Switch>
+      <Route path="/team" exact>
+        <TeamsPage />
+      </Route>
+      <Route path="/events" exact>
+        <EventsPage />
+      </Route>
+      <Route path="/videos" exact>
+        <VideosPage />
+      </Route>
+      <Route path="/">
+        <LandingPage />
+      </Route>
+    </Switch>
+  );
 }
 function App() {
   AOS.init();
@@ -32,7 +33,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <ScrollToTop />
-        <Routes/>
+        <Routes />
       </div>
     </BrowserRouter>
   );

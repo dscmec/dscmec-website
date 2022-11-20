@@ -9,10 +9,16 @@ import { useEffect, useState } from "react";
 import firebaseApp from "../../utils/firebase";
 import Loader from "../Loader/Loader";
 import "./Videos.css";
+import { AiFillCloseCircle, AiOutlinePlayCircle } from "react-icons/ai";
+import { Box, Modal } from "@mui/material";
+import Backdrop from "@mui/material/Backdrop";
 function Videos() {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  const [open, setOpen] = useState(false);
+  const [videoId, setVideoId] = useState("");
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   async function getVideos() {
     const db = getFirestore(firebaseApp);
     const data = await getDocs(
@@ -53,16 +59,25 @@ function Videos() {
             <div className="videos" data-aos="slide-up" data-aos-duraion="4000">
               {item.yids.map((item1, index1) => {
                 return (
-                  <div data-aos="slide-up" data-aos-duraion="4000" key={index1}>
-                    {" "}
-                    <iframe
-                      className="video_iframe"
-                      src={item1.replace("watch?v=", "embed/")}
-                      title="DSC MEC Videos"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
+                  <div
+                    data-aos="slide-up"
+                    data-aos-duraion="4000"
+                    key={index1}
+                    className="video"
+                  >
+                    <img
+                      src={`https://img.youtube.com/vi/${item1}/0.jpg`}
+                      alt=""
+                      className="video_iframe_img"
+                    />
+                    <AiOutlinePlayCircle
+                      size={50}
+                      className="play_icon"
+                      onClick={() => {
+                        handleOpen();
+                        setVideoId(item1);
+                      }}
+                    />
                   </div>
                 );
               })}
@@ -70,6 +85,36 @@ function Videos() {
           </>
         );
       })}
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Box className="modal_box">
+          <AiFillCloseCircle
+            size={40}
+            color="red"
+            onClick={handleClose}
+            style={{ cursor: "pointer" }}
+          />
+          <iframe
+            src={`https://www.youtube.com/embed/${videoId}`}
+            width="100%"
+            height="auto"
+            title="DSC MEC Videos"
+            frameBorder="0"
+            className="video_iframe"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </Box>
+      </Modal>
     </div>
   );
 }
