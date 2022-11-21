@@ -1,7 +1,7 @@
 const { spawn } = require("child_process");
 try {
   setInterval(() => {
-    const child = spawn(`git pull --rebase origin master`, { shell: true });
+    const child = spawn(`git pull --rebase origin master && npm i`, { shell: true });
     child.stdout.on("data", (data) => {
       console.log(`stdout: ${data}`);
     });
