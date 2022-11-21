@@ -10,6 +10,7 @@ import VideosPage from "./pages/VideosPage/VideosPage";
 import useGoogleAnalytics from "./hooks/useGoogleAnalytics";
 function Routes() {
   useGoogleAnalytics();
+
   return (
     <Switch>
       <Route path="/team" exact>
