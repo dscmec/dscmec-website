@@ -149,6 +149,7 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 2rem;
+
 }
 .modal_box_1 {
   position: absolute;
@@ -246,6 +247,12 @@
     justify-content: center;
     border-radius: 10px;
     border: 2px solid #0f9d58;
+  }
+  .modal_buttons{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+    
   }
   
 }
