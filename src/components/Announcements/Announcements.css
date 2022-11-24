@@ -24,8 +24,6 @@
   overflow: hidden;
 }
 
-/* ANNOUNCEMENT ITEM */
-
 .announcement-item-container {
   display: flex;
   flex-direction: row;

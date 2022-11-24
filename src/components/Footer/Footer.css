@@ -12,7 +12,6 @@
 .footer-background {
   width: 100%;
   height: auto;
-  /* position: absolute; */
   left: 0;
   z-index: -1;
 }
@@ -20,7 +19,7 @@
 .footer-container {
   position: absolute;
   bottom: 20px;
-  z-index: 999 !important;
+  z-index: 999;
   padding: 2rem;
   padding-bottom: 1rem;
 }
@@ -42,7 +41,6 @@
   justify-content: center;
   margin: 0 1.6rem;
   border-radius: 99px;
-  /* color: black; */
   color: #4285f4;
   text-decoration: none;
 }
@@ -82,7 +80,7 @@
   .footer-container {
     position: absolute;
     bottom: 10px;
-    z-index: 999 !important;
+    z-index: 999;
     padding: 2rem;
     padding-bottom: 1rem;
   }
@@ -120,7 +118,6 @@
     justify-content: center;
     margin: 0 1.2rem;
     border-radius: 99px;
-    /* color: black; */
     text-decoration: none;
   }
 

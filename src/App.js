@@ -7,10 +7,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import EventsPage from "./pages/EventsPage/EventsPage";
 import TeamsPage from "./pages/TeamsPage/TeamsPage";
 import VideosPage from "./pages/VideosPage/VideosPage";
-import useGoogleAnalytics from "./hooks/useGoogleAnalytics";
 function Routes() {
-  useGoogleAnalytics();
-
   return (
     <Switch>
       <Route path="/team" exact>

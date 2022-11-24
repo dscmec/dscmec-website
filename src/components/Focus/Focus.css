@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 85vh; /* calc(100vh - 5rem) */
+  min-height: 85vh;
   position: relative;
 }
 
@@ -12,11 +12,6 @@
   font-size: 2.8rem;
   font-family: "Poppins";
 }
-
-/* .focus > h1::before {
-  content: url("../../assets/svg/ripples-yellow.svg");
-  
-} */
 
 .focus > p {
   padding-top: 2rem;
@@ -31,7 +26,7 @@
   position: absolute;
   width: 175px;
   height: 175px;
-  top: 7.3rem; /* 8.3rem */ /* 23vh */
+  top: 7.3rem;
   z-index: -1;
 }
 
@@ -118,8 +113,7 @@
     padding-right: 1.5rem;
   }
   .focus .ripples-yellow {
-    /* top: 0.9rem; */
-    top: 12.8vh; /* 17.8vh */ /* 14.8vh */
+    top: 12.8vh;
   }
   .focus .waves-yellow-1,
   .focus .waves-yellow-2,

@@ -42,7 +42,11 @@ function Videos() {
     <Loader />
   ) : (
     <div className="videos_container">
-      <h1 className="videos_heading" data-aos="slide-up" data-aos-duraion="500">
+      <h1
+        className="videos_heading"
+        data-aos="slide-up"
+        data-aos-duration="500"
+      >
         Our Videos
       </h1>
       {videos.map((item, index) => {
@@ -52,16 +56,21 @@ function Videos() {
               key={index}
               className="videos_heading_1"
               data-aos="slide-up"
-              data-aos-duraion="4000"
+              data-aos-duraion="500"
             >
               {item.title}
             </h1>
-            <div className="videos" data-aos="slide-up" data-aos-duraion="4000">
+            <div
+              className="videos"
+              data-aos="slide-up"
+              key={index}
+              data-aos-duration="500"
+            >
               {item.yids.map((item1, index1) => {
                 return (
                   <div
                     data-aos="slide-up"
-                    data-aos-duraion="4000"
+                    data-aos-duration="500"
                     key={index1}
                     className="video"
                   >

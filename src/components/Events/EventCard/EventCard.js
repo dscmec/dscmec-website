@@ -64,9 +64,7 @@ function EventCard({
             </div>
             <div className="modal_content_para">
               <div className="modal_header_text">{event.title}</div>
-              <div className="modal_content_text">
-                {event.desc}
-              </div>
+              <div className="modal_content_text">{event.desc}</div>
               <div className="modal_buttons">
                 {!isArchived && (
                   <div className="register_btn">Register Here</div>
