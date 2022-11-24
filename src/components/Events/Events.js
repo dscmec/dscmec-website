@@ -75,7 +75,7 @@ function Events() {
                       link={item.link}
                     />
                   );
-                } else return null;
+                } else return "";
               })
             )}
           </div>
@@ -106,7 +106,7 @@ function Events() {
                     link={item.link}
                   />
                 );
-              } else return null;
+              } else return "";
             })}
           </div>
         </div>

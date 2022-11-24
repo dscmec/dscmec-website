@@ -189,7 +189,7 @@
   height: auto;
   padding: 1rem;
   position: relative;
-  bottom:15px;
+  bottom: 15px;
 }
 .modal_content_poster img {
   width: 400px;
@@ -224,19 +224,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  
-
   }
   .modal_content {
     flex-direction: column;
   }
   .modal_content_poster {
     width: 100%;
-  
   }
   .modal_content_para {
     width: 100%;
-    
   }
   .modal_content_poster img {
     width: 100%;
@@ -247,5 +243,4 @@
     border-radius: 10px;
     border: 2px solid #0f9d58;
   }
-  
 }
