@@ -25,12 +25,18 @@ function EventCard({
         <div className="image-overlay"></div>
         <img src={`https://drive.google.com/uc?id=${event.img}`} alt="" />
       </div>
-      <h1>{title}</h1>
+      {title.length > 20 ? (
+        <h1>{title.substring(0, 20)}...</h1>
+      ) : (
+        <h1>{title}</h1>
+      )}
       <div className="card-center">
         <p>{date}</p>
         <p>{time}</p>
       </div>
-      <p>{desc}</p>
+      <div className="card-center-para">
+        <p>{desc}</p>
+      </div>
       <div className="card-bottom">
         <div className="explore_btn" onClick={handleOpen}>
           Explore
