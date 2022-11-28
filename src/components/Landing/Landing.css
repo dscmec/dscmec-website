@@ -1,16 +1,11 @@
 .landing {
-  /* margin: 2rem; */
-  padding: 12rem 2rem 2rem; /* 7rem 2rem 2rem */
+  padding: 12rem 2rem 2rem;
   pointer-events: none;
-  /* display: flex; */
   background: url("../../assets/img/bg-1024.png");
-
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   min-height: calc(100vh - 5rem);
-  /* margin-top: 5rem; */
-  /* position: relative; */
 }
 
 .landing .mascots-mobile {
@@ -22,14 +17,10 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: left;
-  /* flex: 0.6; */
   padding: 7rem 7rem;
 }
 
 .landingLeftHeader {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   margin-top: 0rem;
 }
 
@@ -62,8 +53,6 @@
 }
 
 .landingLeftInfo > h4 {
-  /* padding-left: 8rem;
-  padding-right: 4rem; */
   text-align: left;
   margin-top: 2rem;
   font-family: "Poppins";
@@ -103,7 +92,7 @@
 
 @media screen and (max-width: 992px) {
   .landing {
-    padding-top: 10rem; /* 5rem */
+    padding-top: 10rem;
     display: flex;
     flex-direction: column;
   }
@@ -114,14 +103,14 @@
 
 @media screen and (max-width: 600px) {
   .landing {
-    padding-top: 9rem; /* 4rem */
+    padding-top: 9rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
 
   .landingLeft {
-    padding: 2rem 0.7rem; /* 2rem 3rem */
+    padding: 2rem 0.7rem;
     align-items: center;
   }
 

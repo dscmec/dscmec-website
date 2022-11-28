@@ -17,8 +17,10 @@ function Videos() {
   const [loading, setLoading] = useState(true);
   const [open, setOpen] = useState(false);
   const [videoId, setVideoId] = useState("");
+  const [visible, setVisible] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
   async function getVideos() {
     const db = getFirestore(firebaseApp);
     const data = await getDocs(
@@ -42,7 +44,11 @@ function Videos() {
     <Loader />
   ) : (
     <div className="videos_container">
-      <h1 className="videos_heading" data-aos="slide-up" data-aos-duraion="500">
+      <h1
+        className="videos_heading"
+        data-aos="slide-up"
+        data-aos-duration="500"
+      >
         Our Videos
       </h1>
       {videos.map((item, index) => {
@@ -52,32 +58,41 @@ function Videos() {
               key={index}
               className="videos_heading_1"
               data-aos="slide-up"
-              data-aos-duraion="4000"
+              data-aos-duraion="500"
             >
               {item.title}
             </h1>
-            <div className="videos" data-aos="slide-up" data-aos-duraion="4000">
+            <div
+              className="videos"
+              data-aos="slide-up"
+              key={index}
+              data-aos-duration="500"
+            >
               {item.yids.map((item1, index1) => {
                 return (
                   <div
                     data-aos="slide-up"
-                    data-aos-duraion="4000"
+                    data-aos-duration="500"
                     key={index1}
                     className="video"
                   >
                     <img
                       src={`https://img.youtube.com/vi/${item1}/0.jpg`}
                       alt=""
+                      onLoad={() => setVisible(true)}
                       className="video_iframe_img"
                     />
-                    <AiOutlinePlayCircle
-                      size={50}
-                      className="play_icon"
-                      onClick={() => {
-                        handleOpen();
-                        setVideoId(item1);
-                      }}
-                    />
+                    {(visible)? (
+                      <AiOutlinePlayCircle
+                        size={50}
+                        className="play_icon"
+                        loading="lazy"
+                        onClick={() => {
+                          handleOpen();
+                          setVideoId(item1);
+                        }}
+                      />
+                    ):("")}
                   </div>
                 );
               })}

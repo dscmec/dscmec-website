@@ -24,8 +24,6 @@
   overflow: hidden;
 }
 
-/* ANNOUNCEMENT ITEM */
-
 .announcement-item-container {
   display: flex;
   flex-direction: row;
@@ -88,6 +86,12 @@
   width: 146px;
   height: 146px;
   z-index: -1;
+}
+
+.mySwiper img{
+  width: auto;
+  height: 350px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 600px) {

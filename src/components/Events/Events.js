@@ -1,8 +1,7 @@
-import { collection, getDocs, getFirestore } from "firebase/firestore";
+import { collection, getDocs, getFirestore, orderBy, query } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import firebaseApp from "../../utils/firebase";
 import Loader from "../Loader/Loader";
-
 import EventCard from "./EventCard/EventCard";
 import "./Events.css";
 
@@ -12,7 +11,7 @@ function Events() {
 
   async function getEvents() {
     const db = getFirestore(firebaseApp);
-    const data = await getDocs(collection(db, "events"));
+    const data = await getDocs(query(collection(db, "events"),orderBy("id", "desc")));
     let eventsArray = [];
     data.forEach((doc) => {
       eventsArray.push(doc.data());
@@ -39,9 +38,9 @@ function Events() {
     <Loader />
   ) : (
     <div className="events">
-      <h1 data-aos="slide-up" data-aos-duration="2000">
+      <div data-aos="slide-up" data-aos-duration="2000" className="events-heading">
         Events
-      </h1>
+      </div>
       <div className="event-container">
         <div className="event-upcoming">
           <h3 data-aos="slide-up" data-aos-duration="2000">
@@ -75,7 +74,7 @@ function Events() {
                       link={item.link}
                     />
                   );
-                } else return null;
+                } else return "";
               })
             )}
           </div>
@@ -106,7 +105,7 @@ function Events() {
                     link={item.link}
                   />
                 );
-              } else return null;
+              } else return "";
             })}
           </div>
         </div>
