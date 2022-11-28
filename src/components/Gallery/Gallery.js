@@ -56,10 +56,10 @@ export default function Gallery() {
             breakpoints={{
               // when window width is >= 640px
               768: {
-                slidesPerView: 2,
+                slidesPerView: 1,
               },
               1275: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
               // when window width is >= 768px
               882: {
