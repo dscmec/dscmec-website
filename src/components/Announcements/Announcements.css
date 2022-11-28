@@ -88,6 +88,12 @@
   z-index: -1;
 }
 
+.mySwiper img{
+  width: auto;
+  height: 350px;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 600px) {
   .announcements-left {
     padding: 2rem 0.9rem;

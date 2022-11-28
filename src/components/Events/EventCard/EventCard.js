@@ -23,7 +23,8 @@ function EventCard({
     <div className="eventCard">
       <div className="event-card-image">
         <div className="image-overlay"></div>
-        <img src={`https://drive.google.com/uc?id=${event.img}`} alt="" />
+        <img src={`https://drive.google.com/uc?id=${event.card_img}`} alt="" />
+        <img src={`https://drive.google.com/uc?id=${event.img}`} alt=""style={{display:"none"}} />
       </div>
       {title.length > 20 ? (
         <h1>{title.substring(0, 20)}...</h1>
@@ -63,7 +64,7 @@ function EventCard({
           <div className="modal_content">
             <div className="modal_content_poster">
               <img
-                src={`https://drive.google.com/uc?id=${event.img}`}
+                src={`https://drive.google.com/uc?id=${img}`}
                 className="modal_content_poster"
                 alt=""
               />
@@ -73,16 +74,33 @@ function EventCard({
               <div className="modal_content_text">{event.desc}</div>
               <div className="modal_buttons">
                 {!isArchived && (
-                  <div className="register_btn">Register Here</div>
+                  <div
+                    className="register_btn"
+                    onClick={() => {
+                      window.open(`${reglink}`, "_blank");
+                    }}
+                  >
+                    Register Here
+                  </div>
                 )}
                 {isArchived && youtube && (
-                  <div className="youtube_btn">
+                  <div
+                    className="youtube_btn"
+                    onClick={() => {
+                      window.open(`${youtube}`, "_blank");
+                    }}
+                  >
                     <AiFillYoutube size={25} />
                     YouTube
                   </div>
                 )}
                 {isArchived && link && (
-                  <div className="youtube_btn_1">
+                  <div
+                    className="youtube_btn_1"
+                    onClick={() => {
+                      window.open(`${link}`, "_blank");
+                    }}
+                  >
                     <HiOutlineLink size={25} />
                     Resources
                   </div>

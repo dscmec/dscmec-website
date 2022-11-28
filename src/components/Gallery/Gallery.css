@@ -1,0 +1,37 @@
+.gallery-container
+{
+    height: 80vh;
+    margin-top: 5rem;
+    padding: 3rem;
+    width:100vw;
+    position: relative;
+    background: url('../../assets/svg/gallery.svg') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.gallery-heading
+{
+    font-size: 3rem;
+    font-weight: 600;
+    width: 100vh;
+    text-align: center;
+    font-family: "Poppins";
+    color: #fff;
+    text-align: center;
+}
+.gallery-container-1
+{
+    width:100vw;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-icon
+{
+    color: #fff;
+    cursor: pointer;
+}
