@@ -17,8 +17,10 @@ function Videos() {
   const [loading, setLoading] = useState(true);
   const [open, setOpen] = useState(false);
   const [videoId, setVideoId] = useState("");
+  const [visible, setVisible] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
   async function getVideos() {
     const db = getFirestore(firebaseApp);
     const data = await getDocs(
@@ -77,16 +79,20 @@ function Videos() {
                     <img
                       src={`https://img.youtube.com/vi/${item1}/0.jpg`}
                       alt=""
+                      onLoad={() => setVisible(true)}
                       className="video_iframe_img"
                     />
-                    <AiOutlinePlayCircle
-                      size={50}
-                      className="play_icon"
-                      onClick={() => {
-                        handleOpen();
-                        setVideoId(item1);
-                      }}
-                    />
+                    {(visible)? (
+                      <AiOutlinePlayCircle
+                        size={50}
+                        className="play_icon"
+                        loading="lazy"
+                        onClick={() => {
+                          handleOpen();
+                          setVideoId(item1);
+                        }}
+                      />
+                    ):("")}
                   </div>
                 );
               })}
