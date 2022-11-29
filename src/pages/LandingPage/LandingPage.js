@@ -23,7 +23,7 @@ function LandingPage() {
       <Landing />
       <Announcements />
       <Focus />
-      <Gallery/>
+      {/* <Gallery/> */}
       <OurTeam />
       <ContactUs />
       <Footer />
