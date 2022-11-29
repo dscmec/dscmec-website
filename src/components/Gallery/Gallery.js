@@ -50,7 +50,7 @@ export default function Gallery() {
             onSwiper={setSwiperRef}
             grabCursor={true}
             centeredSlides={true}
-            spaceBetween={30}
+            spaceBetween={40}
             initialSlide={4}
             loop={true}
             breakpoints={{
@@ -58,7 +58,7 @@ export default function Gallery() {
               768: {
                 slidesPerView: 1,
               },
-              1275: {
+              1440: {
                 slidesPerView: 3,
               },
               // when window width is >= 768px
@@ -76,7 +76,7 @@ export default function Gallery() {
                 <SwiperSlide key={index}>
                   <img
                     src={`https://drive.google.com/uc?id=${item}`}
-                    style={{ width: "400px", height: "370px" }}
+                    style={{ width: "420px", height: "370px",borderRadius:"15px",boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"}}
                     alt=""
                   />
                 </SwiperSlide>
