@@ -6,6 +6,7 @@ import {
   query,
 } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import firebaseApp from "../../utils/firebase";
 import EventCard from "../Events/EventCard/EventCard";
 import Loader from "../Loader/Loader";
@@ -14,7 +15,7 @@ import "./EventHome.css";
 function EventHome() {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  const history = useHistory();
   async function getEvents() {
     const db = getFirestore(firebaseApp);
     const data = await getDocs(
@@ -127,7 +128,7 @@ function EventHome() {
         data-aos="slide-up"
         data-aos-duration="2000"
         onClick={() => {
-          window.location.href = "/events";
+          history.push("/events");
         }}
       >
         View All
