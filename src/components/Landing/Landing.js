@@ -1,13 +1,10 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 import { NavHashLink as Link } from "react-router-hash-link";
-
 import logoFull from "../../assets/svg/logo-full.svg";
 import scrollDown from "../../assets/svg/scroll-down.svg";
 import mascots from "../../assets/svg/mascots.svg";
 import mascotsMobile from "../../assets/svg/mascots-mobile.svg";
 import logoMobile from "../../assets/img/logo-mobile.png";
-
 import "./Landing.css";
 
 function Landing() {
@@ -37,11 +34,10 @@ function Landing() {
           >
             <h4>Helping students bridge the gap between theory and practice</h4>
           </div>
-          <Button
-            className="joinButton"
+          <div
+            className="explore_btn_2"
             data-aos="slide-up"
             data-aos-duration="2000"
-            variant="success"
             onClick={() => {
               window.open(
                 "https://gdsc.community.dev/government-model-engineering-college-thrikkakara/",
@@ -49,8 +45,8 @@ function Landing() {
               );
             }}
           >
-            JOIN NOW
-          </Button>
+            Join Now
+          </div>
         </div>
       </div>
       <div className="scroll-down" data-aos="slide-up" data-aos-duration="2000">

@@ -1,7 +1,5 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { Button } from "react-bootstrap";
-
 import circles from "../../assets/svg/circles.svg";
 import frames from "../../assets/svg/frames.svg";
 import frames1 from "../../assets/svg/frames-1.svg";
@@ -28,17 +26,16 @@ function OurTeam() {
           The group of high energy individuals banding together to take on the
           world using code and constant vibe checks.
         </p>
-        <Button
+        <div
           data-aos="slide-up"
           data-aos-duration="2000"
-          className="ourteamButton"
-          variant="success"
+          className="explore_btn_2"
           onClick={() => {
             history.push("/team");
           }}
         >
-          MEET THE TEAM
-        </Button>
+          Meet the Team
+        </div>
       </div>
     </section>
   );
