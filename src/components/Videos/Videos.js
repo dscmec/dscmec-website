@@ -82,7 +82,7 @@ function Videos() {
                       onLoad={() => setVisible(true)}
                       className="video_iframe_img"
                     />
-                    {(visible)? (
+                    {visible ? (
                       <AiOutlinePlayCircle
                         size={50}
                         className="play_icon"
@@ -92,7 +92,9 @@ function Videos() {
                           setVideoId(item1);
                         }}
                       />
-                    ):("")}
+                    ) : (
+                      ""
+                    )}
                   </div>
                 );
               })}

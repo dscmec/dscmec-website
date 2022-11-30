@@ -42,11 +42,11 @@
 .card-center-para::-webkit-scrollbar {
   width: 0.5em;
 }
- 
+
 .card-center-para::-webkit-scrollbar-track {
   background-color: #052139;
 }
- 
+
 .card-center-para::-webkit-scrollbar-thumb {
   background-color: #285caa;
   border-radius: 10px;

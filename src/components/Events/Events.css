@@ -69,8 +69,7 @@
   justify-content: center;
 }
 
-.events-heading
-{
+.events-heading {
   position: relative;
   z-index: 1;
   margin-top: 3rem;
@@ -79,5 +78,5 @@
   font-size: 45px;
   line-height: 150px;
   color: #000000;
-  background: url('../../assets/svg/events.svg') no-repeat center center fixed ;
+  background: url("../../assets/svg/events.svg") no-repeat center center fixed;
 }

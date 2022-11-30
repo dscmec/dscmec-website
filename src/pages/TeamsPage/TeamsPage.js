@@ -1,6 +1,4 @@
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import Team from "../../components/Team/Team";
+import { Footer, Navbar, Team } from "../../components";
 import CustomTitle from "../../utils/customTitle";
 function TeamsPage() {
   return (

@@ -131,8 +131,7 @@
   color: white;
   transition: ease-in-out 0.1s;
 }
-.contact_form_btn:hover
-{
+.contact_form_btn:hover {
   background: #0d7543;
 }
 .contactus_container {
