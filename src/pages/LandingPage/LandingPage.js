@@ -8,6 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import { useEffect, useState } from "react";
 import Loader from "../../components/Loader/Loader";
 import CustomTitle from "../../utils/customTitle";
+import EventHome from "../../components/EventHome/EventHome";
 // import Gallery from "../../components/Gallery/Gallery";
 function LandingPage() {
   const [spinner, setSpinner] = useState(true);
@@ -23,6 +24,7 @@ function LandingPage() {
       <Landing />
       <Announcements />
       <Focus />
+      <EventHome/>
       {/* <Gallery/> */}
       <OurTeam />
       <ContactUs />
