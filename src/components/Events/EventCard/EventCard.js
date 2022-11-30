@@ -24,7 +24,11 @@ function EventCard({
       <div className="event-card-image">
         <div className="image-overlay"></div>
         <img src={`https://drive.google.com/uc?id=${event.card_img}`} alt="" />
-        <img src={`https://drive.google.com/uc?id=${event.img}`} alt=""style={{display:"none"}} />
+        <img
+          src={`https://drive.google.com/uc?id=${event.img}`}
+          alt=""
+          style={{ display: "none" }}
+        />
       </div>
       {title.length > 20 ? (
         <h1>{title.substring(0, 20)}...</h1>

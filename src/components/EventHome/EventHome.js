@@ -1,4 +1,10 @@
-import { collection, getDocs, getFirestore, orderBy, query } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  orderBy,
+  query,
+} from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import firebaseApp from "../../utils/firebase";
 import EventCard from "../Events/EventCard/EventCard";
@@ -11,7 +17,9 @@ function EventHome() {
 
   async function getEvents() {
     const db = getFirestore(firebaseApp);
-    const data = await getDocs(query(collection(db, "events"),orderBy("id", "desc")));
+    const data = await getDocs(
+      query(collection(db, "events"), orderBy("id", "desc"))
+    );
     let eventsArray = [];
     data.forEach((doc) => {
       eventsArray.push(doc.data());
@@ -38,7 +46,11 @@ function EventHome() {
     <Loader />
   ) : (
     <div className="events">
-      <h1 data-aos="slide-up" data-aos-duration="2000" className="events-heading">
+      <h1
+        data-aos="slide-up"
+        data-aos-duration="2000"
+        className="events-heading"
+      >
         Events
       </h1>
       <div className="event-container">
@@ -88,7 +100,7 @@ function EventHome() {
             data-aos="slide-up"
             data-aos-duration="2000"
           >
-            {events.slice(0,4).map((item, index) => {
+            {events.slice(0, 4).map((item, index) => {
               if (item.isArchived === true) {
                 return (
                   <EventCard
@@ -110,10 +122,16 @@ function EventHome() {
           </div>
         </div>
       </div>
-      <div className="explore_btn_2"  data-aos="slide-up"
-            data-aos-duration="2000" onClick={()=>{
-                window.location.href="/events";
-            }}>View All</div>
+      <div
+        className="explore_btn_2"
+        data-aos="slide-up"
+        data-aos-duration="2000"
+        onClick={() => {
+          window.location.href = "/events";
+        }}
+      >
+        View All
+      </div>
     </div>
   );
 }

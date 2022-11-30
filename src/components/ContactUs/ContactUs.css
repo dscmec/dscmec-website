@@ -117,6 +117,7 @@
 .contact_form_btn {
   display: flex;
   align-items: center;
+  font-family: "Poppins";
   justify-content: center;
   gap: 0.5rem;
   outline: none;
@@ -126,14 +127,12 @@
   padding: 0.75rem 1rem;
   font-weight: 600;
   font-size: 16px;
-  background: #0a89d3;
+  background: #0f9d58;
   color: white;
   transition: ease-in-out 0.1s;
 }
-
 .contact_form_btn:hover {
-  background: #05486e;
-  color: white;
+  background: #0d7543;
 }
 .contactus_container {
   position: relative;

@@ -1,6 +1,12 @@
 import wavesYellow from "../../assets/svg/waves-yellow.svg";
 import "./Announcements.css";
-import { collection, getDocs, getFirestore, orderBy, query } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  orderBy,
+  query,
+} from "firebase/firestore";
 import firebaseApp from "../../utils/firebase";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -42,7 +48,9 @@ function Announcements() {
 
   async function getAnnouncements() {
     const db = getFirestore(firebaseApp);
-    const data = await getDocs(query(collection(db, "announcements"), orderBy("id", "asc")));
+    const data = await getDocs(
+      query(collection(db, "announcements"), orderBy("id", "asc"))
+    );
     let announcementsArray = [];
     data.forEach((doc) => {
       announcementsArray.push(doc.data());
@@ -62,20 +70,28 @@ function Announcements() {
         >
           <h1>Announcements</h1>
         </div>
-        {(announcements)?(<div
-          className="announcements-body"
-          data-aos="slide-up"
-          data-aos-duration="2000"
-        >
-          {announcements &&
-            announcements.map((item, index) => {
-              return (
-                <AnnouncementItem {...item} key={index} variant={index + 1} />
-              );
-            })}
-        </div>):(<div className="announcements-body" data-aos="slide-up" data-aos-duration="2000">
-          <h1>No Announcements</h1>
-          </div>)}
+        {announcements ? (
+          <div
+            className="announcements-body"
+            data-aos="slide-up"
+            data-aos-duration="2000"
+          >
+            {announcements &&
+              announcements.map((item, index) => {
+                return (
+                  <AnnouncementItem {...item} key={index} variant={index + 1} />
+                );
+              })}
+          </div>
+        ) : (
+          <div
+            className="announcements-body"
+            data-aos="slide-up"
+            data-aos-duration="2000"
+          >
+            <h1>No Announcements</h1>
+          </div>
+        )}
       </div>
       <img className="waves-yellow-1" src={wavesYellow} alt="" />
       <img className="waves-yellow-2" src={wavesYellow} alt="" />

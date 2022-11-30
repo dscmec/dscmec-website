@@ -1,5 +1,6 @@
 export { default as Announcements } from "./Announcements/Announcements";
 export { default as ContactUs } from "./ContactUs/ContactUs";
+export { default as EventHome } from "./EventHome/EventHome";
 export { default as Events } from "./Events/Events";
 export { default as Focus } from "./Focus/Focus";
 export { default as Footer } from "./Footer/Footer";

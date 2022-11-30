@@ -1,4 +1,10 @@
-import { collection, getDocs, getFirestore, orderBy, query } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  orderBy,
+  query,
+} from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import firebaseApp from "../../utils/firebase";
 import Loader from "../Loader/Loader";
@@ -11,7 +17,9 @@ function Events() {
 
   async function getEvents() {
     const db = getFirestore(firebaseApp);
-    const data = await getDocs(query(collection(db, "events"),orderBy("id", "desc")));
+    const data = await getDocs(
+      query(collection(db, "events"), orderBy("id", "desc"))
+    );
     let eventsArray = [];
     data.forEach((doc) => {
       eventsArray.push(doc.data());
@@ -38,7 +46,11 @@ function Events() {
     <Loader />
   ) : (
     <div className="events">
-      <div data-aos="slide-up" data-aos-duration="2000" className="events-heading">
+      <div
+        data-aos="slide-up"
+        data-aos-duration="2000"
+        className="events-heading"
+      >
         Events
       </div>
       <div className="event-container">
