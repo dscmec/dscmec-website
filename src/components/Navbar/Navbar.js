@@ -40,10 +40,12 @@ function Navigation() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           <GiHamburgerMenu style={{ color: "#808080", fontSize: "1.5rem" }} />
         </Navbar.Toggle>
+        
         <Navbar.Collapse
           className="justify-content-end"
           id="responsive-navbar-nav"
         >
+          
           <Nav className="nav-item">
             <HashLink
               as={Link}
@@ -97,6 +99,9 @@ function Navigation() {
             >
               Contact Us
             </HashLink>
+              <div className="blogs-container" onClick={()=>{
+                window.open("http://dscblogs.mec.ac.in/", "_blank")
+              }}>Blogs</div>
 
             <a
               href="https://discord.com/invite/XpQEB5d"
