@@ -46,6 +46,25 @@
   z-index: 1;
   pointer-events: none;
 }
+.blogs-container
+{
+    background: #0f9d58;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.8rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    width: 100px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .blogs-container:hover {
+    background: #0d7543;
+  }
+  
 
 @media screen and (max-width: 992px) {
   .nav-item a {
