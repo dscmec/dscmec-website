@@ -4,6 +4,8 @@ services:
     container_name: dscmec-frontend
     build:
       context: .
+    ports:
+      - '80:80'
 #     environment:
 #       - VIRTUAL_HOST=dsc.mec.ac.in
 #     restart: "always"
