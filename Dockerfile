@@ -1,7 +1,7 @@
 FROM node:16-slim as build-stage
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm i
 COPY . ./
 RUN npm run build
 
