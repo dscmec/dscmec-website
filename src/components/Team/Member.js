@@ -21,7 +21,9 @@ export const Member = (props) => {
 
         <Image
           className="circle-icon"
-          src={`https://drive.google.com/uc?id=${props.img}`}
+          //  src={`https://drive.google.com/uc?id=${props.img}`}
+          src={`https://ik.imagekit.io/ElegantFalcon/Approved-crying-cat-meme-437aqu.jpg?updatedAt=1700311166008`}
+
           alt="member"
         />
 
@@ -50,7 +52,7 @@ export const MemberResponsive = (props) => {
         )}
         <Image
           className="rect-icon"
-          src={`https://drive.google.com/uc?id=${props.img}`}
+          src={`${props}`}
           alt="member"
         />
 
