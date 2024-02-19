@@ -23,9 +23,9 @@ function EventCard({
     <div className="eventCard">
       <div className="event-card-image">
         <div className="image-overlay"></div>
-        <img src={`https://drive.google.com/uc?id=${event.card_img}`} alt="" />
+        <img src={event.card_img} alt="" />
         <img
-          src={`https://drive.google.com/uc?id=${event.img}`}
+          src={event.img}
           alt=""
           style={{ display: "none" }}
         />
@@ -68,7 +68,7 @@ function EventCard({
           <div className="modal_content">
             <div className="modal_content_poster">
               <img
-                src={`https://drive.google.com/uc?id=${img}`}
+                src={event.img}
                 className="modal_content_poster"
                 alt=""
               />
