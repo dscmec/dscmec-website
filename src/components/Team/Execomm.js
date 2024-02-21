@@ -5,14 +5,18 @@ import {
   orderBy,
   query,
 } from "firebase/firestore";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
 import firebaseApp from "../../utils/firebase";
 import Loader from "../Loader/Loader";
+import "./Execomm.css";
 import { Member, MemberResponsive } from "./Member";
 import "./Team.css";
 
 export default function Team() {
   const [coreTeam, setCoreTeam] = useState([]);
+  const [year, setYear] = useState("2022-2023");
+  const years = ["2022-2023", "2021-2022"];
   /*
   const [webTeam, setWebTeam] = useState([]);
   const [appTeam, setAppTeam] = useState([]);
@@ -23,6 +27,9 @@ export default function Team() {
   */
   const [loading, setLoading] = useState(true);
   useEffect(() => {
+    getCoreTeam();
+  }, [year]);
+  useEffect(() => {
     if (coreTeam.length > 0) {
       setLoading(false);
     }
@@ -30,10 +37,7 @@ export default function Team() {
   async function getCoreTeam() {
     const db = getFirestore(firebaseApp);
     const data = await getDocs(
-      query(
-        collection(db, "/teams/97VDCMk6xdHrjIYm7Yo4/core"),
-        orderBy("id", "asc")
-      )
+      query(collection(db, `/execomm/${year}/core-team`), orderBy("id", "asc"))
     );
     let coreTeamArray = [];
     data.forEach((doc) => {
@@ -143,6 +147,12 @@ export default function Team() {
     <>
       <TeamNormal
         coreTeam={coreTeam}
+        year={year}
+        years={years}
+        setYear={setYear}
+        getCoreTeam={getCoreTeam}
+        loading={loading}
+        setLoading={setLoading}
         /*
         webTeam={webTeam}
         appTeam={appTeam}
@@ -154,6 +164,10 @@ export default function Team() {
       />
       <TeamResponsive
         coreTeam={coreTeam}
+        year={year}
+        years={years}
+        setYear={setYear}
+        getCoreTeam={getCoreTeam}
         /*
         webTeam={webTeam}
         appTeam={appTeam}
@@ -168,29 +182,73 @@ export default function Team() {
 }
 
 const TeamNormal = (props) => {
+  const [show, setShow] = useState(false);
+  const ref = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setShow(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="team-normal">
+    <div className="team-normal execomm-special">
       <h1 className="team-heading" data-aos="slide-up" data-aos-duration="2000">
-        Meet Our Team
+        Ex-Executive Committee
       </h1>
-      <div
-        className="lead-container"
-        data-aos="slide-up"
-        data-aos-duration="2000"
-      >
-        {props.coreTeam.map((item, index) => {
-          return (
-            <Member
-              key={index}
-              img={item.img}
-              link={item.link}
-              name={item.name}
-              designation={item.designation}
-            />
-          );
-        })}
-      </div>
-      {/*
+      {props.loading ? (
+        <Loader />
+      ) : (
+        <>
+          <div ref={ref} className="year-select-options-container">
+            <div onClick={() => setShow(!show)} className="year-select-title">
+              <h2>{props.year}</h2>
+              <IoIosArrowDown size={40} />
+            </div>
+            {show ? (
+              <ul data-aos="fade-down" className="year-select-options">
+                {props.years.map((item, index) => {
+                  return (
+                    <li
+                      key={index}
+                      className="year-select"
+                      onClick={() => {
+                        props.setYear(item);
+                        props.setLoading(true);
+                      }}
+                    >
+                      {item}
+                    </li>
+                  );
+                })}
+              </ul>
+            ) : null}
+          </div>
+          <div
+            className="lead-container"
+            data-aos="slide-up"
+            data-aos-duration="2000"
+          >
+            {props.coreTeam.map((item, index) => {
+              return (
+                <Member
+                  key={index}
+                  img={item.img}
+                  link={item.link}
+                  name={item.name}
+                  designation={item.designation}
+                />
+              );
+            })}
+          </div>
+          {/*
       <div
         className="team-container"
         data-aos="slide-up"
@@ -432,6 +490,8 @@ const TeamNormal = (props) => {
         </div> 
       </div>
       */}
+        </>
+      )}
     </div>
   );
 };
@@ -444,8 +504,9 @@ const TeamResponsive = (props) => {
         data-aos-duration="2000"
         className="team-heading-resp"
       >
-        Meet Our Team
+        Ex-Executive Committee
       </h1>
+      <div>{props.year}</div>
       <div
         className="lead-container-resp"
         data-aos="slide-up"

@@ -8,5 +8,5 @@ export { default as Landing } from "./Landing/Landing";
 export { default as Loader } from "./Loader/Loader";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as OurTeam } from "./OurTeam/OurTeam";
-export { default as Team } from "./Team/Team";
+export { default as Team } from "./Team/index";
 export { default as Videos } from "./Videos/Videos";

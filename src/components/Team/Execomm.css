@@ -1,0 +1,44 @@
+.year-select-options-container {
+  position: relative;
+  display: inline-block;
+}
+
+.execomm-special {
+  min-height: 350px;
+}
+
+.year-select-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-direction: row;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.year-select-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -20%;
+  /* transform: translate(-50%, 0); */
+  z-index: 2;
+}
+
+.year-select-options li {
+  list-style: none;
+  background-color: #ececec;
+  width: 200px;
+  padding: 10px 0px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.year-select-options li:hover {
+  background-color: #dbdbdb;
+}
