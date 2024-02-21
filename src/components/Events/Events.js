@@ -26,22 +26,17 @@ function Events() {
     });
     setEvents(eventsArray);
   }
+
   useEffect(() => {
     getEvents();
   }, []);
+
   useEffect(() => {
-    if (events.length > 0) {
-      setLoading(false);
-    }
+    setLoading(false);
   }, [events]);
-  var count = 0;
-  function number() {
-    for (var i = 0; i < events.length; i++) {
-      if (events[i].isArchived === false) {
-        count++;
-      }
-    }
-  }
+
+  const upcomingEventsCount = events.filter((item) => !item.isArchived).length;
+
   return loading ? (
     <Loader />
   ) : (
@@ -63,46 +58,15 @@ function Events() {
             data-aos="slide-up"
             data-aos-duration="2000"
           >
-            {number()}
-            {count === 0 ? (
+            {upcomingEventsCount === 0 ? (
               <h4 data-aos="slide-up" data-aos-duration="2000">
                 There are no upcoming events right now !!
               </h4>
             ) : (
-              events.map((item, index) => {
-                if (item.isArchived === false) {
-                  return (
-                    <EventCard
-                      key={index}
-                      event={item}
-                      img={item.img}
-                      title={item.title}
-                      time={item.time}
-                      date={item.date}
-                      desc={item.desc}
-                      isArchived={item.isArchived}
-                      reglink={item.reglink}
-                      youtube={item.youtube}
-                      link={item.link}
-                    />
-                  );
-                } else return "";
-              })
-            )}
-          </div>
-        </div>
-        <div className="event-archive">
-          <h3 data-aos="slide-up" data-aos-duration="2000">
-            Archive
-          </h3>
-          <div
-            className="archive-cards"
-            data-aos="slide-up"
-            data-aos-duration="2000"
-          >
-            {events.map((item, index) => {
-              if (item.isArchived === true) {
-                return (
+              events
+                .filter((item) => !item.isArchived)
+                .reverse()
+                .map((item, index) => (
                   <EventCard
                     key={index}
                     event={item}
@@ -116,9 +80,37 @@ function Events() {
                     youtube={item.youtube}
                     link={item.link}
                   />
-                );
-              } else return "";
-            })}
+                ))
+            )}
+          </div>
+        </div>
+        <div className="event-archive">
+          <h3 data-aos="slide-up" data-aos-duration="2000">
+            Archive
+          </h3>
+          <div
+            className="archive-cards"
+            data-aos="slide-up"
+            data-aos-duration="2000"
+          >
+            {events
+              .filter((item) => item.isArchived)
+              .reverse()
+              .map((item, index) => (
+                <EventCard
+                  key={index}
+                  event={item}
+                  img={item.img}
+                  title={item.title}
+                  time={item.time}
+                  date={item.date}
+                  desc={item.desc}
+                  isArchived={item.isArchived}
+                  reglink={item.reglink}
+                  youtube={item.youtube}
+                  link={item.link}
+                />
+              ))}
           </div>
         </div>
       </div>
