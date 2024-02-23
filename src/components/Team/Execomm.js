@@ -16,7 +16,7 @@ import "./Team.css";
 export default function Team() {
   const [coreTeam, setCoreTeam] = useState([]);
   const [year, setYear] = useState("2022-2023");
-  const years = ["2022-2023", "2021-2022"];
+  const years = ["2022-2023"];
   /*
   const [webTeam, setWebTeam] = useState([]);
   const [appTeam, setAppTeam] = useState([]);
@@ -168,6 +168,8 @@ export default function Team() {
         years={years}
         setYear={setYear}
         getCoreTeam={getCoreTeam}
+        loading={loading}
+        setLoading={setLoading}
         /*
         webTeam={webTeam}
         appTeam={appTeam}
@@ -218,10 +220,11 @@ const TeamNormal = (props) => {
                   return (
                     <li
                       key={index}
-                      className="year-select"
                       onClick={() => {
-                        props.setYear(item);
-                        props.setLoading(true);
+                        if (item !== props.year) {
+                          props.setYear(item);
+                          props.setLoading(true);
+                        }
                       }}
                     >
                       {item}
@@ -497,8 +500,24 @@ const TeamNormal = (props) => {
 };
 
 const TeamResponsive = (props) => {
+  const [show, setShow] = useState(false);
+  const ref = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setShow(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="team-responsive">
+    <div className="team-responsive execomm-special">
       <h1
         data-aos="slide-up"
         data-aos-duration="2000"
@@ -506,25 +525,53 @@ const TeamResponsive = (props) => {
       >
         Ex-Executive Committee
       </h1>
-      <div>{props.year}</div>
-      <div
-        className="lead-container-resp"
-        data-aos="slide-up"
-        data-aos-duration="2000"
-      >
-        {props.coreTeam.map((item, index) => {
-          return (
-            <MemberResponsive
-              key={index}
-              img={item.img}
-              link={item.link}
-              name={item.name}
-              designation={item.designation}
-            />
-          );
-        })}
-      </div>
-      {/* 
+      {props.loading ? (
+        <Loader />
+      ) : (
+        <>
+          <div ref={ref} className="year-select-options-container">
+            <div onClick={() => setShow(!show)} className="year-select-title">
+              <h2>{props.year}</h2>
+              <IoIosArrowDown size={25} />
+            </div>
+            {show ? (
+              <ul data-aos="fade-down" className="year-select-options">
+                {props.years.map((item, index) => {
+                  return (
+                    <li
+                      key={index}
+                      onClick={() => {
+                        if (item !== props.year) {
+                          props.setYear(item);
+                          props.setLoading(true);
+                        }
+                      }}
+                    >
+                      {item}
+                    </li>
+                  );
+                })}
+              </ul>
+            ) : null}
+          </div>
+          <div
+            className="lead-container-resp"
+            data-aos="slide-up"
+            data-aos-duration="2000"
+          >
+            {props.coreTeam.map((item, index) => {
+              return (
+                <MemberResponsive
+                  key={index}
+                  img={item.img}
+                  link={item.link}
+                  name={item.name}
+                  designation={item.designation}
+                />
+              );
+            })}
+          </div>
+          {/* 
       <div
         className="team-container-resp"
         data-aos="slide-up"
@@ -664,6 +711,8 @@ const TeamResponsive = (props) => {
         </Carousel>
       </div>
         */}
+        </>
+      )}
     </div>
   );
 };

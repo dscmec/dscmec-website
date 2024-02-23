@@ -42,3 +42,24 @@
 .year-select-options li:hover {
   background-color: #dbdbdb;
 }
+
+@media screen and (max-width: 760px) {
+  .year-select-title {
+    margin-bottom: 0.5rem;
+  }
+  .year-select-title h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .year-select-options {
+    left: -15%;
+  }
+
+  .year-select-options li {
+    width: 170px;
+    padding: 5px 0px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
