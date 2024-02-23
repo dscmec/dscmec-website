@@ -19,11 +19,7 @@ export const Member = (props) => {
           </a>
         )}
 
-        <Image
-          className="circle-icon"
-          src={props.img}
-          alt="member"
-        />
+        <Image className="circle-icon" src={props.img} alt="member" />
 
         <div className="details">
           <h4>{props.name}</h4>
@@ -39,20 +35,11 @@ export const MemberResponsive = (props) => {
     <>
       <div className="member-responsive">
         {props.link && (
-          <a
-            href={props.link}
-            target="_blank"
-            rel="noreferrer"
-            style={{ position: "absolute", top: "-20px" }}
-          >
+          <a href={props.link} target="_blank" rel="noreferrer" style={{}}>
             <Image className="ln-icon-resp" src={linkedinIcon} alt="member" />
           </a>
         )}
-        <Image
-          className="rect-icon"
-          src={props.img}
-          alt="member"
-        />
+        <Image className="rect-icon" src={props.img} alt="member" />
 
         <h4>{props.name}</h4>
         <h5>{props.designation}</h5>

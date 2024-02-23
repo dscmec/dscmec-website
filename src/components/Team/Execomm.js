@@ -202,7 +202,11 @@ const TeamNormal = (props) => {
 
   return (
     <div className="team-normal execomm-special">
-      <h1 className="team-heading" data-aos="slide-up" data-aos-duration="2000">
+      <h1
+        className="execomm-heading"
+        data-aos="slide-up"
+        data-aos-duration="2000"
+      >
         Ex-Executive Committee
       </h1>
       {props.loading ? (
@@ -521,7 +525,7 @@ const TeamResponsive = (props) => {
       <h1
         data-aos="slide-up"
         data-aos-duration="2000"
-        className="team-heading-resp"
+        className="execomm-heading-resp"
       >
         Ex-Executive Committee
       </h1>

@@ -43,6 +43,13 @@
   background-color: #dbdbdb;
 }
 
+.execomm-heading {
+  margin-top: 80px;
+}
+.execomm-heading-resp {
+  padding-top: 50px;
+}
+
 @media screen and (max-width: 760px) {
   .year-select-title {
     margin-bottom: 0.5rem;
