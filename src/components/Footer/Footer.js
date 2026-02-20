@@ -51,7 +51,7 @@ function Footer() {
           <div>
             <img src={logo} className="footer-logo" alt="" />
           </div>
-          Developer Student Clubs MEC {new Date().getFullYear()}
+          Google Developer Groups on Campus MEC {new Date().getFullYear()}
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
-# Website for DSC MEC
+# Website for GDGC MEC
 
-Official Website of DSC MEC.
+Official Website of GDGC MEC.
 
 ### Getting Started
 Create `.env` file.
