@@ -124,7 +124,7 @@ function Videos() {
             src={`https://www.youtube.com/embed/${videoId}`}
             width="100%"
             height="auto"
-            title="DSC MEC Videos"
+            title="GDGC MEC Videos"
             frameBorder="0"
             className="video_iframe"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

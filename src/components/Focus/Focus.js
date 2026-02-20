@@ -24,7 +24,7 @@ function Focus() {
         </h1>
         <br />
         <p data-aos="slide-up" data-aos-duration="2000">
-          DSC MEC seeks to encourage learning dynamically and provide a boost to
+          GDGC MEC seeks to encourage learning dynamically and provide a boost to
           developers stuck in a rut as well as connecting them with a group of
           like-minded peers to take on larger projects to change things for the
           better.
